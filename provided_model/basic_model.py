@@ -6,7 +6,7 @@ from sklearn.pipeline import make_pipeline
 
 
 # Load the competition data
-comp_data = pd.read_csv("competition_data.csv")
+comp_data = pd.read_csv("data/competition_data.csv")
 
 # Split into training and evaluation samples
 train_data = comp_data[comp_data["ROW_ID"].isna()]
@@ -15,7 +15,7 @@ del comp_data
 gc.collect()
 
 # Train a random forest model on the train data
-train_data = train_data.sample(frac=1/3)
+train_data = train_data.sample(frac=0.3, random_state=7589)
 y_train = train_data["conversion"]
 X_train = train_data.drop(columns=["conversion", "ROW_ID"])
 X_train = X_train.select_dtypes(include='number')
