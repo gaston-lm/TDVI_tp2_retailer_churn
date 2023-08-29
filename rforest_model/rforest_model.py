@@ -5,6 +5,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import make_pipeline
 
+# Semilla para utilizar siempre el mismo validation y tener replicabilidad.
 seed = 798589991
 
 # Cargamos la data de la competencia.
@@ -21,12 +22,19 @@ kaggle_data = comp_data[comp_data["ROW_ID"].notna()]
 # Entrenamos un modelo de random forest.
 y = local_data[['conversion']].copy()
 X = local_data.drop(columns=['conversion', 'ROW_ID', 'category_id'], axis = 1)
+X = X.select_dtypes(include='number')
 
 val_test_size = 0.3 # Proporción de la suma del test de validación y del de test.
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size = val_test_size, random_state = seed, stratify = y)
 
-cls = make_pipeline(SimpleImputer(), RandomForestClassifier(max_depth=8, random_state=7589))
+cls = make_pipeline(SimpleImputer(), RandomForestClassifier(max_depth=8, random_state=seed))
 cls.fit(X_train, y_train)
+
+# Chequeamos el valor debajo de la curva AUC-ROC
+y_pred = cls.predict_proba(X_val)[:, 1]
+auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
+print('AUC-ROC validación: %0.5f' % auc_roc)
+
 
 # Predicción en la data de kaggle para submitear.
 kaggle_data = kaggle_data.drop(columns=["conversion"])
