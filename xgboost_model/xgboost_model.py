@@ -34,7 +34,7 @@ best_min_child_weight = 3
 best_colsample_bytree = 0.9000335771350197
 best_reg_lambda = 12.654060098206006
 
-final_cls = make_pipeline(StandardScaler(), xgb.XGBClassifier(
+final_cls = make_pipeline(xgb.XGBClassifier(
         objective='binary:logistic',
         seed=seed,
         eval_metric='auc',
@@ -57,7 +57,7 @@ auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
 print('AUC-ROC validación: %0.5f' % auc_roc)
 
 # Para hacer submit.
-all_data_cls = make_pipeline(StandardScaler(), xgb.XGBClassifier(
+all_data_cls = make_pipeline(xgb.XGBClassifier(
     objective='binary:logistic',
     seed=seed,
     eval_metric='auc',
