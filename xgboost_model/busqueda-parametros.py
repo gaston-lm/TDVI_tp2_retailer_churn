@@ -41,7 +41,7 @@ space = {
 
 # Objective function for hyperparameter optimization
 def objective(params):
-    cls =  make_pipeline(StandardScaler(), SimpleImputer(), xgb.XGBClassifier(
+    cls =  make_pipeline(StandardScaler(), xgb.XGBClassifier(
         objective='binary:logistic',
         seed=seed,
         eval_metric='auc',
