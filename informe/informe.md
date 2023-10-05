@@ -1,7 +1,7 @@
 ---
 title: "Tecnología Digital VI: Inteligencia Artificial - Trabajo Práctico 2"
-author: [Federico Giorgi, Tomás Curzio, Gastón Loza Montaña]
-date: "08/10/23"
+author: [Federico Giorgi, Gastón Loza Montaña, Tomás Curzio]
+date: "04/10/23"
 lang: "es"
 ...
 
@@ -17,7 +17,11 @@ Entendemos por cómo estaba presentada la información de la plataforma en la qu
 
 Del segundo gráfico, nos llama la atención que la tasa de conversión se mantiene bastante estable durante casi todo el día (entre las 9:00 a 23:00) con leves picos en el horario de la salida del horario laboral (18:00) y en la cena u horario de ir a descansar (22:00-23:00).
 
-# Variables adicionales
+# Ingeniería de atributos
+
+## Variables que no aportaban información
+
+## Variables adicionales
 
 A pesar de la gran cantidad de atributos con las que cuenta el dateset provisto, nos parecía interesante agregar variables adicionales que puedan aportar al modelo predictivo. Entre ellas se encuentran:
 
@@ -38,5 +42,13 @@ Buscabamos además que el validation set no nos arroje resultados muy optimistas
 # Modelo predictivo
 
 ## Hiperparámetros
+
+Para la elección de nuestros hiperparámetros utilizamos la librería `hyperopt`, con el algoritmo de [TPE](https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f), el default de la librería, que utiliza un enfoque Bayesiano. En cada paso intenta construir un modelo probabilistico de la función y elegir los parametros mas prometedores para el siguiente paso. 
+
+Lo hicimos así para un modelo inicial sobre el cual aplicamos algunas modificaciones validando tanto en validation como en el leaderboard público y una vez que tuvimos nuestro modelo final, volvimos a calibrar los parametros con otra pasada de hyperopt (no tantas iteraciones por una cuestión de cómputo), lo cual fue beneficioso para el score.
+
+Utilizamos solo los parámetros vistos en clase, ya que esto nos permitía tener una idea mas clara de cuando podíamos estar overfitteando y cuando no al ir moviendolos. Como finalmente los parámetros de hyperopt nos daban un buen score tanto en validation como en el leaderboard público, consideramos que no estaba haciendo overfitting y no los modificamos. En el leaderboard privado nuestro score aumentó, lo que nos da pie a pensar que esa consideración era correcta.
+
+![Parametros obtenidos con Hyperopt](hyperopt.png)
 
 # Análisis Final
