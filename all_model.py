@@ -15,6 +15,7 @@ from sklearn.metrics import balanced_accuracy_score, roc_auc_score, make_scorer,
 from sklearn.preprocessing import StandardScaler
 
 seed = 798589991
+seeds = [798589991, 199985797, 719989598]
 do_hyperopt = False
 
 # Para W2V
@@ -113,12 +114,13 @@ def data_eng(df):
     df.drop('main_picture', inplace=True, axis=1)
     df.drop('category_id', inplace=True, axis=1)
     df.drop('domain_id', inplace=True, axis=1)
+    df.drop('product_id', inplace=True, axis=1)
     df.drop('deal_print_id', inplace=True, axis=1)
     df.drop('etl_version', inplace=True, axis=1)
     df.drop('site_id', inplace=True, axis=1)
     df.drop('item_id', inplace=True, axis=1)
     df.drop('accepts_mercadopago', inplace=True, axis=1)
-
+    
     # OHE de variables categóricas
     cols_to_encode = ['category_first', 'listing_type_id', 'logistic_type', 'platform', 'category_last']
     df_encoded = pd.get_dummies(df[cols_to_encode])
@@ -132,7 +134,7 @@ def data_eng(df):
     # Creación del modelo Word2Vec
     vec_size = 50
     w2v_title = gensim.models.Word2Vec(vector_size=vec_size,
-                                       window=15,
+                                       window=9,
                                        min_count=5,
                                        negative=15,
                                        sample=0.01,
@@ -179,19 +181,6 @@ X = local_data.drop(columns=['conversion', 'ROW_ID'], axis = 1)
 
 val_test_size = 0.3 # Proporción de la suma del test de validación y del de test.
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size = val_test_size, random_state = seed, stratify = y)
-
-# Contamos apariciones de product_id (pues sino sería data leakage)
-# Para X_train
-X_train['pid_count'] = X_train.groupby('product_id')['product_id'].transform('count')
-X_train.drop('product_id', inplace=True, axis=1)
-
-# Para X_val
-X_val['pid_count'] = X_val.groupby('product_id')['product_id'].transform('count')
-X_val.drop('product_id', inplace=True, axis=1)
-
-# Para Kaggle
-kaggle_data['pid_count'] = kaggle_data.groupby('product_id')['product_id'].transform('count')
-kaggle_data.drop('product_id', inplace=True, axis=1)
 
 if do_hyperopt:
     # Espacio de búsqueda
@@ -255,6 +244,7 @@ else:
     best_colsample_bytree = 0.5918738102818046
     best_reg_lambda = 15.162218839683447
 
+'''
 final_cls = make_pipeline(xgb.XGBClassifier(
         objective='binary:logistic',
         seed=seed,
@@ -272,34 +262,42 @@ final_cls = make_pipeline(xgb.XGBClassifier(
 
 final_cls.fit(X_train, y_train)
 
+
 # Chequeamos el valor debajo de la curva AUC-ROC
 y_pred = final_cls.predict_proba(X_val)[:, 1]
 auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
 print('AUC-ROC validación: %0.5f' % auc_roc)
+'''
 
-
-# Para hacer submit.
-all_data_cls = make_pipeline(xgb.XGBClassifier(
-    objective='binary:logistic',
-    seed=seed,
-    eval_metric='auc',
-    max_depth=best_max_depth,
-    learning_rate=best_learning_rate,
-    n_estimators=best_n_estimators,
-    gamma=best_gamma,
-    subsample=best_subsample,
-    min_child_weight=best_min_child_weight,
-    colsample_bytree=best_colsample_bytree,
-    reg_lambda=best_reg_lambda,
-))
-
-all_data_cls.fit(X, y)
-
-# Predicción en la data de kaggle para submitear.
+y_preds = pd.DataFrame()
 kaggle_data = kaggle_data.drop(columns=["conversion"])
-y_preds = all_data_cls.predict_proba(kaggle_data.drop(columns=["ROW_ID"]))[:, final_cls.classes_ == 1].squeeze()
+to_predict = kaggle_data.drop(columns=["ROW_ID"])
+
+for seed in seeds:
+    # Para hacer submit.
+    all_data_cls = make_pipeline(xgb.XGBClassifier(
+        objective='binary:logistic',
+        seed=seed,
+        eval_metric='auc',
+        max_depth=best_max_depth,
+        learning_rate=best_learning_rate,
+        n_estimators=best_n_estimators,
+        gamma=best_gamma,
+        subsample=best_subsample,
+        min_child_weight=best_min_child_weight,
+        colsample_bytree=best_colsample_bytree,
+        reg_lambda=best_reg_lambda,
+    ))
+
+    all_data_cls.fit(X, y)
+
+    # Predicción en la data de kaggle para submitear.
+    y_pred = all_data_cls.predict_proba(to_predict)[:, all_data_cls.classes_ == 1].squeeze()
+    y_preds[str(seed)] = y_pred
+
+y_preds_prom = y_preds.aggregate('mean', axis=1)
 
 # Generamos el archivo para submit en base a lo predicho.
-submission_df = pd.DataFrame({"ROW_ID": kaggle_data["ROW_ID"], "conversion": y_preds})
+submission_df = pd.DataFrame({"ROW_ID": kaggle_data["ROW_ID"], "conversion": y_preds_prom})
 submission_df["ROW_ID"] = submission_df["ROW_ID"].astype(int)
 submission_df.to_csv("xgboost_model/xgboost_model.csv", sep=",", index=False)
