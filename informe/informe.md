@@ -1,7 +1,7 @@
 ---
 title: "Tecnología Digital VI: Inteligencia Artificial - Trabajo Práctico 2"
 author: [Federico Giorgi, Gastón Loza Montaña, Tomás Curzio]
-date: "04/10/23"
+geometry: "left=2.5cm,right=2.5cm,top=3cm,bottom=3cm"
 lang: "es"
 ...
 
@@ -9,23 +9,36 @@ lang: "es"
 
 Para el análisis de los datos quisimos observar patrones de comportamiendo de los usuarios de la plataforma de e-commerce. Para ello, graficamos la frecuencia de conversión según la plataforma desde la cuál está operando el usuario y la frecuencia de conversión según hora y día de la semana.
 
-![Plot 1: Histograma de conversión por plataforma](platform_vs_conversion.png)
+![Histograma de conversión por plataforma](platform_vs_conversion.png){ width=400px }
 
 Entendemos por cómo estaba presentada la información de la plataforma en la que se estaba realizando la visualización que tanto la categoría `android` como `ios` refieren a las aplicaciones nativas de la plataforma en esos sistemas operativos y que `mobile` refiere al uso de la plataforma desde el navegador del dispositivo móbil. Notamos que la conversión en `desktop` es superior a la demás alternativas y que dentro de las opciones de teléfonos, la mayor tasa de conversión se da en dispositivos con el OS de Apple.
 
-![Plot 2: Histogramas de conversión por hora del día y día de la semana](hora_dia_vs_conversion.png)
+![Histogramas de conversión por hora del día y día de la semana](hora_dia_vs_conversion.png){ width=400px }
 
 Del segundo gráfico, nos llama la atención que la tasa de conversión se mantiene bastante estable durante casi todo el día (entre las 9:00 a 23:00) con leves picos en el horario de la salida del horario laboral (18:00) y en la cena u horario de ir a descansar (22:00-23:00).
 
 # Ingeniería de atributos
 
-## Variables que no aportaban información
-
 ## Variables adicionales
 
 A pesar de la gran cantidad de atributos con las que cuenta el dateset provisto, nos parecía interesante agregar variables adicionales que puedan aportar al modelo predictivo. Entre ellas se encuentran:
 
-- `discount_%`: tomamos la diferencia 
+- `discount_%`: tomamos la diferencia procentual entre el precio original y precio.
+- `month`, `day`, `day_of_week`, `hour`, `minute`, `second`: desagregación de la variable original `print_server_timestamp`.
+- `has_warranty`: a partir la exploración de la variable `warranty` que contiene texto libre con poca estandarización, tomamos aquellas que contengan las palabras "sin" y "garantía", y que no tengan digitos numéricos. A veces se mencionan las palabras "sin" y "garantía" en el texto en otro contexto y mencionan con dígitos numéricos indicando la duración de garantía.
+- `tags`: creamos para una columna para cada uno de los tags.
+- `category_first` y `category_last`: a partir de la variable `full_name` que indica el nombre de completo de la categoría divido por jerarquía con "-->" decidimos tomar el primer y último nivel de esta jerarquía. Esta decisión la tomamos observando que estas dos eran las más descriptivas de la categoría y usar todos los niveles de jerarquía generaría un nivel excesivo de columna al hacer OHE sobre las mismas.
+- `platform`: tomamos la última palabra del string ya que esta es la que más información aportaba.
+- `title_emb{i}`: embedings en base a w2v del atributo `title`. En principio hicimos vectores de 300 para hacerle PCA y notamos que con las primeras 100 componentes se explicaba el 90%. Comparamos el AUC-ROC con las primeras 100 componentes principales y contruir los vectores con 100 dimensiones y nos dio mejores resultados lo segundo. Luego al notar que nuestro AUC de validación discrepaba bastante con el del leaderboard pública decidimos bajar las dimensiones a 50 y vimos que funcionó mejor.
+
+## Variables que no aportaban información
+
+Además de agregar variables, decidimos eliminar variables que consideramos que no aportarían al modelo. 
+
+- Decidimos eliminar `accepts_mercadopago` dado que todas las rows tenían la misma información.
+- Identificamos que `category_id` y `domain_id` contaban con la misma información, nada más que uno en forma numérica y otra de texto. Además estos atributos coinciden con `full_name`, el cuál ya usamos para crear `category_first` y `category_last`.
+- `product_id` creímos que tal vez sería útil hacerle counting pero al comparar con otras versiones modelos notamos que hacerlo no mejoraba, por lo que decidimos eliminarla.
+- Los ids restastantes también los eliminamos.
 
 # Conjunto de validación
 
