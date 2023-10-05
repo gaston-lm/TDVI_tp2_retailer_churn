@@ -38,7 +38,7 @@ Además de agregar variables, decidimos eliminar variables que consideramos que 
 - Decidimos eliminar `accepts_mercadopago` dado que todas las rows tenían la misma información.
 - Identificamos que `category_id` y `domain_id` contaban con la misma información, nada más que uno en forma numérica y otra de texto. Además estos atributos coinciden con `full_name`, el cuál ya usamos para crear `category_first` y `category_last`.
 - `product_id` creímos que tal vez sería útil hacerle counting pero al comparar con otras versiones modelos notamos que hacerlo no mejoraba, por lo que decidimos eliminarla.
-- Los ids restastantes también los eliminamos.
+- Los ids restantes también los eliminamos.
 
 # Conjunto de validación
 
@@ -59,7 +59,7 @@ Para empezar, utilizamos un `random forest` muy básico que fue nuestro punto de
 Rápidamente cambiamos el modelo para utilizar la librería `XGBoost`, ya que se mencionó bastante en clase que de los modelos vistos era el mas potente. Empezamos probandolo con el mismo conjunto de datos que el random forest y solo fue ligeramente mejor, pero luego de aplicar la ingeniería de datos mencionada, la diferencia vista fue muy grande (XGBoost nos dio un AUC 9.3% mayor en validation). Descartamos Naive Bayes pues en clase hemos hablado de que es un buen modelo para empezar pero no suele ser lo mejor, y regresión logística, pues al tener tantas columnas si queríamos hacer polinomio 2 se complejizaba demasiado. Esto nos dejo, de los modelos vistos en clase, con XGBoost como modelo a utilizar. 
 
 Para la elección de nuestros hiperparámetros utilizamos la librería `hyperopt`, con el algoritmo de 
-[\textcolor{blue}{TPE}](https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f}), el default de la librería, que utiliza un enfoque Bayesiano. En cada paso intenta construir un modelo probabilistico de la función y elegir los parametros mas prometedores para el siguiente paso. 
+[\textcolor{blue}{TPE}](https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f), el default de la librería, que utiliza un enfoque Bayesiano. En cada paso intenta construir un modelo probabilistico de la función y elegir los parametros mas prometedores para el siguiente paso. 
 
 Lo hicimos así para un modelo inicial sobre el cual aplicamos algunas modificaciones validando tanto en validation como en el leaderboard público y una vez que tuvimos nuestro modelo final, volvimos a calibrar los parametros con otra pasada de hyperopt (no tantas iteraciones por una cuestión de cómputo), lo cual fue beneficioso para el score.
 
