@@ -15,7 +15,6 @@ from sklearn.metrics import balanced_accuracy_score, roc_auc_score, make_scorer,
 from sklearn.preprocessing import StandardScaler
 
 seed = 798589991
-seeds = [798589991, 199985797, 719989598]
 do_hyperopt = False
 
 # Para W2V
@@ -219,7 +218,7 @@ if do_hyperopt:
         return -auc_roc  # We want to maximize AUC-ROC, so we negate it for minimization
 
     # Set up Hyperopt search
-    best = fmin(fn=objective, space=space, algo=tpe.suggest, max_evals=100)  # Adjust max_evals as needed
+    best = fmin(fn=objective, space=space, algo=tpe.suggest, max_evals=30)  # Adjust max_evals as needed
 
     # Print the best hyperparameters
     print("Best Hyperparameters:")
@@ -244,7 +243,7 @@ else:
     best_colsample_bytree = 0.5918738102818046
     best_reg_lambda = 15.162218839683447
 
-'''
+
 final_cls = make_pipeline(xgb.XGBClassifier(
         objective='binary:logistic',
         seed=seed,
@@ -262,42 +261,33 @@ final_cls = make_pipeline(xgb.XGBClassifier(
 
 final_cls.fit(X_train, y_train)
 
-
 # Chequeamos el valor debajo de la curva AUC-ROC
 y_pred = final_cls.predict_proba(X_val)[:, 1]
 auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
 print('AUC-ROC validación: %0.5f' % auc_roc)
-'''
 
-y_preds = pd.DataFrame()
-kaggle_data = kaggle_data.drop(columns=["conversion"])
-to_predict = kaggle_data.drop(columns=["ROW_ID"])
-
-for seed in seeds:
-    # Para hacer submit.
-    all_data_cls = make_pipeline(xgb.XGBClassifier(
-        objective='binary:logistic',
-        seed=seed,
-        eval_metric='auc',
-        max_depth=best_max_depth,
-        learning_rate=best_learning_rate,
-        n_estimators=best_n_estimators,
-        gamma=best_gamma,
-        subsample=best_subsample,
-        min_child_weight=best_min_child_weight,
-        colsample_bytree=best_colsample_bytree,
-        reg_lambda=best_reg_lambda,
+# Para hacer submit.
+all_data_cls = make_pipeline(xgb.XGBClassifier(
+    objective='binary:logistic',
+    seed=seed,
+    eval_metric='auc',
+    max_depth=best_max_depth,
+    learning_rate=best_learning_rate,
+    n_estimators=best_n_estimators,
+    gamma=best_gamma,
+    subsample=best_subsample,
+    min_child_weight=best_min_child_weight,
+    colsample_bytree=best_colsample_bytree,
+    reg_lambda=best_reg_lambda,
     ))
 
-    all_data_cls.fit(X, y)
+all_data_cls.fit(X, y)
 
-    # Predicción en la data de kaggle para submitear.
-    y_pred = all_data_cls.predict_proba(to_predict)[:, all_data_cls.classes_ == 1].squeeze()
-    y_preds[str(seed)] = y_pred
-
-y_preds_prom = y_preds.aggregate('mean', axis=1)
+# Predicción en la data de kaggle para submitear.
+kaggle_data = kaggle_data.drop(columns=["conversion"])
+y_preds = all_data_cls.predict_proba(kaggle_data.drop(columns=["ROW_ID"]))[:, final_cls.classes_ == 1].squeeze()
 
 # Generamos el archivo para submit en base a lo predicho.
-submission_df = pd.DataFrame({"ROW_ID": kaggle_data["ROW_ID"], "conversion": y_preds_prom})
+submission_df = pd.DataFrame({"ROW_ID": kaggle_data["ROW_ID"], "conversion": y_preds})
 submission_df["ROW_ID"] = submission_df["ROW_ID"].astype(int)
 submission_df.to_csv("xgboost_model/xgboost_model.csv", sep=",", index=False)
