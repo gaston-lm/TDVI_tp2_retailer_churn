@@ -15,6 +15,7 @@ from sklearn.metrics import balanced_accuracy_score, roc_auc_score, make_scorer,
 from sklearn.preprocessing import StandardScaler
 
 seed = 798589991
+do_hyperopt = False
 
 # Para W2V
 def tokenizer(raw_text):
@@ -67,7 +68,6 @@ def data_eng(df):
     # Columna del porcentaje de descuento
     discount = (((df['original_price'] - df['price']) / df['original_price']) * 100).astype(int)
     df['discount_%'] = discount
-    df.drop('original_price', inplace=True, axis=1)
 
     # Columnas derivadas de los tags.
     unique_tags = []
@@ -115,7 +115,6 @@ def data_eng(df):
     df.drop('domain_id', inplace=True, axis=1)
     df.drop('deal_print_id', inplace=True, axis=1)
     df.drop('etl_version', inplace=True, axis=1)
-    df.drop('product_id', inplace=True, axis=1)
     df.drop('site_id', inplace=True, axis=1)
     df.drop('item_id', inplace=True, axis=1)
     df.drop('accepts_mercadopago', inplace=True, axis=1)
@@ -133,12 +132,12 @@ def data_eng(df):
     # Creación del modelo Word2Vec
     vec_size = 50
     w2v_title = gensim.models.Word2Vec(vector_size=vec_size,
-                                    window=9,
-                                    min_count=5,
-                                    negative=15,
-                                    sample=0.01,
-                                    workers=8,
-                                    sg=1)
+                                       window=15,
+                                       min_count=5,
+                                       negative=15,
+                                       sample=0.01,
+                                       workers=8,
+                                       sg=1)
 
     # Creación del vocabulario a partir del corpus
     w2v_title.build_vocab([e2 for e1 in df['title_tokens'].values for e2 in e1], 
@@ -181,56 +180,80 @@ X = local_data.drop(columns=['conversion', 'ROW_ID'], axis = 1)
 val_test_size = 0.3 # Proporción de la suma del test de validación y del de test.
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size = val_test_size, random_state = seed, stratify = y)
 
-# Define the search space for hyperparameters
-space = {
-    'max_depth': hp.choice('max_depth', range(1, 15)),
-    'learning_rate': hp.loguniform('learning_rate', -5, 0),
-    'n_estimators': hp.choice('n_estimators', range(50, 500)),
-    'gamma': hp.loguniform('gamma', -5, 0),
-    'subsample': hp.uniform('subsample', 0.5, 1.0),  # Add subsample
-    'min_child_weight': hp.choice('min_child_weight', range(1, 10)),  # Add min_child_weight
-    'colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),  # Add colsample_bytree
-    'reg_lambda': hp.loguniform('reg_lambda', -5, 5),  # Add reg_lambda
-}
+# Contamos apariciones de product_id (pues sino sería data leakage)
+# Para X_train
+X_train['pid_count'] = X_train.groupby('product_id')['product_id'].transform('count')
+X_train.drop('product_id', inplace=True, axis=1)
 
-# Objective function for hyperparameter optimization
-def objective(params):
-    cls =  xgb.XGBClassifier(
-        objective='binary:logistic',
-        seed=seed,
-        eval_metric='auc',
-        max_depth=params['max_depth'],
-        learning_rate=params['learning_rate'],
-        n_estimators=params['n_estimators'],
-        gamma=params['gamma'],
-        subsample=params['subsample'],  # Use subsample
-        min_child_weight=params['min_child_weight'],  # Use min_child_weight
-        colsample_bytree=params['colsample_bytree'],  # Use colsample_bytree
-        reg_lambda=params['reg_lambda'],  # Use reg_lambda
-    )
+# Para X_val
+X_val['pid_count'] = X_val.groupby('product_id')['product_id'].transform('count')
+X_val.drop('product_id', inplace=True, axis=1)
 
-    cls.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=True)
-    
-    y_pred = cls.predict_proba(X_val)[:, 1]
-    auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
-    
-    return -auc_roc  # We want to maximize AUC-ROC, so we negate it for minimization
+# Para Kaggle
+kaggle_data['pid_count'] = kaggle_data.groupby('product_id')['product_id'].transform('count')
+kaggle_data.drop('product_id', inplace=True, axis=1)
 
-# Set up Hyperopt search
-best = fmin(fn=objective, space=space, algo=tpe.suggest, max_evals=100)  # Adjust max_evals as needed
+if do_hyperopt:
+    # Espacio de búsqueda
+    space = {
+        'max_depth': hp.choice('max_depth', range(1, 15)),
+        'learning_rate': hp.loguniform('learning_rate', -5, 0),
+        'n_estimators': hp.choice('n_estimators', range(50, 500)),
+        'gamma': hp.loguniform('gamma', -5, 0),
+        'subsample': hp.uniform('subsample', 0.5, 1.0),  # Add subsample
+        'min_child_weight': hp.choice('min_child_weight', range(1, 10)),  # Add min_child_weight
+        'colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),  # Add colsample_bytree
+        'reg_lambda': hp.loguniform('reg_lambda', -5, 5),  # Add reg_lambda
+    }
 
-# Print the best hyperparameters
-print("Best Hyperparameters:")
-print(best)
+    # Funciíon objetivo
+    def objective(params):
+        cls =  xgb.XGBClassifier(
+            objective='binary:logistic',
+            seed=seed,
+            eval_metric='auc',
+            max_depth=params['max_depth'],
+            learning_rate=params['learning_rate'],
+            n_estimators=params['n_estimators'],
+            gamma=params['gamma'],
+            subsample=params['subsample'],  # Use subsample
+            min_child_weight=params['min_child_weight'],  # Use min_child_weight
+            colsample_bytree=params['colsample_bytree'],  # Use colsample_bytree
+            reg_lambda=params['reg_lambda'],  # Use reg_lambda
+        )
 
-best_max_depth = range(1, 15)[best['max_depth']]
-best_learning_rate = best['learning_rate']
-best_n_estimators = range(50, 500)[best['n_estimators']]
-best_gamma = best['gamma']
-best_subsample = best['subsample']
-best_min_child_weight = best['min_child_weight']
-best_colsample_bytree = best['colsample_bytree']
-best_reg_lambda = best['reg_lambda']
+        cls.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=True)
+        
+        y_pred = cls.predict_proba(X_val)[:, 1]
+        auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
+        
+        return -auc_roc  # We want to maximize AUC-ROC, so we negate it for minimization
+
+    # Set up Hyperopt search
+    best = fmin(fn=objective, space=space, algo=tpe.suggest, max_evals=100)  # Adjust max_evals as needed
+
+    # Print the best hyperparameters
+    print("Best Hyperparameters:")
+    print(best)
+
+    best_max_depth = range(1, 15)[best['max_depth']]
+    best_learning_rate = best['learning_rate']
+    best_n_estimators = range(50, 500)[best['n_estimators']]
+    best_gamma = best['gamma']
+    best_subsample = best['subsample']
+    best_min_child_weight = best['min_child_weight']
+    best_colsample_bytree = best['colsample_bytree']
+    best_reg_lambda = best['reg_lambda']
+
+else:
+    best_max_depth = 7
+    best_learning_rate = 0.03504176190033326
+    best_n_estimators = 378
+    best_gamma = 0.012058425899935464
+    best_subsample = 0.6434651515727876
+    best_min_child_weight = 6
+    best_colsample_bytree = 0.5918738102818046
+    best_reg_lambda = 15.162218839683447
 
 final_cls = make_pipeline(xgb.XGBClassifier(
         objective='binary:logistic',
