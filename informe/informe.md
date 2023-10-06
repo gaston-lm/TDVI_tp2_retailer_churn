@@ -37,8 +37,8 @@ Además de agregar variables, decidimos eliminar variables que consideramos que 
 
 - Decidimos eliminar `accepts_mercadopago` dado que todas las rows tenían la misma información.
 - Identificamos que `category_id` y `domain_id` contaban con la misma información, nada más que uno en forma numérica y otra de texto. Además estos atributos coinciden con `full_name`, el cuál ya usamos para crear `category_first` y `category_last`.
-- `product_id` creímos que tal vez sería útil hacerle counting pero al comparar con otras versiones modelos notamos que hacerlo no mejoraba, por lo que decidimos eliminarla.
-- Los ids restantes también los eliminamos.
+- `product_id` creímos que tal vez sería útil hacerle counting pero al comparar con otras versiones del modelo notamos que hacerlo no mejoraba, por lo que decidimos eliminarla.
+- Los ids restantes también los eliminamos. Hacerle OHE incrementaba demasiado la cantidad de columnas y el conteo no nos había sido útil para aumentar score.
 
 # Conjunto de validación
 
