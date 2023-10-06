@@ -204,10 +204,10 @@ if do_hyperopt:
             learning_rate=params['learning_rate'],
             n_estimators=params['n_estimators'],
             gamma=params['gamma'],
-            subsample=params['subsample'],  # Use subsample
-            min_child_weight=params['min_child_weight'],  # Use min_child_weight
-            colsample_bytree=params['colsample_bytree'],  # Use colsample_bytree
-            reg_lambda=params['reg_lambda'],  # Use reg_lambda
+            subsample=params['subsample'],
+            min_child_weight=params['min_child_weight'],
+            colsample_bytree=params['colsample_bytree'],
+            reg_lambda=params['reg_lambda'],
         )
 
         cls.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=True)
@@ -215,12 +215,12 @@ if do_hyperopt:
         y_pred = cls.predict_proba(X_val)[:, 1]
         auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
         
-        return -auc_roc  # We want to maximize AUC-ROC, so we negate it for minimization
+        return -auc_roc  # Queremos maximizar AUC-ROC, asi que lo hacemos negativo para minimizar.
 
-    # Set up Hyperopt search
-    best = fmin(fn=objective, space=space, algo=tpe.suggest, max_evals=30)  # Adjust max_evals as needed
+    # Seteamos la búsqueda de hyperopt
+    best = fmin(fn=objective, space=space, algo=tpe.suggest, max_evals=30)
 
-    # Print the best hyperparameters
+    # Imprimimos mejores parámetros
     print("Best Hyperparameters:")
     print(best)
 
