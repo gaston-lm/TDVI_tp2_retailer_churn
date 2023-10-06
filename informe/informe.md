@@ -73,3 +73,25 @@ Best Hiperparameters:
 ```
 
 # Análisis Final
+
+IDEA: tal vez poner algo de que la que tiene más weight es print_position pq es numérica pero en realidad la que tiene más gain es is_pdp (así tiramos facha diciendo que el trade-off de las distintas variables para medir perfomance).
+
+| Feature                  |   weight |     gain |    cover |   total_gain |      total_cover |
+|:-------------------------|---------:|---------:|---------:|-------------:|-----------------:|
+| is_pdp                   |      227 | 770.69   | 10377.1  |       174947 |       2355595.25 |
+| offset                   |      253 |  99.7131 |  4563.77 |      25227.4 |       1154634.25 |
+| platform_desktop         |      210 |  50.7512 |  3302.91 |      10657.8 |        693610.25 |
+| print_position           |      792 |  45.1744 |  1922.79 |      35778.2 |       1522846.25 |
+| total_orders_item_30days |      509 |  30.6762 |  2353.67 |      15614.2 |          1198020 |
+
+Interesantes correlaciones con is_pdp:
+
+- price: 0.1138636035
+- extended_warranty_eligible: 0.1761752217
+- avg_gmv_seller_bday: 0.2081312699
+- category_last_Celulares y Smartphones: 0.1965971884
+- ahora-12: 0.1082403863
+- platform_desktop: 0.1035357212
+- free_shipping: 0.068602974
+- fulfillment: 0.0677687822
+- listing_type_id_gold_pro: 0.0648932047

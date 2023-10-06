@@ -1,0 +1,193 @@
+,0
+available_quantity,-0.013200261049114027
+avg_gmv_item_domain_30days,0.14104750677976582
+avg_gmv_item_sel,0.06708981464578759
+avg_gmv_seller_bday,0.20813126993509332
+avg_qty_orders_item_domain_30days,0.005425900640041369
+avg_qty_orders_item_sel_30days,0.011936343259787627
+avg_si_item_sel_30day,0.0012723342663041627
+free_shipping,0.06860297396820335
+fulfillment,0.06776878220064984
+health,-0.4590768642311953
+is_pdp,1.0
+offset,-0.020172145443028075
+original_price,0.10806022296817593
+price,0.11386360345653394
+print_position,0.0030457433653910673
+qty_items_dom,0.03141704771568288
+qty_items_sel,0.03372922246854396
+sold_quantity,-0.02509863305231594
+total_asp_item_domain_30days,0.1431262973576387
+total_asp_item_sel_30days,0.15288781153664735
+total_gmv_domain_bday,0.18897481661135415
+total_gmv_item_30days,0.14048296443549024
+total_items_domain,0.044893099976066726
+total_items_seller,0.004053107929461262
+total_orders_domain_30days,0.043811939584518185
+total_orders_item_30days,0.04404355664665789
+total_orders_sel_30days,0.1254946671301761
+total_si_domain_30days,0.01780629836592068
+total_si_item_30days,0.020116064825248466
+total_si_sel_30days,0.09502448153621174
+total_visits_domain,0.06573469990039263
+total_visits_item,-0.03351609698321963
+total_visits_seller,0.04914203130436127
+warranty,0.02723009969655741
+discount_%,0.026683011487581332
+good_quality_picture,0.006472906416073856
+good_quality_thumbnail,0.025609060191074836
+today_promotion,-0.0012313288940734321
+brand_verified,0.002286746697816693
+extended_warranty_eligible,0.17617522171795663
+cart_eligible,-0.07588819120373619
+incomplete_technical_specs,-0.018737578084360555
+loyalty_discount_eligible,-0.0790994451247933
+deal_of_the_day,0.0019839593935841097
+dragged_bids_and_visits,-0.0131515401367564
+lightning_deal,0.017077362293899664
+poor_quality_picture,-0.006472906416073863
+ahora-12,0.10824038628036421
+catalog_listing_eligible,-0.008815144433752609
+poor_quality_thumbnail,-0.006258274893939278
+under_infractions,-0.0033335895527636466
+month,0.00771792581870406
+day,-0.005851369018730999
+day_of_week,1.691784739984286e-05
+hour,0.007471356742999563
+minute,-0.004285840458907
+second,0.0010672506515752923
+category_first_Accesorios para Vehículos,-0.013477107626802593
+category_first_Alimentos y Bebidas,-0.01101458916455681
+category_first_Bebés,-0.012633808806266801
+category_first_Belleza y Cuidado Personal,-0.020549218946636846
+category_first_Celulares y Teléfonos,0.15705822893273838
+category_first_Computación,0.006724555092818952
+category_first_Consolas y Videojuegos,-0.0033385823873388963
+category_first_Deportes y Fitness,-0.024182328904027536
+category_first_Electrodomésticos y Aires Ac.,0.032766484697128104
+"category_first_Electrónica, Audio y Video",0.03167959717046179
+category_first_Herramientas y Construcción,-0.023849047369389618
+"category_first_Hogar, Muebles y Jardín",-0.035585443389185636
+category_first_Industrias y Oficinas,-0.009412769428218169
+category_first_Instrumentos Musicales,-0.001932745957040098
+category_first_Juegos y Juguetes,-0.014467546127924332
+category_first_Ropa y Accesorios,-0.033194852531956906
+category_first_Salud y Equipamiento Médico,-0.014278400030450113
+listing_type_id_gold_pro,0.06489320472802643
+listing_type_id_gold_special,-0.06489320472802643
+logistic_type_cross_docking,-0.04321887548544722
+logistic_type_custom,0.00644071872774631
+logistic_type_drop_off,-0.02605114915847846
+logistic_type_fulfillment,0.06776878220064984
+logistic_type_not_specified,-0.0074242842168437675
+logistic_type_xd_drop_off,-0.012196960586397973
+platform_android,-0.11076450507697227
+platform_desktop,0.10353572122765979
+platform_ios,-0.022798447020931353
+platform_mobile,0.07027445494635946
+category_last_Almohadas,-0.006228449061186205
+category_last_Atornillador y Destornillador,-0.004365519415428971
+category_last_Auriculares,-0.009404335962119537
+category_last_Balanzas de Baño,-0.002489193616337468
+"category_last_Baldes, Palanganas y Fuentones",-0.0032589552682124575
+category_last_Bombachas,-0.004790131806509991
+category_last_Botas y Botinetas,-0.007317027833573647
+category_last_Boxers y Slips,-0.00563808210350509
+category_last_Burletes,-0.004985992867683608
+category_last_Cables de Datos,-0.003460355811012901
+category_last_Cargadores de Controles,-0.0037505551519103463
+category_last_Carteles Luminosos,-0.0020421157951917937
+category_last_Celulares y Smartphones,0.19659718836265885
+category_last_Cortadoras de Pelo,-0.009755378643961515
+category_last_Cortinas de Baño,-0.003333589552763648
+category_last_Cuidado Facial,-0.0049983696401333395
+category_last_De Mano,-0.005053696134442399
+category_last_Descartables,-0.006468105432295746
+category_last_Desodorantes,-0.003415618196597743
+category_last_Difusores Aromáticos,-0.004004682415964777
+category_last_Eléctricos,-0.00670405910316537
+category_last_Flores de Ducha,-0.0059949816990907115
+category_last_Frazadas,-0.004599480139442229
+category_last_Fundas para Celulares,-0.005102379940284707
+category_last_Griferías,0.00032151309271426064
+category_last_Hidrolavadoras,-0.0035826733389404666
+category_last_Jabón Líquido para Ropa,-0.004393682381200804
+category_last_Juegos de Mesa,-0.006950151589925267
+category_last_Lampazos y Mopas,-0.005709037600305536
+category_last_Lámparas de Techo,-0.006248348366714064
+category_last_Lásers Profesionales,-0.0016975750290168263
+category_last_Medias,-0.0029416767909376407
+category_last_Mini Compresores,-0.003823719115344125
+category_last_Mochilas,-0.009144451615911244
+category_last_Máquinas para Pastas,-0.004942434068039076
+category_last_Máscaras para Soldar,-0.002713501888491994
+category_last_Navajas y Cuchillos Antiguos,-0.002115915200008608
+category_last_Otros,-0.013229149003658658
+category_last_Pantalones,-0.0030139188525291167
+category_last_Parlantes y Bafles,-0.003599810759339765
+category_last_Planchas,-0.0032589552682124583
+category_last_Pochocleras,-0.003268377095559237
+category_last_Portátiles,-0.0025014985890323377
+category_last_Secadores de Pelo,-0.003839790236453041
+category_last_Smartwatch,-0.0074354314765816085
+category_last_Soportes,-0.00577377733527995
+category_last_TVs,0.06039355381965637
+category_last_Tablets,-0.0017037592719356112
+category_last_Taladros Atornilladores,-0.006424739541224615
+category_last_Termofusoras,-0.0032589552682124596
+category_last_Trimmers,-0.00353076624220694
+category_last_Valijas,-0.0019655552827711623
+category_last_Videojuegos,-0.006307679183705835
+category_last_Vinos,-0.0032305260677775176
+category_last_Whiskies,-0.00428712938022501
+category_last_Zapatillas,-0.025697034943785238
+title_emb_0,0.08897690198287722
+title_emb_1,-0.001721818272178862
+title_emb_2,-0.05743172305752929
+title_emb_3,0.10708197792780212
+title_emb_4,0.0041840987628109375
+title_emb_5,0.025640577539905098
+title_emb_6,0.0704474054650912
+title_emb_7,-0.027295017900222575
+title_emb_8,0.006704599763791967
+title_emb_9,-0.07887627882854448
+title_emb_10,-0.08676325477996452
+title_emb_11,-0.06640125682110222
+title_emb_12,0.06586566846861777
+title_emb_13,0.027641091676285246
+title_emb_14,-0.09706884989242677
+title_emb_15,-0.011326793188550588
+title_emb_16,-0.05088069500549926
+title_emb_17,0.026624049914956056
+title_emb_18,-0.03327561860668846
+title_emb_19,0.026908085733297032
+title_emb_20,-0.009674946463449107
+title_emb_21,-0.005826815926881551
+title_emb_22,-0.06296075829212053
+title_emb_23,0.007911775884223728
+title_emb_24,-0.048074601208945425
+title_emb_25,0.015872239809009397
+title_emb_26,-0.0928411250310544
+title_emb_27,-0.023841034673450973
+title_emb_28,-0.056438174882000904
+title_emb_29,0.032070203632065905
+title_emb_30,0.0508017865425958
+title_emb_31,-0.01546099236109704
+title_emb_32,-0.0023363472344721543
+title_emb_33,0.017189308611676012
+title_emb_34,-0.025697779297095148
+title_emb_35,0.01696192197094951
+title_emb_36,0.0036747107861935095
+title_emb_37,0.023033606395044245
+title_emb_38,-0.029063279924272774
+title_emb_39,0.007061985098926332
+title_emb_40,-0.03489995782920101
+title_emb_41,0.0067349984626552195
+title_emb_42,0.05084580396816252
+title_emb_43,0.06575431397740601
+title_emb_44,0.008267032934126593
+title_emb_45,0.05646006583327101
+title_emb_46,0.03985102137531624
+title_emb_47,-0.0387985289458455
+title_emb_48,0.05887860516666721
+title_emb_49,-0.06812380627698847
