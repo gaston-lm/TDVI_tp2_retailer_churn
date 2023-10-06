@@ -35,7 +35,9 @@ A pesar de la gran cantidad de atributos con las que cuenta el dateset provisto,
 
 Además de agregar variables, decidimos eliminar variables que consideramos que no aportarían al modelo. 
 
+- Eliminamos las variables que en Kaggle decía que se debían ignorar como `benefit`.
 - Decidimos eliminar `accepts_mercadopago` dado que todas las rows tenían la misma información.
+- Eliminamos `main_picture` pues aún no vimos como obtener información de imágenes.
 - Identificamos que `category_id` y `domain_id` contaban con la misma información, nada más que uno en forma numérica y otra de texto. Además estos atributos coinciden con `full_name`, el cuál ya usamos para crear `category_first` y `category_last`.
 - `product_id` creímos que tal vez sería útil hacerle counting pero al comparar con otras versiones del modelo notamos que hacerlo no mejoraba, por lo que decidimos eliminarla.
 - Los ids restantes también los eliminamos. Hacerle OHE incrementaba demasiado la cantidad de columnas y el conteo no nos había sido útil para aumentar score.
@@ -74,7 +76,7 @@ Best Hiperparameters:
 
 # Análisis Final
 
-IDEA: tal vez poner algo de que la que tiene más weight es print_position pq es numérica pero en realidad la que tiene más gain es is_pdp (así tiramos facha diciendo que el trade-off de las distintas variables para medir perfomance).
+Para ver la importancia de nuestros parametros, utilizamos distintas métricas de importancia, principalmente `Gain` y `Weight`. Mientras `Gain` implica la contribucion relativa de la variable al modelo (mayor gain que otra variable significa que es mas importante), `Weight` representa la cantidad de splits que se hizo con la variable. Entendemos que el `Weight` es interesante pues si se utiliza en muchos splits tiene sentido que sea un predictor útil, pero nos basamos mas en la `Gain`, pues entendemos que por ejemplo una variable binaria muy importante solo puede generar 1 split por arbol (como es el caso de is_pdp).
 
 | Feature                  |   weight |     gain |    cover |   total_gain |      total_cover |
 |:-------------------------|---------:|---------:|---------:|-------------:|-----------------:|
@@ -83,6 +85,10 @@ IDEA: tal vez poner algo de que la que tiene más weight es print_position pq es
 | platform_desktop         |      210 |  50.7512 |  3302.91 |      10657.8 |        693610.25 |
 | print_position           |      792 |  45.1744 |  1922.79 |      35778.2 |       1522846.25 |
 | total_orders_item_30days |      509 |  30.6762 |  2353.67 |      15614.2 |          1198020 |
+
+La tabla muestra el top 5 de variables mas importantes. Podemos ver como la posición en la página importa, determinado por las variables `offset` y `print_position`, que la gente suele hacer sus compras desde una computadora, por la variable `platform_desktop`, que los items que mas se vienen vendiendo suelen seguir esa tendencia por la variable `total_orders_items_30days` y finalmente que lógicamente es muy importante que los usuarios clickeen nuestro producto para que lo compren, por la variable `is_pdp`.
+
+Para darle un consejo a vendedores, buscamos enfocarnos justamente en eso, en el primer paso que es lograr que el usuario clickee nuestro producto, lo cual aumenta nuestra probabilidad de conversión. Para eso, buscamos las variables que se correlacionan con `is_pdp`.
 
 Interesantes correlaciones con is_pdp:
 
@@ -94,4 +100,7 @@ Interesantes correlaciones con is_pdp:
 - platform_desktop: 0.1035357212
 - free_shipping: 0.068602974
 - fulfillment: 0.0677687822
-- listing_type_id_gold_pro: 0.0648932047
+
+Podemos ver como es muy importante `avg_gmv_seller_bday` la cantidad de ventas que tiene el vendedor, esto puede ser por un factor de confianza si lo conocemos (por ejemplo, si aparece que lo vende una marca conocida) o también porque aquellos que venden mucho, saben como operar en la página. Principalmente vemos que precios competitivos hacen la diferencia, lo cual es bastante lógico, luego hay categorías como `category_last_Celulares y Smartphones` o `platform_desktop` que tienen mas que ver con que son productos muy buscados y que en general como vimos las compras se hacen desde la computadora. Cosas que el vendedor si puede tener en cuenta son variables como `ahora-12`, `free_shipping`, `fulfillment`, que si bien le pueden generar un costo (pagar el envío o hacerlo uno mismo, dar cuotas, etc.) influyen a que el producto sea mas tenido en cuenta y clickeado, lo cual lleva a una mayor probabilidad de venta. Aun que no parezca muy lógico ya que no aparece tanto al scrollear, la variable `extended_warranty_eligible` parece tener un impacto, posiblemente por filtros o funcionamiento interno del retailer que lo hagan aparecer mas arriba (vimos como también era un factor importante), por lo que recomendaríamos ofrecer una garantía extendible de ser posible.
+
+Teniendo en cuenta estas consideraciones, 
