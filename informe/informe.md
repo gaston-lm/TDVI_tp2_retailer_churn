@@ -78,7 +78,7 @@ Best Hiperparameters:
 
 Para ver la importancia de nuestros parametros, utilizamos distintas métricas de importancia, principalmente `Gain` y `Weight`. Mientras `Gain` implica la contribucion relativa de la variable al modelo (mayor gain que otra variable significa que es mas importante), `Weight` representa la cantidad de splits que se hizo con la variable. Entendemos que el `Weight` es interesante pues si se utiliza en muchos splits tiene sentido que sea un predictor útil, pero nos basamos mas en la `Gain`, pues entendemos que por ejemplo una variable binaria muy importante solo puede generar 1 split por arbol (como es el caso de is_pdp).
 
-| Feature                  |   weight |     gain |    cover |   total_gain |      total_cover | Importante |
+| Feature                  |   weight |     gain |    cover |   total_gain |      total_cover | Importance |
 |:-------------------------|---------:|---------:|---------:|-------------:|-----------------:| ----------:|
 | is_pdp                   |      227 | 770.69   | 10377.1  |       174947 |       2355595.25 | 0.2932     |
 | offset                   |      253 |  99.7131 |  4563.77 |      25227.4 |       1154634.25 | 0.0379     |
@@ -103,4 +103,8 @@ Interesantes correlaciones con is_pdp:
 
 Podemos ver como es muy importante `avg_gmv_seller_bday` la cantidad de ventas que tiene el vendedor, esto puede ser por un factor de confianza si lo conocemos (por ejemplo, si aparece que lo vende una marca conocida) o también porque aquellos que venden mucho, saben como operar en la página. Principalmente vemos que precios competitivos hacen la diferencia, lo cual es bastante lógico, luego hay categorías como `category_last_Celulares y Smartphones` o `platform_desktop` que tienen mas que ver con que son productos muy buscados y que en general como vimos las compras se hacen desde la computadora. Cosas que el vendedor si puede tener en cuenta son variables como `ahora-12`, `free_shipping`, `fulfillment`, que si bien le pueden generar un costo (pagar el envío o hacerlo uno mismo, dar cuotas, etc.) influyen a que el producto sea mas tenido en cuenta y clickeado, lo cual lleva a una mayor probabilidad de venta. Aun que no parezca muy lógico ya que no aparece tanto al scrollear, la variable `extended_warranty_eligible` parece tener un impacto, posiblemente por filtros o funcionamiento interno del retailer que lo hagan aparecer mas arriba (vimos como también era un factor importante), por lo que recomendaríamos ofrecer una garantía extendible de ser posible.
 
-Teniendo en cuenta estas consideraciones, 
+Teniendo en cuenta estas consideraciones, probablemente el vendedor pueda lograr un mayor porcentaje de clicks en su producto, consiguiendo así una mayor cantidad de ventas.
+
+# Notas para nosotros -> BORRAR AL FINAL!!
+
+Para que quede perfecto faltaría simplemente reducir el espacio que ocupa a las 3 carillas que se piden y quizás intentar que el análisis de datos inicial sea mas exploratorio pero aún no se me ocurre como hacer eso asi que lo podemos obviar.
