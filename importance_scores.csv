@@ -1,0 +1,1953 @@
+Feature,weight,gain,cover,total_gain,total_cover
+available_quantity,527.0,7.577753067016602,905.275146484375,3993.475830078125,477080.0
+avg_gmv_item_domain_30days,268.0,7.819207668304443,745.6773071289062,2095.547607421875,199841.515625
+avg_gmv_item_sel,290.0,6.644211769104004,506.9574279785156,1926.8214111328125,147017.65625
+avg_gmv_seller_bday,216.0,6.466831207275391,590.370361328125,1396.8355712890625,127520.0
+avg_qty_orders_item_domain_30days,332.0,9.465169906616211,825.7725830078125,3142.436279296875,274156.5
+avg_qty_orders_item_sel_30days,334.0,7.860804557800293,656.8632202148438,2625.5087890625,219392.3125
+avg_si_item_sel_30day,247.0,6.2003173828125,388.18963623046875,1531.4783935546875,95882.84375
+boosted,0.0,0.0,0.0,0.0,0.0
+free_shipping,58.0,15.430145263671875,2992.158935546875,894.9484252929688,173545.21875
+fulfillment,17.0,6.102170944213867,226.25003051757812,103.73690795898438,3846.25048828125
+health,138.0,6.76057767868042,846.5831298828125,932.959716796875,116828.46875
+is_pdp,224.0,780.5259399414062,10454.5595703125,174837.8125,2341821.25
+offset,252.0,100.29735565185547,4544.5244140625,25274.93359375,1145220.125
+original_price,230.0,9.837422370910645,1315.5533447265625,2262.607177734375,302577.28125
+price,400.0,10.889351844787598,1724.365478515625,4355.74072265625,689746.1875
+print_position,851.0,42.17078399658203,1775.4525146484375,35887.3359375,1510910.125
+qty_items_dom,169.0,5.543124198913574,340.5743713378906,936.7880249023438,57557.06640625
+qty_items_sel,211.0,6.076827526092529,338.397705078125,1282.2105712890625,71401.9140625
+sold_quantity,423.0,5.267996788024902,389.4584045410156,2228.362548828125,164740.90625
+total_asp_item_domain_30days,302.0,7.489442825317383,742.4158935546875,2261.811767578125,224209.59375
+total_asp_item_sel_30days,242.0,6.268310070037842,495.171875,1516.9310302734375,119831.59375
+total_gmv_domain_bday,207.0,7.365194320678711,616.6298828125,1524.59521484375,127642.390625
+total_gmv_item_30days,289.0,10.224004745483398,748.9796142578125,2954.7373046875,216455.109375
+total_items_domain,158.0,5.7154107093811035,417.79425048828125,903.034912109375,66011.4921875
+total_items_seller,209.0,5.890741348266602,400.2225341796875,1231.1649169921875,83646.5078125
+total_orders_domain_30days,241.0,8.41277027130127,989.1627197265625,2027.4776611328125,238388.21875
+total_orders_item_30days,505.0,30.33719253540039,2365.297119140625,15320.2822265625,1194475.0
+total_orders_sel_30days,182.0,6.590085029602051,621.731201171875,1199.3955078125,113155.078125
+total_si_domain_30days,233.0,7.794968605041504,845.3473510742188,1816.2276611328125,196965.9375
+total_si_item_30days,255.0,16.00281524658203,1262.00830078125,4080.718017578125,321812.125
+total_si_sel_30days,193.0,6.326234340667725,618.5866088867188,1220.9632568359375,119387.21875
+total_visits_domain,192.0,6.953028202056885,707.8787231445312,1334.9814453125,135912.71875
+total_visits_item,386.0,11.076924324035645,1206.646240234375,4275.69287109375,465765.46875
+total_visits_seller,241.0,6.613621711730957,622.8037719726562,1593.8828125,150095.703125
+warranty,4.0,7.256349086761475,839.499755859375,29.0253963470459,3357.9990234375
+discount_%,357.0,11.770421981811523,1911.3778076171875,4202.04052734375,682361.875
+good_quality_picture,6.0,16.77717399597168,1404.9073486328125,100.66304016113281,8429.4443359375
+good_quality_thumbnail,25.0,10.049915313720703,3136.489990234375,251.24789428710938,78412.25
+today_promotion,12.0,3.8273212909698486,108.95126342773438,45.9278564453125,1307.4151611328125
+brand_verified,6.0,8.210808753967285,833.3209838867188,49.264854431152344,4999.92578125
+extended_warranty_eligible,31.0,19.674705505371094,2242.190185546875,609.9158935546875,69507.8984375
+immediate_payment,0.0,0.0,0.0,0.0,0.0
+cart_eligible,9.0,4.479256629943848,157.89259338378906,40.31330871582031,1421.0333251953125
+incomplete_technical_specs,16.0,19.10462188720703,2316.790283203125,305.6739501953125,37068.64453125
+loyalty_discount_eligible,6.0,4.8171844482421875,239.159912109375,28.903106689453125,1434.95947265625
+deal_of_the_day,10.0,9.060321807861328,606.6610717773438,90.60321807861328,6066.61083984375
+dragged_bids_and_visits,9.0,6.055481910705566,1062.3538818359375,54.49933624267578,9561.1845703125
+lightning_deal,1.0,14.206432342529297,581.6119384765625,14.206432342529297,581.6119384765625
+poor_quality_picture,4.0,11.181753158569336,2218.5888671875,44.727012634277344,8874.35546875
+ahora-12,67.0,17.372196197509766,3013.118408203125,1163.9371337890625,201878.9375
+catalog_listing_eligible,8.0,8.032638549804688,951.4852905273438,64.2611083984375,7611.88232421875
+poor_quality_thumbnail,1.0,21.485595703125,2403.305908203125,21.485595703125,2403.305908203125
+supermarket_eligible,0.0,0.0,0.0,0.0,0.0
+under_infractions,2.0,2.9886474609375,3872.408203125,5.977294921875,7744.81640625
+month,16.0,4.913309574127197,178.8101348876953,78.61295318603516,2860.962158203125
+day,244.0,7.587911128997803,1267.6053466796875,1851.4503173828125,309295.71875
+day_of_week,207.0,8.225312232971191,1494.0284423828125,1702.6396484375,309263.875
+hour,571.0,9.056188583374023,1521.4879150390625,5171.08349609375,868769.625
+minute,550.0,4.212708950042725,253.22500610351562,2316.989990234375,139273.75
+second,477.0,3.808805227279663,207.4520721435547,1816.800048828125,98954.640625
+category_first_Accesorios para Vehículos,3.0,8.051518440246582,902.2890014648438,24.154556274414062,2706.866943359375
+category_first_Agro,0.0,0.0,0.0,0.0,0.0
+category_first_Alimentos y Bebidas,6.0,17.335693359375,2025.9417724609375,104.01416015625,12155.650390625
+category_first_Animales y Mascotas,0.0,0.0,0.0,0.0,0.0
+category_first_Antigüedades y Colecciones,0.0,0.0,0.0,0.0,0.0
+"category_first_Arte, Librería y Mercería",0.0,0.0,0.0,0.0,0.0
+category_first_Bebés,2.0,6.406566619873047,1267.3671875,12.813133239746094,2534.734375
+category_first_Belleza y Cuidado Personal,8.0,7.546281337738037,985.3591918945312,60.3702507019043,7882.87353515625
+category_first_Celulares y Telefonía,0.0,0.0,0.0,0.0,0.0
+category_first_Celulares y Teléfonos,2.0,17.033979415893555,320.54949951171875,34.06795883178711,641.0989990234375
+category_first_Computación,4.0,22.344104766845703,3485.54931640625,89.37641906738281,13942.197265625
+category_first_Consolas y Videojuegos,4.0,11.610443115234375,1972.8123779296875,46.4417724609375,7891.24951171875
+category_first_Cámaras y Accesorios,0.0,0.0,0.0,0.0,0.0
+category_first_Deportes y Fitness,8.0,10.008162498474121,1327.9061279296875,80.06529998779297,10623.2490234375
+category_first_Electrodomésticos,0.0,0.0,0.0,0.0,0.0
+category_first_Electrodomésticos y Aires Ac.,1.0,4.846303939819336,194.49118041992188,4.846303939819336,194.49118041992188
+"category_first_Electrónica, Audio y Video",20.0,24.194114685058594,2386.72509765625,483.8822937011719,47734.5
+category_first_Eletrodomésticos,0.0,0.0,0.0,0.0,0.0
+category_first_Esportes e Fitness,0.0,0.0,0.0,0.0,0.0
+category_first_Herramientas y Construcción,5.0,5.209226131439209,186.385498046875,26.046131134033203,931.927490234375
+"category_first_Hogar, Muebles y Jardín",11.0,7.6124587059021,518.1141357421875,83.73704528808594,5699.25537109375
+category_first_Industrias y Oficinas,0.0,0.0,0.0,0.0,0.0
+category_first_Instrumentos Musicales,16.0,9.551315307617188,6319.21923828125,152.821044921875,101107.5078125
+category_first_Joyas y Relojes,0.0,0.0,0.0,0.0,0.0
+category_first_Juegos y Juguetes,16.0,9.240696907043457,2602.441650390625,147.8511505126953,41639.06640625
+"category_first_Libros, Revistas y Comics",0.0,0.0,0.0,0.0,0.0
+"category_first_Música, Películas y Series",0.0,0.0,0.0,0.0,0.0
+category_first_Otras categorías,0.0,0.0,0.0,0.0,0.0
+category_first_Ropa y Accesorios,4.0,9.715036392211914,504.8598327636719,38.860145568847656,2019.4393310546875
+"category_first_Ropa, Bolsas y Calzado",0.0,0.0,0.0,0.0,0.0
+category_first_Salud y Equipamiento Médico,2.0,6.037184715270996,2613.955322265625,12.074369430541992,5227.91064453125
+"category_first_Souvenirs, Cotillón y Fiestas",0.0,0.0,0.0,0.0,0.0
+listing_type_id_gold_pro,27.0,7.332333087921143,537.5530395507812,197.97299194335938,14513.931640625
+listing_type_id_gold_special,12.0,7.157567501068115,691.3984985351562,85.89080810546875,8296.7822265625
+logistic_type_cross_docking,16.0,7.593454837799072,445.89093017578125,121.49527740478516,7134.2548828125
+logistic_type_custom,2.0,20.41404151916504,3561.42724609375,40.82808303833008,7122.8544921875
+logistic_type_default,0.0,0.0,0.0,0.0,0.0
+logistic_type_drop_off,7.0,4.963071346282959,428.6441345214844,34.74150085449219,3000.509033203125
+logistic_type_fulfillment,13.0,8.034802436828613,1297.7850341796875,104.45243072509766,16871.205078125
+logistic_type_not_specified,4.0,12.195435523986816,2862.474609375,48.781742095947266,11449.8984375
+logistic_type_xd_drop_off,10.0,8.989339828491211,3598.104736328125,89.89339447021484,35981.046875
+platform_android,122.0,15.576279640197754,1547.281982421875,1900.30615234375,188768.40625
+platform_desktop,190.0,55.8759880065918,3669.459228515625,10616.4375,697197.25
+platform_ios,21.0,12.452000617980957,536.8492431640625,261.49200439453125,11273.833984375
+platform_mobile,25.0,14.647696495056152,624.615478515625,366.1924133300781,15615.38671875
+category_last_A Carbón,0.0,0.0,0.0,0.0,0.0
+category_last_A Combustible,0.0,0.0,0.0,0.0,0.0
+category_last_A Combustión,0.0,0.0,0.0,0.0,0.0
+category_last_A Gas,0.0,0.0,0.0,0.0,0.0
+category_last_Abanicos,0.0,0.0,0.0,0.0,0.0
+category_last_Ablandadores de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Abrochadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Accesorios,0.0,0.0,0.0,0.0,0.0
+category_last_Aceite de Motor,0.0,0.0,0.0,0.0,0.0
+category_last_Aceites,0.0,0.0,0.0,0.0,0.0
+category_last_Aceites de Motor,0.0,0.0,0.0,0.0,0.0
+category_last_Acetos Balsámicos,0.0,0.0,0.0,0.0,0.0
+category_last_Acolchados,0.0,0.0,0.0,0.0,0.0
+category_last_Acordeones,0.0,0.0,0.0,0.0,0.0
+category_last_Acrílicos,0.0,0.0,0.0,0.0,0.0
+category_last_Acústicas,0.0,0.0,0.0,0.0,0.0
+category_last_Adaptadores,1.0,11.779052734375,3970.809814453125,11.779052734375,3970.809814453125
+category_last_Adaptadores Wifi,0.0,0.0,0.0,0.0,0.0
+category_last_Adaptadores de Enchufes,0.0,0.0,0.0,0.0,0.0
+category_last_Adaptadores de Taladro,0.0,0.0,0.0,0.0,0.0
+category_last_Adhesivos para Construcción,0.0,0.0,0.0,0.0,0.0
+category_last_Adornos,0.0,0.0,0.0,0.0,0.0
+category_last_Aerosoles,0.0,0.0,0.0,0.0,0.0
+category_last_Aerógrafo,0.0,0.0,0.0,0.0,0.0
+category_last_Afeitadoras Descartables,0.0,0.0,0.0,0.0,0.0
+category_last_Afeitadoras Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Afiladores,0.0,0.0,0.0,0.0,0.0
+category_last_Afiladores Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Afiladores Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Afinadores,0.0,0.0,0.0,0.0,0.0
+category_last_Agarraderas para Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Agarres para Gimnasio,0.0,0.0,0.0,0.0,0.0
+category_last_Agendas y Diarios Íntimos,0.0,0.0,0.0,0.0,0.0
+category_last_Agitadores,0.0,0.0,0.0,0.0,0.0
+category_last_Aguas Minerales,0.0,0.0,0.0,0.0,0.0
+category_last_Agujas,0.0,0.0,0.0,0.0,0.0
+category_last_Ahuyentadores Ultrasónicos,0.0,0.0,0.0,0.0,0.0
+category_last_Airbags,0.0,0.0,0.0,0.0,0.0
+category_last_Aireadores de Vinos,0.0,0.0,0.0,0.0,0.0
+category_last_Aires Acondicionados,0.0,0.0,0.0,0.0,0.0
+category_last_Alacenas de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Alambrados,0.0,0.0,0.0,0.0,0.0
+category_last_Alambres,0.0,0.0,0.0,0.0,0.0
+category_last_Alambres de Púa,0.0,0.0,0.0,0.0,0.0
+category_last_Alambres para Soldar,0.0,0.0,0.0,0.0,0.0
+category_last_Alargues,0.0,0.0,0.0,0.0,0.0
+category_last_Alarmas para Automotores,0.0,0.0,0.0,0.0,0.0
+category_last_Alarmas para Motos,0.0,0.0,0.0,0.0,0.0
+category_last_Alarmas y Sensores,0.0,0.0,0.0,0.0,0.0
+category_last_Alcoholes Etílicos,0.0,0.0,0.0,0.0,0.0
+category_last_Alcoholes en Aerosol,0.0,0.0,0.0,0.0,0.0
+category_last_Alcoholes en Gel,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras Antigolpes,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras De Baile,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras Sanitarias,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras de Juego,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras para Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Alfombras y Carpetas,0.0,0.0,0.0,0.0,0.0
+category_last_Alforjas,0.0,0.0,0.0,0.0,0.0
+"category_last_Alforjas, Bolsos y Cartucheras",0.0,0.0,0.0,0.0,0.0
+category_last_Algodones,0.0,0.0,0.0,0.0,0.0
+category_last_Alianzas,0.0,0.0,0.0,0.0,0.0
+category_last_Alicates,0.0,0.0,0.0,0.0,0.0
+category_last_Alimento,0.0,0.0,0.0,0.0,0.0
+category_last_Alimentos de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_All In One,0.0,0.0,0.0,0.0,0.0
+category_last_Almohadas,2.0,11.465997695922852,1206.726318359375,22.931995391845703,2413.45263671875
+category_last_Almohadas para Viaje,0.0,0.0,0.0,0.0,0.0
+category_last_Almohadillas Relajantes,0.0,0.0,0.0,0.0,0.0
+category_last_Almohadillas Térmicas,0.0,0.0,0.0,0.0,0.0
+category_last_Almohadones,0.0,0.0,0.0,0.0,0.0
+category_last_Almohadones de Maternidad,0.0,0.0,0.0,0.0,0.0
+category_last_Alpargatas,0.0,0.0,0.0,0.0,0.0
+category_last_Amasadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Ambos Médicos,0.0,0.0,0.0,0.0,0.0
+category_last_Amoladoras,0.0,0.0,0.0,0.0,0.0
+category_last_Amperímetros,0.0,0.0,0.0,0.0,0.0
+category_last_Amplificadores,0.0,0.0,0.0,0.0,0.0
+category_last_Amplificadores de Audio,0.0,0.0,0.0,0.0,0.0
+category_last_Anafes,0.0,0.0,0.0,0.0,0.0
+category_last_Anafes Portátiles,0.0,0.0,0.0,0.0,0.0
+category_last_Anclas,0.0,0.0,0.0,0.0,0.0
+category_last_Andadores y Caminadores,0.0,0.0,0.0,0.0,0.0
+category_last_Anilinas,0.0,0.0,0.0,0.0,0.0
+category_last_Anillos,0.0,0.0,0.0,0.0,0.0
+category_last_Anillos para Celulares,0.0,0.0,0.0,0.0,0.0
+category_last_Antenas Wireless,0.0,0.0,0.0,0.0,0.0
+category_last_Antenas de TV,0.0,0.0,0.0,0.0,0.0
+category_last_Antenas para Walkie-Talkies,0.0,0.0,0.0,0.0,0.0
+category_last_Anteojos,0.0,0.0,0.0,0.0,0.0
+category_last_Anteojos de Sol,0.0,0.0,0.0,0.0,0.0
+category_last_Antideslizantes para Bañera,0.0,0.0,0.0,0.0,0.0
+category_last_Antiparras,0.0,0.0,0.0,0.0,0.0
+category_last_Antiparras y Snorkels,0.0,0.0,0.0,0.0,0.0
+category_last_Antirrobos de Ruedas,0.0,0.0,0.0,0.0,0.0
+category_last_Anzuelos,0.0,0.0,0.0,0.0,0.0
+category_last_Aparadores y Vajilleros,0.0,0.0,0.0,0.0,0.0
+category_last_Aparatos Repelentes,0.0,0.0,0.0,0.0,0.0
+category_last_Aparatos para Abdominales,0.0,0.0,0.0,0.0,0.0
+category_last_Aparejos Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Aparejos Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Apoya Celulares,0.0,0.0,0.0,0.0,0.0
+category_last_Arcos,0.0,0.0,0.0,0.0,0.0
+category_last_Arcos y Flechas,0.0,0.0,0.0,0.0,0.0
+category_last_Arduino,0.0,0.0,0.0,0.0,0.0
+category_last_Arenadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Armarios para Lavadero,0.0,0.0,0.0,0.0,0.0
+category_last_Armónicas,0.0,0.0,0.0,0.0,0.0
+category_last_Arneses y Pretales,0.0,0.0,0.0,0.0,0.0
+category_last_Aromatizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Aromatizadores y Purificadores,0.0,0.0,0.0,0.0,0.0
+category_last_Aros,0.0,0.0,0.0,0.0,0.0
+category_last_Aros de Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Aros y Tableros,0.0,0.0,0.0,0.0,0.0
+category_last_Arroceras,0.0,0.0,0.0,0.0,0.0
+category_last_Arroz,0.0,0.0,0.0,0.0,0.0
+category_last_Artefactos de Iluminación,0.0,0.0,0.0,0.0,0.0
+category_last_Asientos,0.0,0.0,0.0,0.0,0.0
+category_last_Asientos Masajeadores,0.0,0.0,0.0,0.0,0.0
+category_last_Asientos de Kayaks,0.0,0.0,0.0,0.0,0.0
+category_last_Aspersores,0.0,0.0,0.0,0.0,0.0
+category_last_Aspiradoras,1.0,11.8387451171875,1320.436279296875,11.8387451171875,1320.436279296875
+category_last_Aspiradoras Robot,0.0,0.0,0.0,0.0,0.0
+category_last_Aspiradores Nasales,0.0,0.0,0.0,0.0,0.0
+category_last_Atornillador y Destornillador,6.0,20.51190185546875,4005.4580078125,123.0714111328125,24032.748046875
+category_last_Atriles,0.0,0.0,0.0,0.0,0.0
+category_last_Audífonos,0.0,0.0,0.0,0.0,0.0
+category_last_Auriculares,1.0,10.16351318359375,1218.6541748046875,10.16351318359375,1218.6541748046875
+category_last_Auriculares y Manos Libres,0.0,0.0,0.0,0.0,0.0
+category_last_Autobronceantes,0.0,0.0,0.0,0.0,0.0
+category_last_Automodelismo,0.0,0.0,0.0,0.0,0.0
+category_last_Autos a Batería,0.0,0.0,0.0,0.0,0.0
+category_last_Autos de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_Azadas,0.0,0.0,0.0,0.0,0.0
+category_last_Azúcar,0.0,0.0,0.0,0.0,0.0
+category_last_BB Cream,0.0,0.0,0.0,0.0,0.0
+category_last_Baberos para Comer,0.0,0.0,0.0,0.0,0.0
+category_last_Babitas,0.0,0.0,0.0,0.0,0.0
+category_last_Baby Calls,0.0,0.0,0.0,0.0,0.0
+category_last_Bachas de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Bachas para Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Bajo Mesadas,0.0,0.0,0.0,0.0,0.0
+category_last_Bajos,0.0,0.0,0.0,0.0,0.0
+category_last_Balanzas Comerciales,0.0,0.0,0.0,0.0,0.0
+category_last_Balanzas de Baño,4.0,5.751220703125,6835.47314453125,23.0048828125,27341.892578125
+category_last_Balanzas de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Balanzas de Precisión,0.0,0.0,0.0,0.0,0.0
+category_last_Balanzas para Valijas,0.0,0.0,0.0,0.0,0.0
+"category_last_Baldes, Palanganas y Fuentones",2.0,12.517738342285156,655.1040649414062,25.035476684570312,1310.2081298828125
+category_last_Baldosas de Cemento,0.0,0.0,0.0,0.0,0.0
+category_last_Balines,0.0,0.0,0.0,0.0,0.0
+category_last_Balizas,0.0,0.0,0.0,0.0,0.0
+category_last_Banco de Trabajo,0.0,0.0,0.0,0.0,0.0
+category_last_Bancos,0.0,0.0,0.0,0.0,0.0
+category_last_Bancos y Banquetas,0.0,0.0,0.0,0.0,0.0
+category_last_Bandas Depilatorias,0.0,0.0,0.0,0.0,0.0
+category_last_Bandas Elásticas,0.0,0.0,0.0,0.0,0.0
+category_last_Bandas de Suspensión,0.0,0.0,0.0,0.0,0.0
+category_last_Bandas para Cintas de Correr,0.0,0.0,0.0,0.0,0.0
+category_last_Bandejas,0.0,0.0,0.0,0.0,0.0
+category_last_Bandejas Portapapeles,0.0,0.0,0.0,0.0,0.0
+"category_last_Bandejas, Asaderas y Fuentes",0.0,0.0,0.0,0.0,0.0
+category_last_Banderas,0.0,0.0,0.0,0.0,0.0
+category_last_Banderines,0.0,0.0,0.0,0.0,0.0
+category_last_Banderines y Guirnaldas,0.0,0.0,0.0,0.0,0.0
+category_last_Banquetas,0.0,0.0,0.0,0.0,0.0
+category_last_Barandas,0.0,0.0,0.0,0.0,0.0
+category_last_Barbijos,0.0,0.0,0.0,0.0,0.0
+category_last_Barbijos Antipolvo,0.0,0.0,0.0,0.0,0.0
+category_last_Barcos Antiguos y Fragatas,0.0,0.0,0.0,0.0,0.0
+category_last_Barrales Antipánico,0.0,0.0,0.0,0.0,0.0
+category_last_Barrales de Suspensión,0.0,0.0,0.0,0.0,0.0
+category_last_Barrales para Cortinas,0.0,0.0,0.0,0.0,0.0
+category_last_Barras LED,0.0,0.0,0.0,0.0,0.0
+category_last_Barras Push Up,0.0,0.0,0.0,0.0,0.0
+category_last_Barras de Cereal,0.0,0.0,0.0,0.0,0.0
+category_last_Barras de Silicona,0.0,0.0,0.0,0.0,0.0
+category_last_Barras para Dominadas,0.0,0.0,0.0,0.0,0.0
+category_last_Barre Migas,0.0,0.0,0.0,0.0,0.0
+category_last_Barrefondos,0.0,0.0,0.0,0.0,0.0
+category_last_Barretas,0.0,0.0,0.0,0.0,0.0
+category_last_Barriletes - Cometas,0.0,0.0,0.0,0.0,0.0
+category_last_Bases,0.0,0.0,0.0,0.0,0.0
+category_last_Bases de Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Bases para Butacas,0.0,0.0,0.0,0.0,0.0
+category_last_Bases para Sommiers,0.0,0.0,0.0,0.0,0.0
+category_last_Bastones,0.0,0.0,0.0,0.0,0.0
+category_last_Batas,0.0,0.0,0.0,0.0,0.0
+category_last_Batas de Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Baterías,0.0,0.0,0.0,0.0,0.0
+category_last_Baterías Acústicas,0.0,0.0,0.0,0.0,0.0
+category_last_Baterías Completas,0.0,0.0,0.0,0.0,0.0
+category_last_Baterías para Cámaras,0.0,0.0,0.0,0.0,0.0
+category_last_Bates,0.0,0.0,0.0,0.0,0.0
+category_last_Batidoras,0.0,0.0,0.0,0.0,0.0
+category_last_Batidores Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Batidores de Pintura,0.0,0.0,0.0,0.0,0.0
+category_last_Bañeras para Bebés,0.0,0.0,0.0,0.0,0.0
+category_last_Baúles Porta Cascos,0.0,0.0,0.0,0.0,0.0
+category_last_Baúles para Delivery,0.0,0.0,0.0,0.0,0.0
+category_last_Bebederos,0.0,0.0,0.0,0.0,0.0
+category_last_Bebidas Alcohólicas Preparadas,0.0,0.0,0.0,0.0,0.0
+category_last_Bebidas Aperitivos,0.0,0.0,0.0,0.0,0.0
+category_last_Bebidas Energizantes,0.0,0.0,0.0,0.0,0.0
+category_last_Bencina,0.0,0.0,0.0,0.0,0.0
+category_last_Bermudas y Shorts,0.0,0.0,0.0,0.0,0.0
+"category_last_Bermudas, Boxers y Zungas",0.0,0.0,0.0,0.0,0.0
+"category_last_Bermudas, Sungas y Shorts",0.0,0.0,0.0,0.0,0.0
+category_last_Bibliotecas y Estanterías,0.0,0.0,0.0,0.0,0.0
+category_last_Bicicletas,0.0,0.0,0.0,0.0,0.0
+category_last_Bicicletas Fijas,0.0,0.0,0.0,0.0,0.0
+category_last_Bidets,0.0,0.0,0.0,0.0,0.0
+category_last_Bielas,0.0,0.0,0.0,0.0,0.0
+category_last_Bieletas,0.0,0.0,0.0,0.0,0.0
+category_last_Biferas,0.0,0.0,0.0,0.0,0.0
+category_last_Billeteras,0.0,0.0,0.0,0.0,0.0
+category_last_Binoculares,0.0,0.0,0.0,0.0,0.0
+category_last_Biombos,0.0,0.0,0.0,0.0,0.0
+category_last_Bisagras,0.0,0.0,0.0,0.0,0.0
+category_last_Bisagras de Capot,0.0,0.0,0.0,0.0,0.0
+category_last_Blanqueador Dental,0.0,0.0,0.0,0.0,0.0
+category_last_Bloqueras,0.0,0.0,0.0,0.0,0.0
+category_last_Bloques y Construcción,0.0,0.0,0.0,0.0,0.0
+category_last_Blusas,0.0,0.0,0.0,0.0,0.0
+category_last_Bochas,0.0,0.0,0.0,0.0,0.0
+category_last_Bochas y Fundas para Palancas,0.0,0.0,0.0,0.0,0.0
+category_last_Bodyboard,0.0,0.0,0.0,0.0,0.0
+category_last_Bodys,0.0,0.0,0.0,0.0,0.0
+category_last_Bolas Espejadas,0.0,0.0,0.0,0.0,0.0
+category_last_Bolitas de Gel,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas Ecológicas,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas al Vacío,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas de Colostomía,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas de Dormir,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas de Hidratación,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas para Aspiradoras,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsas para Lavar Ropa,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos Deportivos,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos Materos,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos Organizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos de Herramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos de Viaje,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos para Palos,0.0,0.0,0.0,0.0,0.0
+category_last_Bolsos y Mochilas Tácticas,0.0,0.0,0.0,0.0,0.0
+category_last_Bolígrafos,0.0,0.0,0.0,0.0,0.0
+category_last_Bombachas,1.0,3.287353515625,3082.560791015625,3.287353515625,3082.560791015625
+category_last_Bombas,0.0,0.0,0.0,0.0,0.0
+category_last_Bombas Centrífugas,0.0,0.0,0.0,0.0,0.0
+category_last_Bombas Presurizadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Bombas Sumergibles,0.0,0.0,0.0,0.0,0.0
+category_last_Bombas para Bidones,0.0,0.0,0.0,0.0,0.0
+category_last_Bombas para Piletas,0.0,0.0,0.0,0.0,0.0
+category_last_Bombillas para Mate,0.0,0.0,0.0,0.0,0.0
+category_last_Bongos,0.0,0.0,0.0,0.0,0.0
+category_last_Bonés,0.0,0.0,0.0,0.0,0.0
+category_last_Boquillas,0.0,0.0,0.0,0.0,0.0
+category_last_Borceguies,0.0,0.0,0.0,0.0,0.0
+category_last_Boroscopios,0.0,0.0,0.0,0.0,0.0
+category_last_Botadores,0.0,0.0,0.0,0.0,0.0
+category_last_Botas,0.0,0.0,0.0,0.0,0.0
+category_last_Botas y Botinetas,8.0,9.687621116638184,1148.7320556640625,77.50096893310547,9189.8564453125
+category_last_Botellas Deportivas,0.0,0.0,0.0,0.0,0.0
+category_last_Botes,0.0,0.0,0.0,0.0,0.0
+category_last_Botines,0.0,0.0,0.0,0.0,0.0
+category_last_Botines de Hockey,0.0,0.0,0.0,0.0,0.0
+category_last_Botines y Zapatos,0.0,0.0,0.0,0.0,0.0
+category_last_Botiquines,0.0,0.0,0.0,0.0,0.0
+category_last_Boxers y Slips,1.0,3.8203125,2762.291748046875,3.8203125,2762.291748046875
+category_last_Boyas,0.0,0.0,0.0,0.0,0.0
+category_last_Bozales,0.0,0.0,0.0,0.0,0.0
+category_last_Brackets,0.0,0.0,0.0,0.0,0.0
+category_last_Brandy,0.0,0.0,0.0,0.0,0.0
+category_last_Brochas para Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Bronceadores,0.0,0.0,0.0,0.0,0.0
+category_last_Brújulas,0.0,0.0,0.0,0.0,0.0
+category_last_Bucleras,0.0,0.0,0.0,0.0,0.0
+category_last_Bufandas,0.0,0.0,0.0,0.0,0.0
+category_last_Bulones,0.0,0.0,0.0,0.0,0.0
+category_last_Bulones de Rueda,0.0,0.0,0.0,0.0,0.0
+category_last_Burbujas,0.0,0.0,0.0,0.0,0.0
+category_last_Burbujeros,0.0,0.0,0.0,0.0,0.0
+category_last_Burletes,1.0,4.7718658447265625,400.4267883300781,4.7718658447265625,400.4267883300781
+category_last_Burros de Arranque,0.0,0.0,0.0,0.0,0.0
+category_last_Buzones de Cartas,0.0,0.0,0.0,0.0,0.0
+category_last_Buzos,0.0,0.0,0.0,0.0,0.0
+category_last_Buzos y Hoodies,0.0,0.0,0.0,0.0,0.0
+category_last_Bálsamos Labiales,0.0,0.0,0.0,0.0,0.0
+category_last_Bípodes,0.0,0.0,0.0,0.0,0.0
+category_last_Caballetes,0.0,0.0,0.0,0.0,0.0
+category_last_Caballitos Mecedores,0.0,0.0,0.0,0.0,0.0
+category_last_Cabezales,0.0,0.0,0.0,0.0,0.0
+category_last_Cabezales para Compresores,0.0,0.0,0.0,0.0,0.0
+category_last_Cabezas de Práctica,0.0,0.0,0.0,0.0,0.0
+category_last_Cabinas para Uñas,0.0,0.0,0.0,0.0,0.0
+category_last_Cableado,0.0,0.0,0.0,0.0,0.0
+category_last_Cables,0.0,0.0,0.0,0.0,0.0
+category_last_Cables Adaptadores,0.0,0.0,0.0,0.0,0.0
+category_last_Cables Power,0.0,0.0,0.0,0.0,0.0
+category_last_Cables Subterráneos,0.0,0.0,0.0,0.0,0.0
+category_last_Cables Taller,0.0,0.0,0.0,0.0,0.0
+category_last_Cables Unipolares,0.0,0.0,0.0,0.0,0.0
+category_last_Cables de Apertura,0.0,0.0,0.0,0.0,0.0
+category_last_Cables de Audio y Video,0.0,0.0,0.0,0.0,0.0
+category_last_Cables de Bujía,0.0,0.0,0.0,0.0,0.0
+category_last_Cables de Datos,5.0,18.25225830078125,3985.395751953125,91.26129150390625,19926.978515625
+category_last_Cables de Red,0.0,0.0,0.0,0.0,0.0
+category_last_Cables y Adaptadores,0.0,0.0,0.0,0.0,0.0
+category_last_Cables y Conectores,0.0,0.0,0.0,0.0,0.0
+category_last_Cacao,0.0,0.0,0.0,0.0,0.0
+category_last_Cadenas de Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_Cadenas y Collares,0.0,0.0,0.0,0.0,0.0
+category_last_Cafeteras,0.0,0.0,0.0,0.0,0.0
+category_last_Café Instantáneo,0.0,0.0,0.0,0.0,0.0
+category_last_Café en Granos y Molido,0.0,0.0,0.0,0.0,0.0
+category_last_Caja de Engranajes,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas Decoradas,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas Fuertes,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas Registradoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas de Archivo,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas de Dirección,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas de Herramientas,1.0,3.204345703125,2005.9576416015625,3.204345703125,2005.9576416015625
+category_last_Cajas de Ingletes,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas de Paso Estancas,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas para Dinero,0.0,0.0,0.0,0.0,0.0
+category_last_Cajas para Térmicas,0.0,0.0,0.0,0.0,0.0
+category_last_Cajones de Madera,0.0,0.0,0.0,0.0,0.0
+category_last_Cal,0.0,0.0,0.0,0.0,0.0
+category_last_Caladoras,0.0,0.0,0.0,0.0,0.0
+category_last_Calcomanías,0.0,0.0,0.0,0.0,0.0
+category_last_Calculadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Calefones,0.0,0.0,0.0,0.0,0.0
+category_last_Calendarios,0.0,0.0,0.0,0.0,0.0
+category_last_Calentadores,0.0,0.0,0.0,0.0,0.0
+category_last_Calibres,0.0,0.0,0.0,0.0,0.0
+category_last_Calzados,0.0,0.0,0.0,0.0,0.0
+category_last_Calzas,0.0,0.0,0.0,0.0,0.0
+category_last_Calzas Ciclistas,0.0,0.0,0.0,0.0,0.0
+category_last_Camas,0.0,0.0,0.0,0.0,0.0
+category_last_Camas Elásticas,1.0,4.3890380859375,563.6589965820312,4.3890380859375,563.6589965820312
+category_last_Camicletas,0.0,0.0,0.0,0.0,0.0
+category_last_Camillas para Masajes,0.0,0.0,0.0,0.0,0.0
+category_last_Camisas,0.0,0.0,0.0,0.0,0.0
+category_last_Camisetas,0.0,0.0,0.0,0.0,0.0
+category_last_Camisetas Térmicas,0.0,0.0,0.0,0.0,0.0
+category_last_Camisetas y Remeras,0.0,0.0,0.0,0.0,0.0
+"category_last_Camisetas, Remeras y Chombas",0.0,0.0,0.0,0.0,0.0
+category_last_Camisones,0.0,0.0,0.0,0.0,0.0
+category_last_Campanas,0.0,0.0,0.0,0.0,0.0
+category_last_Camperas,0.0,0.0,0.0,0.0,0.0
+"category_last_Camperas, Tapados y Trenchs",0.0,0.0,0.0,0.0,0.0
+category_last_Canastos,1.0,1.4231281280517578,61.41986846923828,1.4231281280517578,61.41986846923828
+category_last_Canastos para Bicicleta,0.0,0.0,0.0,0.0,0.0
+category_last_Candados,0.0,0.0,0.0,0.0,0.0
+category_last_Candados y Cables de Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_Canillas para Cerveza Tirada,0.0,0.0,0.0,0.0,0.0
+category_last_Canilleras,0.0,0.0,0.0,0.0,0.0
+category_last_Capacitores,0.0,0.0,0.0,0.0,0.0
+category_last_Capas,0.0,0.0,0.0,0.0,0.0
+category_last_Capas Impermeables,0.0,0.0,0.0,0.0,0.0
+category_last_Capotrastes,0.0,0.0,0.0,0.0,0.0
+category_last_Carameleras,0.0,0.0,0.0,0.0,0.0
+category_last_Caravanas,0.0,0.0,0.0,0.0,0.0
+category_last_Carburadores,0.0,0.0,0.0,0.0,0.0
+category_last_Carcasas,0.0,0.0,0.0,0.0,0.0
+category_last_Carcasas para Cortadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cardigans y Saquitos,0.0,0.0,0.0,0.0,0.0
+category_last_Cargadores,0.0,0.0,0.0,0.0,0.0
+category_last_Cargadores con Cable,0.0,0.0,0.0,0.0,0.0
+category_last_Cargadores de Baterías,0.0,0.0,0.0,0.0,0.0
+category_last_Cargadores de Controles,1.0,20.2783203125,5850.6015625,20.2783203125,5850.6015625
+category_last_Cargadores para Cámaras,0.0,0.0,0.0,0.0,0.0
+category_last_Cargadores y Fuentes,0.0,0.0,0.0,0.0,0.0
+category_last_Carpas,0.0,0.0,0.0,0.0,0.0
+category_last_Carpas para Cultivo Indoor,0.0,0.0,0.0,0.0,0.0
+category_last_Carpas para Niños,0.0,0.0,0.0,0.0,0.0
+category_last_Carpetas y Biblioratos,0.0,0.0,0.0,0.0,0.0
+category_last_Carreteles,0.0,0.0,0.0,0.0,0.0
+category_last_Carretillas,0.0,0.0,0.0,0.0,0.0
+category_last_Carritos de Supermercado,0.0,0.0,0.0,0.0,0.0
+category_last_Carritos para Compras,0.0,0.0,0.0,0.0,0.0
+category_last_Carros Plataforma,0.0,0.0,0.0,0.0,0.0
+category_last_Carros Zorra,0.0,0.0,0.0,0.0,0.0
+category_last_Carros de Traslación,0.0,0.0,0.0,0.0,0.0
+category_last_Carros de limpieza,0.0,0.0,0.0,0.0,0.0
+category_last_Cartas Coleccionables R.P.G.,0.0,0.0,0.0,0.0,0.0
+category_last_Cartas Didácticas,0.0,0.0,0.0,0.0,0.0
+category_last_Carteles,0.0,0.0,0.0,0.0,0.0
+category_last_Carteles Decorativos,0.0,0.0,0.0,0.0,0.0
+category_last_Carteles Luminosos,1.0,5.65625,4295.32763671875,5.65625,4295.32763671875
+category_last_Carteles sin Luz,0.0,0.0,0.0,0.0,0.0
+category_last_Carteles y Letreros,0.0,0.0,0.0,0.0,0.0
+category_last_Carteras,0.0,0.0,0.0,0.0,0.0
+category_last_Cartucheras,0.0,0.0,0.0,0.0,0.0
+category_last_Cartucheras Portaherramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Cartuchos para Afeitadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Casas para Muñecas y Muñecos,0.0,0.0,0.0,0.0,0.0
+category_last_Casas para Pájaros,0.0,0.0,0.0,0.0,0.0
+category_last_Cascos,0.0,0.0,0.0,0.0,0.0
+category_last_Cascos VR,0.0,0.0,0.0,0.0,0.0
+category_last_Catres,0.0,0.0,0.0,0.0,0.0
+category_last_Cavas Conservadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cazoletas,0.0,0.0,0.0,0.0,0.0
+category_last_Cañas,0.0,0.0,0.0,0.0,0.0
+category_last_Celulares y Smartphones,4.0,14.160593032836914,2609.144287109375,56.642372131347656,10436.5771484375
+category_last_Cencerros,0.0,0.0,0.0,0.0,0.0
+category_last_Ceniceros,0.0,0.0,0.0,0.0,0.0
+category_last_Centrales Multimedia,0.0,0.0,0.0,0.0,0.0
+category_last_Centro de Actividades,0.0,0.0,0.0,0.0,0.0
+category_last_Centrífugas Digitales,0.0,0.0,0.0,0.0,0.0
+category_last_Cepilladoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos Alisadores,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos Eléctricos Faciales,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos Globales,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos Interdentales,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos Rotativos,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos de Alambre,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos de Dientes,0.0,0.0,0.0,0.0,0.0
+category_last_Cepillos y Peines,0.0,0.0,0.0,0.0,0.0
+category_last_Cera Depilatoria,0.0,0.0,0.0,0.0,0.0
+category_last_Cera para Ortodoncia,0.0,0.0,0.0,0.0,0.0
+category_last_Cercos de Jardín,0.0,0.0,0.0,0.0,0.0
+category_last_Cerraduras de Baúl,0.0,0.0,0.0,0.0,0.0
+category_last_Cerraduras de Capot,0.0,0.0,0.0,0.0,0.0
+category_last_Cervezas,0.0,0.0,0.0,0.0,0.0
+category_last_Cerámicas,0.0,0.0,0.0,0.0,0.0
+category_last_Cestos Papeleros,0.0,0.0,0.0,0.0,0.0
+category_last_Cestos de Residuos,0.0,0.0,0.0,0.0,0.0
+category_last_Cestos para Ropa,0.0,0.0,0.0,0.0,0.0
+category_last_Chalecos,0.0,0.0,0.0,0.0,0.0
+category_last_Chalecos Reflectivos,0.0,0.0,0.0,0.0,0.0
+category_last_Chalecos con Peso,0.0,0.0,0.0,0.0,0.0
+category_last_Champagnes,0.0,0.0,0.0,0.0,0.0
+category_last_Chapas,0.0,0.0,0.0,0.0,0.0
+category_last_Chapas Identificatorias,0.0,0.0,0.0,0.0,0.0
+category_last_Chapones Cubrecarters,0.0,0.0,0.0,0.0,0.0
+category_last_Chatitas,0.0,0.0,0.0,0.0,0.0
+category_last_Chocolates,0.0,0.0,0.0,0.0,0.0
+category_last_Chombas,0.0,0.0,0.0,0.0,0.0
+category_last_Choperas Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Chupetes,0.0,0.0,0.0,0.0,0.0
+category_last_Ciclocomputadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cielo Raso,0.0,0.0,0.0,0.0,0.0
+category_last_Cierra Empanadas,0.0,0.0,0.0,0.0,0.0
+category_last_Cierres,0.0,0.0,0.0,0.0,0.0
+category_last_Cierres Centralizados,0.0,0.0,0.0,0.0,0.0
+category_last_Cigarreras,0.0,0.0,0.0,0.0,0.0
+category_last_Cinceles y Formones,0.0,0.0,0.0,0.0,0.0
+category_last_Cinta Aisladora,0.0,0.0,0.0,0.0,0.0
+category_last_Cinta Antideslizante,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas Adhesivas,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas Kinesiológicas,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas Métricas,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas Reflectivas,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas de Amarre,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas de Embalaje,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas de Peligro,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas para Correr,0.0,0.0,0.0,0.0,0.0
+category_last_Cintas para Rotuladoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cinturones,0.0,0.0,0.0,0.0,0.0
+category_last_Cinturones Abdominales,0.0,0.0,0.0,0.0,0.0
+category_last_Cinturones de Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_Circulares,0.0,0.0,0.0,0.0,0.0
+category_last_Claquetas de Cine,0.0,0.0,0.0,0.0,0.0
+category_last_Clavadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Clavijas,0.0,0.0,0.0,0.0,0.0
+category_last_Clavos,0.0,0.0,0.0,0.0,0.0
+category_last_Clickers,0.0,0.0,0.0,0.0,0.0
+category_last_Climatizadores Portátiles,0.0,0.0,0.0,0.0,0.0
+category_last_Clipcords,0.0,0.0,0.0,0.0,0.0
+category_last_Cloro para Piletas,0.0,0.0,0.0,0.0,0.0
+category_last_Cochecitos para Bebés,0.0,0.0,0.0,0.0,0.0
+category_last_Cochecitos para Muñecas,0.0,0.0,0.0,0.0,0.0
+category_last_Cocinas,0.0,0.0,0.0,0.0,0.0
+category_last_Cocinas Industriales,0.0,0.0,0.0,0.0,0.0
+category_last_Cocinas de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_Cognac,0.0,0.0,0.0,0.0,0.0
+category_last_Coladores,0.0,0.0,0.0,0.0,0.0
+category_last_Colchas y Cubrecamas,0.0,0.0,0.0,0.0,0.0
+category_last_Colchones,0.0,0.0,0.0,0.0,0.0
+category_last_Colchones Antiescaras,0.0,0.0,0.0,0.0,0.0
+category_last_Colchones Inflables,0.0,0.0,0.0,0.0,0.0
+category_last_Colchonetas,0.0,0.0,0.0,0.0,0.0
+category_last_Collares,0.0,0.0,0.0,0.0,0.0
+category_last_Collares Cervicales,0.0,0.0,0.0,0.0,0.0
+category_last_Collares y Pulseras,0.0,0.0,0.0,0.0,0.0
+category_last_Columnas de Ducha,0.0,0.0,0.0,0.0,0.0
+category_last_Combinadas,0.0,0.0,0.0,0.0,0.0
+category_last_Comederos,0.0,0.0,0.0,0.0,0.0
+category_last_Comederos y Bebederos,0.0,0.0,0.0,0.0,0.0
+category_last_Composteras,0.0,0.0,0.0,0.0,0.0
+category_last_Compoteras y Bowls,0.0,0.0,0.0,0.0,0.0
+category_last_Compresores,0.0,0.0,0.0,0.0,0.0
+category_last_Computadoras Didácticas,0.0,0.0,0.0,0.0,0.0
+category_last_Conectores,0.0,0.0,0.0,0.0,0.0
+category_last_Conjuntos,0.0,0.0,0.0,0.0,0.0
+category_last_Conjuntos Deportivos,0.0,0.0,0.0,0.0,0.0
+category_last_Conjuntos para Ciclismo,0.0,0.0,0.0,0.0,0.0
+category_last_Conos,0.0,0.0,0.0,0.0,0.0
+category_last_Conos de Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_Consolas,0.0,0.0,0.0,0.0,0.0
+category_last_Consolas de Sonido,0.0,0.0,0.0,0.0,0.0
+category_last_Contadoras de Billetes,0.0,0.0,0.0,0.0,0.0
+category_last_Contenedores de Alimento,0.0,0.0,0.0,0.0,0.0
+category_last_Controladores,0.0,0.0,0.0,0.0,0.0
+category_last_Controladores Midi,0.0,0.0,0.0,0.0,0.0
+category_last_Controladores de Asistencia,0.0,0.0,0.0,0.0,0.0
+category_last_Controles Remotos,0.0,0.0,0.0,0.0,0.0
+category_last_Controles Remotos para Portón,0.0,0.0,0.0,0.0,0.0
+category_last_Conversor,0.0,0.0,0.0,0.0,0.0
+category_last_Conversores de Audio y Video,0.0,0.0,0.0,0.0,0.0
+category_last_Conversores de TV,0.0,0.0,0.0,0.0,0.0
+category_last_Cooktop,0.0,0.0,0.0,0.0,0.0
+category_last_Coolers para PC,0.0,0.0,0.0,0.0,0.0
+category_last_Copas,0.0,0.0,0.0,0.0,0.0
+category_last_Copas Menstruales,0.0,0.0,0.0,0.0,0.0
+category_last_Corbatas,0.0,0.0,0.0,0.0,0.0
+category_last_Cordones,0.0,0.0,0.0,0.0,0.0
+category_last_Coronas y Vinchas,0.0,0.0,0.0,0.0,0.0
+category_last_Corpiños,0.0,0.0,0.0,0.0,0.0
+category_last_Correas,0.0,0.0,0.0,0.0,0.0
+category_last_Correas de Muñeca,0.0,0.0,0.0,0.0,0.0
+category_last_Correctores,0.0,0.0,0.0,0.0,0.0
+category_last_Correctores de Juanetes,0.0,0.0,0.0,0.0,0.0
+category_last_Corredoras Telescópicas,0.0,0.0,0.0,0.0,0.0
+category_last_Cortacerco,0.0,0.0,0.0,0.0,0.0
+category_last_Cortadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cortadoras de Cerámica,0.0,0.0,0.0,0.0,0.0
+category_last_Cortadoras de Concreto,0.0,0.0,0.0,0.0,0.0
+category_last_Cortadoras de Pelo,8.0,10.391429901123047,2847.22021484375,83.13143920898438,22777.76171875
+category_last_Cortadoras de Plasma,0.0,0.0,0.0,0.0,0.0
+category_last_Cortadoras de Vidrios,0.0,0.0,0.0,0.0,0.0
+category_last_Cortadoras y Trituradoras,1.0,5.0488128662109375,99.8827896118164,5.0488128662109375,99.8827896118164
+category_last_Cortantes,0.0,0.0,0.0,0.0,0.0
+category_last_Cortaplumas,0.0,0.0,0.0,0.0,0.0
+category_last_Cortinas Frigoríficas,0.0,0.0,0.0,0.0,0.0
+category_last_Cortinas de Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Cortinas de Cabello,0.0,0.0,0.0,0.0,0.0
+category_last_Cortinas y Persianas,0.0,0.0,0.0,0.0,0.0
+category_last_Crayones,0.0,0.0,0.0,0.0,0.0
+category_last_Crema para Peinar,0.0,0.0,0.0,0.0,0.0
+category_last_Cremas,0.0,0.0,0.0,0.0,0.0
+category_last_Cremas Depilatorias,0.0,0.0,0.0,0.0,0.0
+category_last_Cremas de Avellanas,0.0,0.0,0.0,0.0,0.0
+category_last_Cremas para Manos y Pies,0.0,0.0,0.0,0.0,0.0
+category_last_Criollas,0.0,0.0,0.0,0.0,0.0
+category_last_Cromados,0.0,0.0,0.0,0.0,0.0
+category_last_Cronómetros ,0.0,0.0,0.0,0.0,0.0
+category_last_Cuadernos,0.0,0.0,0.0,0.0,0.0
+category_last_Cuadros,0.0,0.0,0.0,0.0,0.0
+category_last_Cubeteras,0.0,0.0,0.0,0.0,0.0
+category_last_Cubiertas de Bicicleta,0.0,0.0,0.0,0.0,0.0
+category_last_Cubiertas para Motos,0.0,0.0,0.0,0.0,0.0
+category_last_Cubiertos,0.0,0.0,0.0,0.0,0.0
+category_last_Cubos de Hielo Reutilizables,0.0,0.0,0.0,0.0,0.0
+category_last_Cubos y Repisas,0.0,0.0,0.0,0.0,0.0
+category_last_Cubre Alfombras,0.0,0.0,0.0,0.0,0.0
+category_last_Cubre Calipers,0.0,0.0,0.0,0.0,0.0
+category_last_Cubre Manijas,0.0,0.0,0.0,0.0,0.0
+category_last_Cubre Sommier,0.0,0.0,0.0,0.0,0.0
+category_last_Cubre Volantes,0.0,0.0,0.0,0.0,0.0
+category_last_Cubrepiletas,0.0,0.0,0.0,0.0,0.0
+category_last_Cucharas Medidoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cucharas para Servir Helado,0.0,0.0,0.0,0.0,0.0
+category_last_Cuchas,0.0,0.0,0.0,0.0,0.0
+category_last_Cuchillas para Peladoras,0.0,0.0,0.0,0.0,0.0
+category_last_Cuchillería,0.0,0.0,0.0,0.0,0.0
+category_last_Cuellos,0.0,0.0,0.0,0.0,0.0
+category_last_Cuidado Corporal,0.0,0.0,0.0,0.0,0.0
+category_last_Cuidado Facial,0.0,0.0,0.0,0.0,0.0
+category_last_Cutters,0.0,0.0,0.0,0.0,0.0
+category_last_Cutters y Trinchetas,0.0,0.0,0.0,0.0,0.0
+category_last_Cámaras,1.0,6.186001777648926,7661.3017578125,6.186001777648926,7661.3017578125
+category_last_Cámaras Analógicas,0.0,0.0,0.0,0.0,0.0
+category_last_Cámaras Digitales,0.0,0.0,0.0,0.0,0.0
+category_last_Cámaras Externas,0.0,0.0,0.0,0.0,0.0
+category_last_Cámaras de Bicicleta,0.0,0.0,0.0,0.0,0.0
+category_last_Cámaras de Retroceso,0.0,0.0,0.0,0.0,0.0
+category_last_Cápsulas,0.0,0.0,0.0,0.0,0.0
+category_last_Cápsulas y Broches para Uñas,0.0,0.0,0.0,0.0,0.0
+category_last_Césped Sintético,0.0,0.0,0.0,0.0,0.0
+category_last_Cómodas y Chifoniers,0.0,0.0,0.0,0.0,0.0
+category_last_DVDs Portátiles con Pantalla,0.0,0.0,0.0,0.0,0.0
+category_last_Dardos,0.0,0.0,0.0,0.0,0.0
+category_last_De Banco,0.0,0.0,0.0,0.0,0.0
+category_last_De Mano,0.0,0.0,0.0,0.0,0.0
+category_last_De Mesa y Escritorio,0.0,0.0,0.0,0.0,0.0
+category_last_De Pared,0.0,0.0,0.0,0.0,0.0
+category_last_De Remolque,0.0,0.0,0.0,0.0,0.0
+category_last_De Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_De Tejer,0.0,0.0,0.0,0.0,0.0
+category_last_De Torsión,0.0,0.0,0.0,0.0,0.0
+category_last_Delantales de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Delineadores de Ojos,0.0,0.0,0.0,0.0,0.0
+category_last_Delineadores para Cejas,0.0,0.0,0.0,0.0,0.0
+category_last_Depiladoras Convencionales,0.0,0.0,0.0,0.0,0.0
+category_last_Depiladoras Definitivas,0.0,0.0,0.0,0.0,0.0
+category_last_Descartables,2.0,13.723876953125,1092.095703125,27.44775390625,2184.19140625
+category_last_Deshumidificadores,0.0,0.0,0.0,0.0,0.0
+category_last_Desmaquillantes,0.0,0.0,0.0,0.0,0.0
+category_last_Desodorantes,2.0,21.76220703125,5356.39990234375,43.5244140625,10712.7998046875
+category_last_Desodorantes para Piso,0.0,0.0,0.0,0.0,0.0
+category_last_Despolvillador de Yerba,0.0,0.0,0.0,0.0,0.0
+category_last_Destapa Cañerías Químicos,0.0,0.0,0.0,0.0,0.0
+category_last_Destapadores,0.0,0.0,0.0,0.0,0.0
+category_last_Destornilladores,0.0,0.0,0.0,0.0,0.0
+category_last_Detectores de Metales,0.0,0.0,0.0,0.0,0.0
+category_last_Detergentes,1.0,9.3759765625,4445.31298828125,9.3759765625,4445.31298828125
+category_last_Difusores Aromáticos,1.0,4.8955078125,6143.185546875,4.8955078125,6143.185546875
+category_last_Difusores y Softboxes,0.0,0.0,0.0,0.0,0.0
+category_last_Digitales,0.0,0.0,0.0,0.0,0.0
+category_last_Dijes,0.0,0.0,0.0,0.0,0.0
+category_last_Dijes y Medallas,0.0,0.0,0.0,0.0,0.0
+category_last_Discos Rígidos,0.0,0.0,0.0,0.0,0.0
+category_last_Discos Rígidos y SSDs,0.0,0.0,0.0,0.0,0.0
+category_last_Discos de Balance,0.0,0.0,0.0,0.0,0.0
+category_last_Discos de Corte,0.0,0.0,0.0,0.0,0.0
+category_last_Disfraces,0.0,0.0,0.0,0.0,0.0
+category_last_Disipadores,0.0,0.0,0.0,0.0,0.0
+category_last_Dispensers de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Dispensers de Bebidas,0.0,0.0,0.0,0.0,0.0
+category_last_Dispensers de Cereales,0.0,0.0,0.0,0.0,0.0
+category_last_Dispensers de Jabón,0.0,0.0,0.0,0.0,0.0
+category_last_Distribuidores,0.0,0.0,0.0,0.0,0.0
+category_last_Divisores de Frecuencia,0.0,0.0,0.0,0.0,0.0
+category_last_Domos para Cámaras de Acción,0.0,0.0,0.0,0.0,0.0
+category_last_Donuts Maker,0.0,0.0,0.0,0.0,0.0
+category_last_Dosificadores de Detergentes,0.0,0.0,0.0,0.0,0.0
+category_last_E-readers,0.0,0.0,0.0,0.0,0.0
+category_last_ECUs,0.0,0.0,0.0,0.0,0.0
+category_last_Ecualizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Electrodos,0.0,0.0,0.0,0.0,0.0
+category_last_Electroestimuladores,0.0,0.0,0.0,0.0,0.0
+category_last_Electroporador,0.0,0.0,0.0,0.0,0.0
+category_last_Elásticos,0.0,0.0,0.0,0.0,0.0
+category_last_Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Eléctricos,5.0,9.393912315368652,4905.34912109375,46.96956253051758,24526.74609375
+category_last_Elípticos,0.0,0.0,0.0,0.0,0.0
+category_last_Embragues,0.0,0.0,0.0,0.0,0.0
+category_last_Empapelados,0.0,0.0,0.0,0.0,0.0
+category_last_En Barra,0.0,0.0,0.0,0.0,0.0
+category_last_Encendedores,0.0,0.0,0.0,0.0,0.0
+category_last_Enchufe Conector,0.0,0.0,0.0,0.0,0.0
+category_last_Encurtidos y Conservas,0.0,0.0,0.0,0.0,0.0
+category_last_Enduídos y Masillas,0.0,0.0,0.0,0.0,0.0
+category_last_Engrapadoras y Clavadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Enjuague Bucal,0.0,0.0,0.0,0.0,0.0
+category_last_Ensaladeras y Bowls,0.0,0.0,0.0,0.0,0.0
+category_last_Enteritos,0.0,0.0,0.0,0.0,0.0
+"category_last_Enterizas, Bikinis y Trikinis",0.0,0.0,0.0,0.0,0.0
+category_last_Envases,0.0,0.0,0.0,0.0,0.0
+category_last_Envases Atomizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Equipos,0.0,0.0,0.0,0.0,0.0
+category_last_Equipos Móviles,0.0,0.0,0.0,0.0,0.0
+category_last_Equipos para Pintar,0.0,0.0,0.0,0.0,0.0
+category_last_Escaladores,0.0,0.0,0.0,0.0,0.0
+category_last_Escaleras,0.0,0.0,0.0,0.0,0.0
+category_last_Escaleras de Coordinación,0.0,0.0,0.0,0.0,0.0
+category_last_Escenarios y Sets para Muñecos,0.0,0.0,0.0,0.0,0.0
+category_last_Escobas y Escobillones,0.0,0.0,0.0,0.0,0.0
+category_last_Escobillas para Inodoro,0.0,0.0,0.0,0.0,0.0
+category_last_Escolares,0.0,0.0,0.0,0.0,0.0
+category_last_Escritorios,0.0,0.0,0.0,0.0,0.0
+category_last_Escuadras Magnéticas,0.0,0.0,0.0,0.0,0.0
+category_last_Escuadras de Precisión,0.0,0.0,0.0,0.0,0.0
+category_last_Escudos,0.0,0.0,0.0,0.0,0.0
+category_last_Esencia de Humo,0.0,0.0,0.0,0.0,0.0
+category_last_Esmaltes,0.0,0.0,0.0,0.0,0.0
+category_last_Esmaltes y Látex,0.0,0.0,0.0,0.0,0.0
+category_last_Espadas,0.0,0.0,0.0,0.0,0.0
+category_last_Espaldares Suecos,0.0,0.0,0.0,0.0,0.0
+category_last_Espalderas,0.0,0.0,0.0,0.0,0.0
+category_last_Especias,0.0,0.0,0.0,0.0,0.0
+category_last_Especieros,0.0,0.0,0.0,0.0,0.0
+category_last_Espejos,0.0,0.0,0.0,0.0,0.0
+category_last_Espejos Retrovisores,0.0,0.0,0.0,0.0,0.0
+category_last_Espejos para Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Esponjas,0.0,0.0,0.0,0.0,0.0
+category_last_Esponjas Faciales,0.0,0.0,0.0,0.0,0.0
+category_last_Espumas de Afeitar,0.0,0.0,0.0,0.0,0.0
+category_last_Espumas de Poliuretano,0.0,0.0,0.0,0.0,0.0
+category_last_Espátulas,0.0,0.0,0.0,0.0,0.0
+category_last_Estabilizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Estabilizadores para Cámaras,0.0,0.0,0.0,0.0,0.0
+category_last_Estaciones de Soldado,0.0,0.0,0.0,0.0,0.0
+category_last_Estanterías,0.0,0.0,0.0,0.0,0.0
+category_last_Estatuas,0.0,0.0,0.0,0.0,0.0
+category_last_Esterilizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Estetoscopios,0.0,0.0,0.0,0.0,0.0
+category_last_Estuches,0.0,0.0,0.0,0.0,0.0
+category_last_Estuches y Fundas,0.0,0.0,0.0,0.0,0.0
+category_last_Estéreos,0.0,0.0,0.0,0.0,0.0
+category_last_Etiquetadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Etiquetas,0.0,0.0,0.0,0.0,0.0
+category_last_Etiquetas Autoadhesivas,0.0,0.0,0.0,0.0,0.0
+category_last_Etiquetas de Tela,0.0,0.0,0.0,0.0,0.0
+category_last_Exfoliadores de Pies y Manos,0.0,0.0,0.0,0.0,0.0
+category_last_Exhibidoras,0.0,0.0,0.0,0.0,0.0
+category_last_Exhibidoras de Autitos,0.0,0.0,0.0,0.0,0.0
+category_last_Exprimidores Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Exprimidores Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Extensiones,0.0,0.0,0.0,0.0,0.0
+category_last_Extensiones de Pestañas,0.0,0.0,0.0,0.0,0.0
+category_last_Extractores,0.0,0.0,0.0,0.0,0.0
+category_last_Extractores de Aire,0.0,0.0,0.0,0.0,0.0
+category_last_Extractores de Tornillo,0.0,0.0,0.0,0.0,0.0
+category_last_Extractores para Baños,0.0,0.0,0.0,0.0,0.0
+category_last_Extractores y Purificadores,0.0,0.0,0.0,0.0,0.0
+category_last_Fajas,0.0,0.0,0.0,0.0,0.0
+category_last_Fajas Anti Ronquidos,0.0,0.0,0.0,0.0,0.0
+category_last_Fajas Lumbares y Abdominales,0.0,0.0,0.0,0.0,0.0
+category_last_Fajas Reductoras,0.0,0.0,0.0,0.0,0.0
+category_last_Fanales,0.0,0.0,0.0,0.0,0.0
+category_last_Faroles,0.0,0.0,0.0,0.0,0.0
+category_last_Faros Traseros,0.0,0.0,0.0,0.0,0.0
+category_last_Faros de Giro,0.0,0.0,0.0,0.0,0.0
+category_last_Fermentadores de Cerveza,0.0,0.0,0.0,0.0,0.0
+category_last_Fertilizantes,0.0,0.0,0.0,0.0,0.0
+category_last_Fichas,0.0,0.0,0.0,0.0,0.0
+category_last_Fideos,0.0,0.0,0.0,0.0,0.0
+category_last_Fidget Spinners,0.0,0.0,0.0,0.0,0.0
+category_last_Filamentos,0.0,0.0,0.0,0.0,0.0
+category_last_Filmadoras y Cámaras de Acción,1.0,3.268310546875,2405.653076171875,3.268310546875,2405.653076171875
+category_last_Filtros,0.0,0.0,0.0,0.0,0.0
+category_last_Filtros Anti-Pop,0.0,0.0,0.0,0.0,0.0
+category_last_Filtros de Aceite,0.0,0.0,0.0,0.0,0.0
+category_last_Filtros de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Filtros de Habitáculo,0.0,0.0,0.0,0.0,0.0
+category_last_Filtros para Aires Ac.,0.0,0.0,0.0,0.0,0.0
+category_last_Filtros para Lavarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Flash para Celulares,0.0,0.0,0.0,0.0,0.0
+category_last_Flashes para Cámaras,0.0,0.0,0.0,0.0,0.0
+category_last_Flautas,0.0,0.0,0.0,0.0,0.0
+category_last_Flechas,0.0,0.0,0.0,0.0,0.0
+category_last_Flores Artificiales,0.0,0.0,0.0,0.0,0.0
+category_last_Flores de Ducha,2.0,5.755550384521484,366.710205078125,11.511100769042969,733.42041015625
+category_last_Foam Roller,0.0,0.0,0.0,0.0,0.0
+category_last_Focos,0.0,0.0,0.0,0.0,0.0
+category_last_Fondue,0.0,0.0,0.0,0.0,0.0
+category_last_Fotocontroles,0.0,0.0,0.0,0.0,0.0
+category_last_Frazadas,2.0,4.8328857421875,2640.38134765625,9.665771484375,5280.7626953125
+category_last_Freezers,0.0,0.0,0.0,0.0,0.0
+category_last_Freidoras,0.0,0.0,0.0,0.0,0.0
+category_last_Fresadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Fresas,0.0,0.0,0.0,0.0,0.0
+category_last_Frigobar,0.0,0.0,0.0,0.0,0.0
+category_last_Frutas Secas,0.0,0.0,0.0,0.0,0.0
+category_last_Fuelles,0.0,0.0,0.0,0.0,0.0
+category_last_Fuentes,0.0,0.0,0.0,0.0,0.0
+category_last_Fuentes Poe,0.0,0.0,0.0,0.0,0.0
+category_last_Fuentes de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Fuentes para Pedales,0.0,0.0,0.0,0.0,0.0
+category_last_Fulares,0.0,0.0,0.0,0.0,0.0
+category_last_Fumigadores,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas Cargadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas Cobertoras,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas Cubre Bicicleta,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas de Gel,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Almohadas,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Almohadones,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Cañas,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Celulares,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Colchones,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Motos,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas para Sillones,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas y Carcasas Sumergibles,0.0,0.0,0.0,0.0,0.0
+category_last_Fundas y Estuches,0.0,0.0,0.0,0.0,0.0
+category_last_Fundidor de Cera,0.0,0.0,0.0,0.0,0.0
+category_last_Fusores,0.0,0.0,0.0,0.0,0.0
+category_last_Futones,0.0,0.0,0.0,0.0,0.0
+category_last_Gabinetes,0.0,0.0,0.0,0.0,0.0
+category_last_Gabinetes para Herramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Galletitas,0.0,0.0,0.0,0.0,0.0
+category_last_Gamepads,0.0,0.0,0.0,0.0,0.0
+category_last_Gamepads y Joysticks,0.0,0.0,0.0,0.0,0.0
+category_last_Ganchos para Cortina de Baño,0.0,0.0,0.0,0.0,0.0
+"category_last_Ganchos, Cintas y Elásticos",0.0,0.0,0.0,0.0,0.0
+category_last_Garages-Estaciones de Servicio,0.0,0.0,0.0,0.0,0.0
+category_last_Garrafas,0.0,0.0,0.0,0.0,0.0
+category_last_Gasas,0.0,0.0,0.0,0.0,0.0
+category_last_Gases Paralizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Gatillos Joystick,0.0,0.0,0.0,0.0,0.0
+category_last_Gazebos,0.0,0.0,0.0,0.0,0.0
+category_last_Gel para Uñas Esculpidas,0.0,0.0,0.0,0.0,0.0
+category_last_Gift Cards,0.0,0.0,0.0,0.0,0.0
+category_last_Gimnasios,0.0,0.0,0.0,0.0,0.0
+category_last_Gin,0.0,0.0,0.0,0.0,0.0
+category_last_Globos,0.0,0.0,0.0,0.0,0.0
+category_last_Golosinas,0.0,0.0,0.0,0.0,0.0
+category_last_Gomas de Borrar,0.0,0.0,0.0,0.0,0.0
+category_last_Gomeras,0.0,0.0,0.0,0.0,0.0
+category_last_Gorras,0.0,0.0,0.0,0.0,0.0
+category_last_Gorros,0.0,0.0,0.0,0.0,0.0
+category_last_Gorros Tácticos,0.0,0.0,0.0,0.0,0.0
+"category_last_Gorros, Sombreros y Boinas",0.0,0.0,0.0,0.0,0.0
+category_last_Grabadores DVR,0.0,0.0,0.0,0.0,0.0
+category_last_Gradillas,0.0,0.0,0.0,0.0,0.0
+category_last_Granola,0.0,0.0,0.0,0.0,0.0
+category_last_Griferías,1.0,6.2838134765625,959.8250122070312,6.2838134765625,959.8250122070312
+category_last_Griferías Convencionales,0.0,0.0,0.0,0.0,0.0
+category_last_Griferías Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Grupos Electrógenos,0.0,0.0,0.0,0.0,0.0
+category_last_Guantes,0.0,0.0,0.0,0.0,0.0
+category_last_Guantes Descartables,0.0,0.0,0.0,0.0,0.0
+category_last_Guantes de Arquero,0.0,0.0,0.0,0.0,0.0
+category_last_Guantes y Mitones,0.0,0.0,0.0,0.0,0.0
+category_last_Guardabarros,0.0,0.0,0.0,0.0,0.0
+category_last_Guardapolvos,0.0,0.0,0.0,0.0,0.0
+category_last_Gubias,0.0,0.0,0.0,0.0,0.0
+category_last_Guitarras,0.0,0.0,0.0,0.0,0.0
+category_last_Habanos,0.0,0.0,0.0,0.0,0.0
+category_last_Hachas,0.0,0.0,0.0,0.0,0.0
+category_last_Hamacas,0.0,0.0,0.0,0.0,0.0
+category_last_Hamacas Paraguayas,0.0,0.0,0.0,0.0,0.0
+category_last_Hand Grips,0.0,0.0,0.0,0.0,0.0
+category_last_Handies,0.0,0.0,0.0,0.0,0.0
+category_last_Harina,0.0,0.0,0.0,0.0,0.0
+category_last_Heladeras,0.0,0.0,0.0,0.0,0.0
+category_last_Heladeras Térmicas,0.0,0.0,0.0,0.0,0.0
+category_last_Herramientas de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_Hidrolavadoras,1.0,8.91357421875,3984.8837890625,8.91357421875,3984.8837890625
+category_last_Hidráulicos,0.0,0.0,0.0,0.0,0.0
+category_last_Hieleras,0.0,0.0,0.0,0.0,0.0
+category_last_Hilo Dental,0.0,0.0,0.0,0.0,0.0
+category_last_Hilo Eléctrico,0.0,0.0,0.0,0.0,0.0
+category_last_Hilos,0.0,0.0,0.0,0.0,0.0
+category_last_Home Theaters,0.0,0.0,0.0,0.0,0.0
+category_last_Hornos,0.0,0.0,0.0,0.0,0.0
+category_last_Hornos Industriales,0.0,0.0,0.0,0.0,0.0
+category_last_Hornos de Pan,0.0,0.0,0.0,0.0,0.0
+category_last_Hoverboards,0.0,0.0,0.0,0.0,0.0
+category_last_Hubs USB,0.0,0.0,0.0,0.0,0.0
+category_last_Huesos,0.0,0.0,0.0,0.0,0.0
+category_last_Huevitos y Sillitas para Autos,0.0,0.0,0.0,0.0,0.0
+category_last_Huevos de Pascua,0.0,0.0,0.0,0.0,0.0
+category_last_Humidores,0.0,0.0,0.0,0.0,0.0
+category_last_Humo,0.0,0.0,0.0,0.0,0.0
+category_last_Identificadores de Vasos,0.0,0.0,0.0,0.0,0.0
+category_last_Iluminación Continua,0.0,0.0,0.0,0.0,0.0
+category_last_Iluminadores,0.0,0.0,0.0,0.0,0.0
+category_last_Imanes de Neodimio,0.0,0.0,0.0,0.0,0.0
+category_last_Impresoras,0.0,0.0,0.0,0.0,0.0
+category_last_Impresoras 3D,0.0,0.0,0.0,0.0,0.0
+category_last_Impresoras de Etiquetas,0.0,0.0,0.0,0.0,0.0
+category_last_Impresoras para Celulares,0.0,0.0,0.0,0.0,0.0
+category_last_Inalámbricos,0.0,0.0,0.0,0.0,0.0
+category_last_Incubadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Individuales,0.0,0.0,0.0,0.0,0.0
+category_last_Inflables para Piscina,0.0,0.0,0.0,0.0,0.0
+category_last_Infladores Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Infladores de Mano,0.0,0.0,0.0,0.0,0.0
+category_last_Ingletadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Inmovillizadores Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Inodoros,0.0,0.0,0.0,0.0,0.0
+category_last_Insecticidas,0.0,0.0,0.0,0.0,0.0
+category_last_Interfaces de Audio,0.0,0.0,0.0,0.0,0.0
+category_last_Interfaces de Guitarras,0.0,0.0,0.0,0.0,0.0
+category_last_Interruptores Diferenciales,0.0,0.0,0.0,0.0,0.0
+category_last_Invitaciones y Tarjetas,0.0,0.0,0.0,0.0,0.0
+category_last_Ionizadores Solares,0.0,0.0,0.0,0.0,0.0
+category_last_Jabones,0.0,0.0,0.0,0.0,0.0
+category_last_Jabón Líquido para Ropa,4.0,12.987762451171875,3081.82763671875,51.9510498046875,12327.310546875
+category_last_Jabón en Polvo,0.0,0.0,0.0,0.0,0.0
+category_last_Jarras,0.0,0.0,0.0,0.0,0.0
+category_last_Jarras Eléctricas,2.0,7.955169677734375,1487.7139892578125,15.91033935546875,2975.427978515625
+category_last_Jeringas,0.0,0.0,0.0,0.0,0.0
+category_last_Jiggers,0.0,0.0,0.0,0.0,0.0
+category_last_Joysticks,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos Completos,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Arrastre,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Comedor,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Encastre,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Living,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Mate,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Mesa,1.0,11.139923095703125,278.9246826171875,11.139923095703125,278.9246826171875
+category_last_Juegos de Muebles de Jardín,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Sommier y Colchón,0.0,0.0,0.0,0.0,0.0
+category_last_Juegos de Vajilla,0.0,0.0,0.0,0.0,0.0
+category_last_Jugos Líquidos,0.0,0.0,0.0,0.0,0.0
+category_last_Jugueras,0.0,0.0,0.0,0.0,0.0
+category_last_Juguetes,0.0,0.0,0.0,0.0,0.0
+category_last_Juguetes para el Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Kartings a Pedal,0.0,0.0,0.0,0.0,0.0
+category_last_Kayaks,0.0,0.0,0.0,0.0,0.0
+category_last_Kit de Filtros,0.0,0.0,0.0,0.0,0.0
+category_last_Kit de Limpieza de Armas,0.0,0.0,0.0,0.0,0.0
+category_last_Kit de Seguridad para Autos,0.0,0.0,0.0,0.0,0.0
+category_last_Kits,0.0,0.0,0.0,0.0,0.0
+category_last_Kits - Mouse y Teclado,0.0,0.0,0.0,0.0,0.0
+category_last_Kits Depilatorios,0.0,0.0,0.0,0.0,0.0
+category_last_Kits Escolares,0.0,0.0,0.0,0.0,0.0
+category_last_Kits Imprimibles para Fiestas,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Antenas Parabólicas,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Arte para Niños,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Barras y Discos,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Bombas y Filtros,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Cuidado de la Piel,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Cuidado para Bebés,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Estéreos y Parlantes,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Herramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Limpieza de Cámaras,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Limpieza de Piscina,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Manifolds,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Monitoreo,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Rulemanes y Sellos,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Trenes Delanteros,0.0,0.0,0.0,0.0,0.0
+category_last_Kits de Xenón,0.0,0.0,0.0,0.0,0.0
+category_last_Kits para Barba,0.0,0.0,0.0,0.0,0.0
+category_last_Kits para Manicura,0.0,0.0,0.0,0.0,0.0
+category_last_Kits para Minitornos,0.0,0.0,0.0,0.0,0.0
+category_last_Kits para Uñas Gelificadas,0.0,0.0,0.0,0.0,0.0
+category_last_LED,0.0,0.0,0.0,0.0,0.0
+category_last_Labiales,0.0,0.0,0.0,0.0,0.0
+category_last_Ladrillos de Vidrio,0.0,0.0,0.0,0.0,0.0
+category_last_Ladrillos para Pilates y Yoga,0.0,0.0,0.0,0.0,0.0
+category_last_Lampazos y Mopas,5.0,16.8961181640625,4416.9326171875,84.4805908203125,22084.6640625
+category_last_Lanas,0.0,0.0,0.0,0.0,0.0
+category_last_Lapiceras,0.0,0.0,0.0,0.0,0.0
+category_last_Laptops,0.0,0.0,0.0,0.0,0.0
+category_last_Lasers,0.0,0.0,0.0,0.0,0.0
+category_last_Latas,0.0,0.0,0.0,0.0,0.0
+category_last_Latas y Botellas,0.0,0.0,0.0,0.0,0.0
+category_last_Lavandinas,0.0,0.0,0.0,0.0,0.0
+category_last_Lavarropas y Lavasecarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Lavavajillas,0.0,0.0,0.0,0.0,0.0
+category_last_Leche,0.0,0.0,0.0,0.0,0.0
+category_last_Leche Maternizada,0.0,0.0,0.0,0.0,0.0
+category_last_Lectores de Código de Barras ,0.0,0.0,0.0,0.0,0.0
+category_last_Lectores de Huellas Digitales,0.0,0.0,0.0,0.0,0.0
+category_last_Lectores de Memorias,0.0,0.0,0.0,0.0,0.0
+category_last_Lectores de Tarjetas,0.0,0.0,0.0,0.0,0.0
+category_last_Leds,0.0,0.0,0.0,0.0,0.0
+category_last_Lentes,0.0,0.0,0.0,0.0,0.0
+category_last_Lentes de Realidad Virtual,0.0,0.0,0.0,0.0,0.0
+category_last_Lentes para Ciclismo,0.0,0.0,0.0,0.0,0.0
+category_last_Lentes sin Graduación,0.0,0.0,0.0,0.0,0.0
+category_last_Leñeros,0.0,0.0,0.0,0.0,0.0
+category_last_Libros,0.0,0.0,0.0,0.0,0.0
+category_last_Licores,0.0,0.0,0.0,0.0,0.0
+category_last_Licuadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Lijadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Lijas,0.0,0.0,0.0,0.0,0.0
+category_last_Limas,0.0,0.0,0.0,0.0,0.0
+category_last_Limpia Vidrios Magnéticos,0.0,0.0,0.0,0.0,0.0
+category_last_Limpiadores Multiuso,0.0,0.0,0.0,0.0,0.0
+category_last_Limpiadores a Vapor,0.0,0.0,0.0,0.0,0.0
+category_last_Limpiadores de Cuero,0.0,0.0,0.0,0.0,0.0
+category_last_Limpiadores de Oídos,0.0,0.0,0.0,0.0,0.0
+category_last_Limpiadores de Pantallas,0.0,0.0,0.0,0.0,0.0
+category_last_Lingas,0.0,0.0,0.0,0.0,0.0
+category_last_Lingas de Equipaje,0.0,0.0,0.0,0.0,0.0
+category_last_Literas,0.0,0.0,0.0,0.0,0.0
+category_last_Llamadores de Ángeles,0.0,0.0,0.0,0.0,0.0
+category_last_Llanas y Fratachos,0.0,0.0,0.0,0.0,0.0
+category_last_Llantas de Autos y Camionetas,0.0,0.0,0.0,0.0,0.0
+category_last_Llantas para Camiones,0.0,0.0,0.0,0.0,0.0
+category_last_Llaveros,0.0,0.0,0.0,0.0,0.0
+category_last_Llaveros de Promoción,0.0,0.0,0.0,0.0,0.0
+category_last_Llaves,0.0,0.0,0.0,0.0,0.0
+category_last_Llaves Conmutadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Llaves de Impacto,0.0,0.0,0.0,0.0,0.0
+category_last_Llaves de Luz,0.0,0.0,0.0,0.0,0.0
+category_last_Localizadores de Llaves,0.0,0.0,0.0,0.0,0.0
+category_last_Lociones,0.0,0.0,0.0,0.0,0.0
+category_last_Lonas Playeras,0.0,0.0,0.0,0.0,0.0
+category_last_Longboards,0.0,0.0,0.0,0.0,0.0
+category_last_Lubricantes,0.0,0.0,0.0,0.0,0.0
+category_last_Luces,0.0,0.0,0.0,0.0,0.0
+category_last_Luces Led Profesionales,0.0,0.0,0.0,0.0,0.0
+category_last_Luces Led para Inodoros,0.0,0.0,0.0,0.0,0.0
+category_last_Luces Sumergibles,0.0,0.0,0.0,0.0,0.0
+category_last_Luces de Emergencia,0.0,0.0,0.0,0.0,0.0
+category_last_Luces de Navidad,0.0,0.0,0.0,0.0,0.0
+category_last_Luces para Piletas,0.0,0.0,0.0,0.0,0.0
+category_last_Luncheras Escolares,0.0,0.0,0.0,0.0,0.0
+category_last_Lupas,0.0,0.0,0.0,0.0,0.0
+category_last_Lustradoras,0.0,0.0,0.0,0.0,0.0
+category_last_Luxómetros,0.0,0.0,0.0,0.0,0.0
+category_last_Lámpara Solar,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas RGB,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas Repelentes,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas USB,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas de Lava,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas de Pared,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas de Pie,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas de Sal,0.0,0.0,0.0,0.0,0.0
+category_last_Lámparas de Techo,0.0,0.0,0.0,0.0,0.0
+category_last_Lápices,0.0,0.0,0.0,0.0,0.0
+category_last_Lápices Detectores,0.0,0.0,0.0,0.0,0.0
+category_last_Lápices Ópticos,0.0,0.0,0.0,0.0,0.0
+category_last_Lásers Profesionales,0.0,0.0,0.0,0.0,0.0
+category_last_Líquido,0.0,0.0,0.0,0.0,0.0
+category_last_Líquidos,0.0,0.0,0.0,0.0,0.0
+category_last_Macetas,0.0,0.0,0.0,0.0,0.0
+category_last_Maceteros,0.0,0.0,0.0,0.0,0.0
+category_last_Machetes,0.0,0.0,0.0,0.0,0.0
+category_last_Maletines,0.0,0.0,0.0,0.0,0.0
+category_last_Maletines de Herramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Maletines de Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Mallas,0.0,0.0,0.0,0.0,0.0
+category_last_Mamaderas,0.0,0.0,0.0,0.0,0.0
+category_last_Mamushkas,0.0,0.0,0.0,0.0,0.0
+category_last_Mancuernas y Pesas,0.0,0.0,0.0,0.0,0.0
+category_last_Manga,0.0,0.0,0.0,0.0,0.0
+category_last_Mangas Pasteleras,0.0,0.0,0.0,0.0,0.0
+category_last_Mangas de Compresión,0.0,0.0,0.0,0.0,0.0
+category_last_Mangueras,0.0,0.0,0.0,0.0,0.0
+category_last_Mangueras de Admisión,0.0,0.0,0.0,0.0,0.0
+category_last_Manijas,0.0,0.0,0.0,0.0,0.0
+category_last_Manijas y Picaportes de Puerta,0.0,0.0,0.0,0.0,0.0
+category_last_Manijones,0.0,0.0,0.0,0.0,0.0
+category_last_Manoplas,0.0,0.0,0.0,0.0,0.0
+category_last_Mantas,0.0,0.0,0.0,0.0,0.0
+category_last_Mantas para Sillones,0.0,0.0,0.0,0.0,0.0
+category_last_Manteles,0.0,0.0,0.0,0.0,0.0
+category_last_Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Marcadores y Resaltadores,0.0,0.0,0.0,0.0,0.0
+category_last_Marcos de Anteojos,0.0,0.0,0.0,0.0,0.0
+category_last_Marcos para Espejos,0.0,0.0,0.0,0.0,0.0
+category_last_Marcos para Estéreos,0.0,0.0,0.0,0.0,0.0
+category_last_Martillos,0.0,0.0,0.0,0.0,0.0
+category_last_Martillos Demoledores,0.0,0.0,0.0,0.0,0.0
+category_last_Masas y Plastilina,0.0,0.0,0.0,0.0,0.0
+category_last_Matafuegos,0.0,0.0,0.0,0.0,0.0
+category_last_Mates,0.0,0.0,0.0,0.0,0.0
+category_last_Mats,0.0,0.0,0.0,0.0,0.0
+category_last_Mazas,0.0,0.0,0.0,0.0,0.0
+category_last_Mazas de Ruedas,0.0,0.0,0.0,0.0,0.0
+category_last_Mechas,0.0,0.0,0.0,0.0,0.0
+category_last_Medallas,0.0,0.0,0.0,0.0,0.0
+category_last_Media Streaming,0.0,0.0,0.0,0.0,0.0
+category_last_Medias,0.0,0.0,0.0,0.0,0.0
+category_last_Medias de Compresión,0.0,0.0,0.0,0.0,0.0
+category_last_Medias de Fútbol,0.0,0.0,0.0,0.0,0.0
+category_last_Medias de Neoprene,0.0,0.0,0.0,0.0,0.0
+category_last_Medias de Trabajo,0.0,0.0,0.0,0.0,0.0
+category_last_Medicine Balls,0.0,0.0,0.0,0.0,0.0
+category_last_Medidores,0.0,0.0,0.0,0.0,0.0
+category_last_Medidores de Distancia,0.0,0.0,0.0,0.0,0.0
+category_last_Medidores de Humedad,0.0,0.0,0.0,0.0,0.0
+category_last_Medidores de Ph,0.0,0.0,0.0,0.0,0.0
+category_last_Megáfonos,0.0,0.0,0.0,0.0,0.0
+category_last_Melódicas,0.0,0.0,0.0,0.0,0.0
+category_last_Membrana Asfáltica,0.0,0.0,0.0,0.0,0.0
+category_last_Memorias,0.0,0.0,0.0,0.0,0.0
+category_last_Memorias RAM,0.0,0.0,0.0,0.0,0.0
+category_last_Mermeladas,0.0,0.0,0.0,0.0,0.0
+category_last_Mesadas,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas Didácticas,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas Laterales,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas Ratonas,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas de Apoyo,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas de Camping,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas de Comedor y Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas de Computación,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas de Jardín,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas de Luz,0.0,0.0,0.0,0.0,0.0
+category_last_Mesas y Sillas para Niños,0.0,0.0,0.0,0.0,0.0
+category_last_Metegoles,0.0,0.0,0.0,0.0,0.0
+category_last_Metrónomos,0.0,0.0,0.0,0.0,0.0
+category_last_Microdermoabrasión,0.0,0.0,0.0,0.0,0.0
+category_last_Microondas,0.0,0.0,0.0,0.0,0.0
+category_last_Microscopios,0.0,0.0,0.0,0.0,0.0
+category_last_Micrófonos,0.0,0.0,0.0,0.0,0.0
+category_last_Micrófonos de Karaoke,0.0,0.0,0.0,0.0,0.0
+category_last_Mineras,0.0,0.0,0.0,0.0,0.0
+category_last_Mini Compresores,0.0,0.0,0.0,0.0,0.0
+category_last_Mini Drones,0.0,0.0,0.0,0.0,0.0
+category_last_Mini Estudios Fotográficos,0.0,0.0,0.0,0.0,0.0
+category_last_Minicomponentes,0.0,0.0,0.0,0.0,0.0
+category_last_Minipimers,0.0,0.0,0.0,0.0,0.0
+category_last_Minitornos,0.0,0.0,0.0,0.0,0.0
+category_last_Mixers de DJs,0.0,0.0,0.0,0.0,0.0
+category_last_Mocasines y Oxfords,0.0,0.0,0.0,0.0,0.0
+category_last_Mochilas,1.0,7.213465213775635,7528.29345703125,7.213465213775635,7528.29345703125
+category_last_Mochilas y Bolsos,0.0,0.0,0.0,0.0,0.0
+category_last_Mochilas y Bolsos Maternales,0.0,0.0,0.0,0.0,0.0
+category_last_Modelado y Peinado,0.0,0.0,0.0,0.0,0.0
+category_last_Moisés y Catres,0.0,0.0,0.0,0.0,0.0
+category_last_Moldes,0.0,0.0,0.0,0.0,0.0
+category_last_Moldes de Jardín,0.0,0.0,0.0,0.0,0.0
+category_last_Moldes para Uñas Esculpidas,0.0,0.0,0.0,0.0,0.0
+category_last_Molduras,0.0,0.0,0.0,0.0,0.0
+category_last_Molinillos de Granos Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Monitores,0.0,0.0,0.0,0.0,0.0
+category_last_Monitores de Estudio,0.0,0.0,0.0,0.0,0.0
+category_last_Monitores de Vigilancia,0.0,0.0,0.0,0.0,0.0
+category_last_Monopatines,0.0,0.0,0.0,0.0,0.0
+category_last_Monopies,0.0,0.0,0.0,0.0,0.0
+category_last_Mordillos,0.0,0.0,0.0,0.0,0.0
+category_last_Morrales,0.0,0.0,0.0,0.0,0.0
+category_last_Morsas,0.0,0.0,0.0,0.0,0.0
+category_last_Morteros,0.0,0.0,0.0,0.0,0.0
+category_last_Mosquetones,0.0,0.0,0.0,0.0,0.0
+category_last_Mosquiteros,0.0,0.0,0.0,0.0,0.0
+category_last_Motherboards,0.0,0.0,0.0,0.0,0.0
+category_last_Motobombas,0.0,0.0,0.0,0.0,0.0
+category_last_Motocultivadores,0.0,0.0,0.0,0.0,0.0
+category_last_Motores,0.0,0.0,0.0,0.0,0.0
+category_last_Motores Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Motores para Lavarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Motores para Portón,0.0,0.0,0.0,0.0,0.0
+category_last_Motos,0.0,0.0,0.0,0.0,0.0
+category_last_Motosierras Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Motosierras a Explosión,0.0,0.0,0.0,0.0,0.0
+category_last_Mouse Pads,0.0,0.0,0.0,0.0,0.0
+category_last_Mouses,0.0,0.0,0.0,0.0,0.0
+category_last_Muebles para Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Muebles para TV,0.0,0.0,0.0,0.0,0.0
+category_last_Multigimnasios,0.0,0.0,0.0,0.0,0.0
+category_last_Multímetros,0.0,0.0,0.0,0.0,0.0
+category_last_Muñecas y Bebotes,0.0,0.0,0.0,0.0,0.0
+category_last_Muñecos de Estimulación,0.0,0.0,0.0,0.0,0.0
+category_last_Muñecos y Figuras de Acción,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas Detectoras,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas Multijuegos,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas de Copos de Nieve,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas de Coser,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas de Cupcakes,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas de Helado,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas para Broches,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas para Helados,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas para Pastas,4.0,5.671417236328125,2539.321044921875,22.6856689453125,10157.2841796875
+category_last_Máquinas para Pochoclo,0.0,0.0,0.0,0.0,0.0
+category_last_Máquinas para Soda,0.0,0.0,0.0,0.0,0.0
+category_last_Máscaras,0.0,0.0,0.0,0.0,0.0
+category_last_Máscaras Faciales,0.0,0.0,0.0,0.0,0.0
+category_last_Máscaras de Respiración,0.0,0.0,0.0,0.0,0.0
+category_last_Máscaras para Entrenamiento,0.0,0.0,0.0,0.0,0.0
+category_last_Máscaras para Pies,0.0,0.0,0.0,0.0,0.0
+category_last_Máscaras para Soldar,6.0,14.877665519714355,2598.37890625,89.2659912109375,15590.2734375
+category_last_Módulos de Luces,0.0,0.0,0.0,0.0,0.0
+category_last_Música,0.0,0.0,0.0,0.0,0.0
+category_last_Naipes de Poker,0.0,0.0,0.0,0.0,0.0
+category_last_Narguiles,0.0,0.0,0.0,0.0,0.0
+category_last_Navajas de Afeitar,0.0,0.0,0.0,0.0,0.0
+category_last_Navajas y Cuchillos,0.0,0.0,0.0,0.0,0.0
+category_last_Navajas y Cuchillos Antiguos,1.0,14.15863037109375,1288.4134521484375,14.15863037109375,1288.4134521484375
+category_last_Navegadores Náuticos,0.0,0.0,0.0,0.0,0.0
+category_last_Nebulizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Neceseres,0.0,0.0,0.0,0.0,0.0
+category_last_Neon,0.0,0.0,0.0,0.0,0.0
+category_last_Neumaticas,0.0,0.0,0.0,0.0,0.0
+category_last_Neumáticos de Auto y Camioneta,0.0,0.0,0.0,0.0,0.0
+category_last_Nido de Contención,0.0,0.0,0.0,0.0,0.0
+category_last_Nivel Láser,0.0,0.0,0.0,0.0,0.0
+category_last_Nivel Óptico,0.0,0.0,0.0,0.0,0.0
+category_last_Niveladores de Porcelanato,0.0,0.0,0.0,0.0,0.0
+category_last_Notas Adhesivas,0.0,0.0,0.0,0.0,0.0
+category_last_Notebooks,0.0,0.0,0.0,0.0,0.0
+category_last_Nylons,0.0,0.0,0.0,0.0,0.0
+category_last_Números Residenciales,0.0,0.0,0.0,0.0,0.0
+category_last_Ojales,0.0,0.0,0.0,0.0,0.0
+category_last_Oleo Calcáreo,0.0,0.0,0.0,0.0,0.0
+category_last_Ollas,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores Colgantes,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Alacena,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Bacha,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Cartera,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Cubiertos,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Escobas,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Escritorio,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Herramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Pañales,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Ropa Interior,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores de Valijas,0.0,0.0,0.0,0.0,0.0
+category_last_Organizadores para Cochecitos,0.0,0.0,0.0,0.0,0.0
+category_last_Otras,0.0,0.0,0.0,0.0,0.0
+category_last_Otras Armas,0.0,0.0,0.0,0.0,0.0
+category_last_Otras Herramientas,0.0,0.0,0.0,0.0,0.0
+category_last_Otras Infusiones,0.0,0.0,0.0,0.0,0.0
+category_last_Otras Linternas,0.0,0.0,0.0,0.0,0.0
+category_last_Otras Piletas,0.0,0.0,0.0,0.0,0.0
+category_last_Otras Prendas,0.0,0.0,0.0,0.0,0.0
+category_last_Otros,3.0,12.032355308532715,549.8792724609375,36.09706497192383,1649.6378173828125
+category_last_Otros Accesorios,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Artículos,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Cables,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Componentes,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Frenos,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Herrajes,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Instrumentos,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Masajeadores,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Materiales,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Repuestos,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Tipos,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Utensilios de Jardinería,0.0,0.0,0.0,0.0,0.0
+category_last_Otros Zapatos,0.0,0.0,0.0,0.0,0.0
+category_last_Oxímetros,0.0,0.0,0.0,0.0,0.0
+category_last_Ozonizadores,0.0,0.0,0.0,0.0,0.0
+category_last_PC,0.0,0.0,0.0,0.0,0.0
+category_last_Pads,0.0,0.0,0.0,0.0,0.0
+category_last_Pads de Práctica,0.0,0.0,0.0,0.0,0.0
+category_last_Paelleras,0.0,0.0,0.0,0.0,0.0
+category_last_Palas,0.0,0.0,0.0,0.0,0.0
+category_last_Palas de Basura,0.0,0.0,0.0,0.0,0.0
+category_last_Palas y Espátulas,0.0,0.0,0.0,0.0,0.0
+category_last_Paletas,0.0,0.0,0.0,0.0,0.0
+category_last_Paletas Playeras,0.0,0.0,0.0,0.0,0.0
+category_last_Palillos,0.0,0.0,0.0,0.0,0.0
+category_last_Palmetas y Focos,0.0,0.0,0.0,0.0,0.0
+category_last_Palos,0.0,0.0,0.0,0.0,0.0
+category_last_Pancheras,0.0,0.0,0.0,0.0,0.0
+category_last_Panquequeras,0.0,0.0,0.0,0.0,0.0
+category_last_Pantallas,0.0,0.0,0.0,0.0,0.0
+category_last_Pantallas para Lámparas,0.0,0.0,0.0,0.0,0.0
+category_last_Pantalones,2.0,6.52618408203125,4561.4794921875,13.0523681640625,9122.958984375
+category_last_Pantalones Largos,0.0,0.0,0.0,0.0,0.0
+category_last_Pantalones y Jeans,0.0,0.0,0.0,0.0,0.0
+category_last_Pantalones y Joggings,0.0,0.0,0.0,0.0,0.0
+"category_last_Pantalones, Jeans y Joggings",0.0,0.0,0.0,0.0,0.0
+category_last_Panties,0.0,0.0,0.0,0.0,0.0
+category_last_Pantuflas,0.0,0.0,0.0,0.0,0.0
+category_last_Papel Aluminio,0.0,0.0,0.0,0.0,0.0
+category_last_Papel Film,0.0,0.0,0.0,0.0,0.0
+category_last_Papeles,0.0,0.0,0.0,0.0,0.0
+category_last_Papeles Hectográficos,0.0,0.0,0.0,0.0,0.0
+category_last_Papeles Higiénicos,0.0,0.0,0.0,0.0,0.0
+category_last_Papilla,0.0,0.0,0.0,0.0,0.0
+category_last_Para Auriculares,0.0,0.0,0.0,0.0,0.0
+category_last_Para Cámaras Instantáneas,0.0,0.0,0.0,0.0,0.0
+category_last_Para Guitarras,0.0,0.0,0.0,0.0,0.0
+category_last_Para Lavarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Para TV,0.0,0.0,0.0,0.0,0.0
+category_last_Paraguas,0.0,0.0,0.0,0.0,0.0
+category_last_Parches,0.0,0.0,0.0,0.0,0.0
+category_last_Parches y Escudos,0.0,0.0,0.0,0.0,0.0
+category_last_Parlantes,0.0,0.0,0.0,0.0,0.0
+category_last_Parlantes Externos,0.0,0.0,0.0,0.0,0.0
+category_last_Parlantes Portátiles,0.0,0.0,0.0,0.0,0.0
+category_last_Parlantes y Bafles,2.0,3.5848388671875,4974.4228515625,7.169677734375,9948.845703125
+category_last_Parrillas Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Parrillas para Hornallas,0.0,0.0,0.0,0.0,0.0
+category_last_Pasadores,0.0,0.0,0.0,0.0,0.0
+category_last_Pastas de Dientes,0.0,0.0,0.0,0.0,0.0
+category_last_Pata Pata,0.0,0.0,0.0,0.0,0.0
+category_last_Patines y Rollers,0.0,0.0,0.0,0.0,0.0
+category_last_Pavas,0.0,0.0,0.0,0.0,0.0
+category_last_Pañales,0.0,0.0,0.0,0.0,0.0
+category_last_Pañales para Adultos,0.0,0.0,0.0,0.0,0.0
+category_last_Paños,0.0,0.0,0.0,0.0,0.0
+category_last_Paños de Joyería,0.0,0.0,0.0,0.0,0.0
+category_last_Pañuelos Descartables,0.0,0.0,0.0,0.0,0.0
+category_last_Pecheras,0.0,0.0,0.0,0.0,0.0
+category_last_Pecheras de Entrenamiento,0.0,0.0,0.0,0.0,0.0
+category_last_Pedalboards,0.0,0.0,0.0,0.0,0.0
+category_last_Pedaleras,0.0,0.0,0.0,0.0,0.0
+category_last_Pedales,0.0,0.0,0.0,0.0,0.0
+category_last_Pedales y Pedaleras de Efectos,0.0,0.0,0.0,0.0,0.0
+category_last_Pegamentos,0.0,0.0,0.0,0.0,0.0
+category_last_Pegamentos Universales,0.0,0.0,0.0,0.0,0.0
+category_last_Peines,0.0,0.0,0.0,0.0,0.0
+category_last_Peines Barberos,0.0,0.0,0.0,0.0,0.0
+category_last_Peines y Cepillos,0.0,0.0,0.0,0.0,0.0
+category_last_Peladoras Caninas,0.0,0.0,0.0,0.0,0.0
+category_last_Pelapapas,0.0,0.0,0.0,0.0,0.0
+category_last_Pelelas,0.0,0.0,0.0,0.0,0.0
+category_last_Pelotas,0.0,0.0,0.0,0.0,0.0
+category_last_Pelotas Playeras,0.0,0.0,0.0,0.0,0.0
+category_last_Pelotas para Peloteros,0.0,0.0,0.0,0.0,0.0
+category_last_Peloteros,0.0,0.0,0.0,0.0,0.0
+category_last_Pelucas,0.0,0.0,0.0,0.0,0.0
+category_last_Peluches,0.0,0.0,0.0,0.0,0.0
+category_last_Pendrives,0.0,0.0,0.0,0.0,0.0
+category_last_Peras de Boxeo,0.0,0.0,0.0,0.0,0.0
+category_last_Perchas,0.0,0.0,0.0,0.0,0.0
+category_last_Percheros,0.0,0.0,0.0,0.0,0.0
+category_last_Perfumeros,0.0,0.0,0.0,0.0,0.0
+category_last_Perfumes,0.0,0.0,0.0,0.0,0.0
+category_last_Perfumes para Ropa,0.0,0.0,0.0,0.0,0.0
+category_last_Perillas,0.0,0.0,0.0,0.0,0.0
+category_last_Persianas,0.0,0.0,0.0,0.0,0.0
+category_last_Pestañas Postizas,0.0,0.0,0.0,0.0,0.0
+category_last_Pianos Digitales,0.0,0.0,0.0,0.0,0.0
+category_last_Pianos y Organos,0.0,0.0,0.0,0.0,0.0
+category_last_Picadoras de Carne Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Picanas,0.0,0.0,0.0,0.0,0.0
+category_last_Piedras Energéticas,0.0,0.0,0.0,0.0,0.0
+category_last_Piedras Sanitarias,0.0,0.0,0.0,0.0,0.0
+category_last_Piercings,0.0,0.0,0.0,0.0,0.0
+category_last_Pies,0.0,0.0,0.0,0.0,0.0
+category_last_Pies de Apoyo,0.0,0.0,0.0,0.0,0.0
+category_last_Pies de Micrófono,0.0,0.0,0.0,0.0,0.0
+category_last_Pies y Soportes,0.0,0.0,0.0,0.0,0.0
+category_last_Pijamas,0.0,0.0,0.0,0.0,0.0
+category_last_Pilas,0.0,0.0,0.0,0.0,0.0
+category_last_Piletas Inflables,0.0,0.0,0.0,0.0,0.0
+category_last_Piletas de Lona,0.0,0.0,0.0,0.0,0.0
+category_last_Pinceles,0.0,0.0,0.0,0.0,0.0
+category_last_Pinceles para Uñas,0.0,0.0,0.0,0.0,0.0
+category_last_Pins,0.0,0.0,0.0,0.0,0.0
+category_last_Pinturas Protectoras,0.0,0.0,0.0,0.0,0.0
+category_last_Pinturas en Aerosol,0.0,0.0,0.0,0.0,0.0
+category_last_Pinturas para Ladrillos,0.0,0.0,0.0,0.0,0.0
+category_last_Pinturas para Pisos,0.0,0.0,0.0,0.0,0.0
+category_last_Pinturas para Techos,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Amperimétricas,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Boga Grip,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Crimpeadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Multifunción,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Odontológicas,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Pelacables,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Pico de Loro,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas Universales,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas de Presión,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas de Punta,0.0,0.0,0.0,0.0,0.0
+category_last_Pinzas para Caravanas,0.0,0.0,0.0,0.0,0.0
+category_last_Pirograbadores,0.0,0.0,0.0,0.0,0.0
+category_last_Pisco,0.0,0.0,0.0,0.0,0.0
+category_last_Pisos Vinílicos,0.0,0.0,0.0,0.0,0.0
+category_last_Pisos de Goma,0.0,0.0,0.0,0.0,0.0
+category_last_Pisos de Madera,0.0,0.0,0.0,0.0,0.0
+category_last_Pisos de Piedra,0.0,0.0,0.0,0.0,0.0
+category_last_Pistas y Lanzadores de Autos,0.0,0.0,0.0,0.0,0.0
+category_last_Pistolas Encoladoras,0.0,0.0,0.0,0.0,0.0
+category_last_Pistolas Etiquetadoras de Ropa,0.0,0.0,0.0,0.0,0.0
+category_last_Pistolas de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Pistolas de Calor,0.0,0.0,0.0,0.0,0.0
+category_last_Pistolas para Pintar,0.0,0.0,0.0,0.0,0.0
+category_last_Pistolas y Escopetas,0.0,0.0,0.0,0.0,0.0
+category_last_Pizarras,0.0,0.0,0.0,0.0,0.0
+category_last_Pizarras Mágicas,0.0,0.0,0.0,0.0,0.0
+category_last_Pizarras Tácticas,0.0,0.0,0.0,0.0,0.0
+category_last_Pizarras y Pizarrones,0.0,0.0,0.0,0.0,0.0
+category_last_Piñatas,0.0,0.0,0.0,0.0,0.0
+category_last_Placares y Roperos,0.0,0.0,0.0,0.0,0.0
+category_last_Placas MDF,0.0,0.0,0.0,0.0,0.0
+category_last_Placas de Construcción,0.0,0.0,0.0,0.0,0.0
+category_last_Placas de Red,0.0,0.0,0.0,0.0,0.0
+category_last_Placas de Sonido,0.0,0.0,0.0,0.0,0.0
+category_last_Placas de Video,0.0,0.0,0.0,0.0,0.0
+category_last_Planchas,4.0,2.85302734375,6613.77294921875,11.412109375,26455.091796875
+category_last_Planchas de Corte,0.0,0.0,0.0,0.0,0.0
+category_last_Planchitas de Pelo,0.0,0.0,0.0,0.0,0.0
+category_last_Plantas,0.0,0.0,0.0,0.0,0.0
+category_last_Plantas Artificiales,0.0,0.0,0.0,0.0,0.0
+category_last_Plantillas,1.0,7.571441650390625,680.5591430664062,7.571441650390625,680.5591430664062
+category_last_Plaquetas para Heladeras,0.0,0.0,0.0,0.0,0.0
+category_last_Plaquetas para Lavarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Plastificadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Platillos,0.0,0.0,0.0,0.0,0.0
+category_last_Platos,0.0,0.0,0.0,0.0,0.0
+category_last_Plomadas,0.0,0.0,0.0,0.0,0.0
+category_last_Pluviómetros Analógicos,0.0,0.0,0.0,0.0,0.0
+category_last_Pochocleras,1.0,6.314453125,3181.170166015625,6.314453125,3181.170166015625
+category_last_Pochoclos,0.0,0.0,0.0,0.0,0.0
+category_last_Polarizado,0.0,0.0,0.0,0.0,0.0
+category_last_Poleas,0.0,0.0,0.0,0.0,0.0
+category_last_Poleas de Alternador,0.0,0.0,0.0,0.0,0.0
+category_last_Poleas de Cigüeñal,0.0,0.0,0.0,0.0,0.0
+category_last_Polleras,0.0,0.0,0.0,0.0,0.0
+category_last_Polvos,0.0,0.0,0.0,0.0,0.0
+category_last_Porcelanatos,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Bicicletas para Auto,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Caramañolas,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Celulares,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Cepillos de Dientes,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Cereales,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Chupetes,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Credenciales,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Documentos y Tarjetas,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Fusiles,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Latas y Botellas,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Llaves,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Macetas,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Mamaderas,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Papel Higiénico,0.0,0.0,0.0,0.0,0.0
+category_last_Porta Sahumerios,0.0,0.0,0.0,0.0,0.0
+category_last_Portaequipajes,0.0,0.0,0.0,0.0,0.0
+category_last_Portafolios,0.0,0.0,0.0,0.0,0.0
+category_last_Portalámparas,0.0,0.0,0.0,0.0,0.0
+category_last_Portaminas,0.0,0.0,0.0,0.0,0.0
+category_last_Portarretratos,0.0,0.0,0.0,0.0,0.0
+category_last_Portavelas,0.0,0.0,0.0,0.0,0.0
+category_last_Porteros Eléctricos,0.0,0.0,0.0,0.0,0.0
+category_last_Portátiles,1.0,3.36181640625,5006.92822265625,3.36181640625,5006.92822265625
+category_last_Post Solar,0.0,0.0,0.0,0.0,0.0
+category_last_Posters,0.0,0.0,0.0,0.0,0.0
+category_last_Pouchs,0.0,0.0,0.0,0.0,0.0
+category_last_Practicunas,0.0,0.0,0.0,0.0,0.0
+category_last_Preamplificadores,0.0,0.0,0.0,0.0,0.0
+category_last_Precintos,0.0,0.0,0.0,0.0,0.0
+category_last_Precintos Manuales,0.0,0.0,0.0,0.0,0.0
+category_last_Prendedores y Broches,0.0,0.0,0.0,0.0,0.0
+category_last_Prensas Esquineras,0.0,0.0,0.0,0.0,0.0
+category_last_Prensas Sargento,0.0,0.0,0.0,0.0,0.0
+category_last_Prensatelas,0.0,0.0,0.0,0.0,0.0
+category_last_Presentadores de Diapositivas,0.0,0.0,0.0,0.0,0.0
+category_last_Primer de Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Probadores de Baterías,0.0,0.0,0.0,0.0,0.0
+category_last_Procesadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Procesadores,0.0,0.0,0.0,0.0,0.0
+category_last_Productos Post Afeitar,0.0,0.0,0.0,0.0,0.0
+category_last_Programador de Riegos,0.0,0.0,0.0,0.0,0.0
+category_last_Protección de Superficies,0.0,0.0,0.0,0.0,0.0
+category_last_Protector Solar,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores Auditivos,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores Bucales,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores Cervicales,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores Diarios,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores Faciales,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores Mamarios,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores de Esquinas,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores de Juanetes,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores de Lluvia,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores de Pantalla,0.0,0.0,0.0,0.0,0.0
+category_last_Protectores de Pie,0.0,0.0,0.0,0.0,0.0
+category_last_Provoleteras,0.0,0.0,0.0,0.0,0.0
+category_last_Proyectores,0.0,0.0,0.0,0.0,0.0
+category_last_Puertas de Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_Puffs,0.0,0.0,0.0,0.0,0.0
+category_last_Pulidoras,0.0,0.0,0.0,0.0,0.0
+category_last_Pulidoras de Banco,0.0,0.0,0.0,0.0,0.0
+category_last_Pulpas de Fruta,0.0,0.0,0.0,0.0,0.0
+category_last_Pulseras,0.0,0.0,0.0,0.0,0.0
+category_last_Pulsómetros ,0.0,0.0,0.0,0.0,0.0
+category_last_Pulverizadores a Explosión,0.0,0.0,0.0,0.0,0.0
+category_last_Puntas de Ejes,0.0,0.0,0.0,0.0,0.0
+category_last_Punteros Láser,0.0,0.0,0.0,0.0,0.0
+category_last_Pupitres,0.0,0.0,0.0,0.0,0.0
+category_last_Purificadores de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Péndulos,0.0,0.0,0.0,0.0,0.0
+category_last_Quillas,0.0,0.0,0.0,0.0,0.0
+category_last_Quitaesmaltes,0.0,0.0,0.0,0.0,0.0
+category_last_Racks para Servidores,0.0,0.0,0.0,0.0,0.0
+category_last_Radiadores de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Radio Despertadores,0.0,0.0,0.0,0.0,0.0
+category_last_Radiofrecuencia Estética,0.0,0.0,0.0,0.0,0.0
+category_last_Radiograbadores,0.0,0.0,0.0,0.0,0.0
+category_last_Radios AM/FM,0.0,0.0,0.0,0.0,0.0
+category_last_Ralladores,0.0,0.0,0.0,0.0,0.0
+category_last_Raquetas de Tenis y Squash,0.0,0.0,0.0,0.0,0.0
+"category_last_Raqueteros, Bolsos y Fundas",0.0,0.0,0.0,0.0,0.0
+category_last_Recargas de Tinta,0.0,0.0,0.0,0.0,0.0
+category_last_Receptores Satelitales,0.0,0.0,0.0,0.0,0.0
+category_last_Redes,0.0,0.0,0.0,0.0,0.0
+category_last_Redes de Pesca,0.0,0.0,0.0,0.0,0.0
+category_last_Redoblantes,0.0,0.0,0.0,0.0,0.0
+category_last_Reductores,0.0,0.0,0.0,0.0,0.0
+category_last_Reeles,0.0,0.0,0.0,0.0,0.0
+category_last_Reflectores Cuarzo,0.0,0.0,0.0,0.0,0.0
+category_last_Reglas de Precisión,0.0,0.0,0.0,0.0,0.0
+category_last_Rejillas,0.0,0.0,0.0,0.0,0.0
+category_last_Rellenables,0.0,0.0,0.0,0.0,0.0
+category_last_Reloj de Pulsera,0.0,0.0,0.0,0.0,0.0
+category_last_Relojes Despertadores,0.0,0.0,0.0,0.0,0.0
+category_last_Relojes Pulsera,0.0,0.0,0.0,0.0,0.0
+category_last_Relojes de Pared,0.0,0.0,0.0,0.0,0.0
+category_last_Remachadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Remeras,0.0,0.0,0.0,0.0,0.0
+category_last_Remeras y Chombas,0.0,0.0,0.0,0.0,0.0
+"category_last_Remeras, Musculosas y Chombas",0.0,0.0,0.0,0.0,0.0
+category_last_Removedores de Pintura,0.0,0.0,0.0,0.0,0.0
+category_last_Removedores de Rayones,0.0,0.0,0.0,0.0,0.0
+category_last_Repasadores,0.0,0.0,0.0,0.0,0.0
+category_last_Repelentes Líquidos,0.0,0.0,0.0,0.0,0.0
+category_last_Reposeras,0.0,0.0,0.0,0.0,0.0
+category_last_Repuestos,0.0,0.0,0.0,0.0,0.0
+category_last_Repuestos de Hojas,0.0,0.0,0.0,0.0,0.0
+category_last_Repuestos para Mopas,0.0,0.0,0.0,0.0,0.0
+category_last_Repuestos para Piletas,0.0,0.0,0.0,0.0,0.0
+category_last_Repuestos y Accesorios,0.0,0.0,0.0,0.0,0.0
+category_last_Repujadores de Cutículas,0.0,0.0,0.0,0.0,0.0
+category_last_Resortes a Gas,0.0,0.0,0.0,0.0,0.0
+category_last_Retazos de Tela,0.0,0.0,0.0,0.0,0.0
+category_last_Retenes para Lavarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Revestimientos Texturados,0.0,0.0,0.0,0.0,0.0
+category_last_Revistas,0.0,0.0,0.0,0.0,0.0
+category_last_Rieles para Cortinas,0.0,0.0,0.0,0.0,0.0
+category_last_Riñoneras,0.0,0.0,0.0,0.0,0.0
+category_last_Robots,0.0,0.0,0.0,0.0,0.0
+category_last_Rockolas,0.0,0.0,0.0,0.0,0.0
+category_last_Rodilleras,0.0,0.0,0.0,0.0,0.0
+category_last_Rodilleras de Voley,0.0,0.0,0.0,0.0,0.0
+category_last_Rodillos,0.0,0.0,0.0,0.0,0.0
+category_last_Rodillos de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Rodillos de Microagujas,0.0,0.0,0.0,0.0,0.0
+category_last_Rollos Aislantes,0.0,0.0,0.0,0.0,0.0
+category_last_Rollos de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Rollos de Embalaje,0.0,0.0,0.0,0.0,0.0
+category_last_Rollos de Tela,0.0,0.0,0.0,0.0,0.0
+category_last_Rollos para Etiquetadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Rompecabezas,0.0,0.0,0.0,0.0,0.0
+category_last_Ron,0.0,0.0,0.0,0.0,0.0
+category_last_Ropa para Muñecas,0.0,0.0,0.0,0.0,0.0
+category_last_Rosarios,0.0,0.0,0.0,0.0,0.0
+category_last_Rotomartillos,0.0,0.0,0.0,0.0,0.0
+category_last_Routers,0.0,0.0,0.0,0.0,0.0
+category_last_Routers y Fresadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Rubik,0.0,0.0,0.0,0.0,0.0
+category_last_Rubores,0.0,0.0,0.0,0.0,0.0
+category_last_Rueda para Abdominales,0.0,0.0,0.0,0.0,0.0
+category_last_Ruedas,0.0,0.0,0.0,0.0,0.0
+category_last_Ruedas de Patín,0.0,0.0,0.0,0.0,0.0
+category_last_Ruedas para Portón,0.0,0.0,0.0,0.0,0.0
+category_last_Runas,0.0,0.0,0.0,0.0,0.0
+category_last_Rímel,0.0,0.0,0.0,0.0,0.0
+category_last_Rótulas,0.0,0.0,0.0,0.0,0.0
+category_last_Sacacorchos,0.0,0.0,0.0,0.0,0.0
+category_last_Sacaleches,0.0,0.0,0.0,0.0,0.0
+category_last_Sacapuntas,0.0,0.0,0.0,0.0,0.0
+category_last_Sahumerios,0.0,0.0,0.0,0.0,0.0
+category_last_Sal,0.0,0.0,0.0,0.0,0.0
+category_last_Salamandras,0.0,0.0,0.0,0.0,0.0
+category_last_Salsas y Aderezos,0.0,0.0,0.0,0.0,0.0
+category_last_Saltarines y Jumpers,0.0,0.0,0.0,0.0,0.0
+category_last_Sandalias y Ojotas,0.0,0.0,0.0,0.0,0.0
+category_last_Sandwicheras,0.0,0.0,0.0,0.0,0.0
+category_last_Sartenes,0.0,0.0,0.0,0.0,0.0
+category_last_Sartenes y Ollas Eléctricas,0.0,0.0,0.0,0.0,0.0
+category_last_Secadores de Pelo,3.0,6.094645023345947,3251.638916015625,18.283935546875,9754.9169921875
+category_last_Secaplatos,0.0,0.0,0.0,0.0,0.0
+category_last_Secarropas,0.0,0.0,0.0,0.0,0.0
+category_last_Selladoras de Bolsas,0.0,0.0,0.0,0.0,0.0
+category_last_Sellos,0.0,0.0,0.0,0.0,0.0
+category_last_Semiejes Completos,0.0,0.0,0.0,0.0,0.0
+category_last_Semillas,0.0,0.0,0.0,0.0,0.0
+category_last_Sensores TPMS,0.0,0.0,0.0,0.0,0.0
+category_last_Sensores TPS,0.0,0.0,0.0,0.0,0.0
+category_last_Sensores de Cigueñal,0.0,0.0,0.0,0.0,0.0
+category_last_Sensores de Estacionamiento,0.0,0.0,0.0,0.0,0.0
+category_last_Separadores de Dedos,0.0,0.0,0.0,0.0,0.0
+category_last_Serruchos,0.0,0.0,0.0,0.0,0.0
+category_last_Servilletas de Papel,0.0,0.0,0.0,0.0,0.0
+category_last_Servilleteros,0.0,0.0,0.0,0.0,0.0
+category_last_Set de Alimentación,0.0,0.0,0.0,0.0,0.0
+category_last_Set de Maquillaje,0.0,0.0,0.0,0.0,0.0
+category_last_Sets,0.0,0.0,0.0,0.0,0.0
+category_last_Sets Completos,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Accesorios,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Artefactos,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Belleza para Niños,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Cubiertos,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Destornilladores,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Duchador y Grifería,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Llaves,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Toallas,0.0,0.0,0.0,0.0,0.0
+category_last_Sets de Vino,0.0,0.0,0.0,0.0,0.0
+category_last_Señuelos,0.0,0.0,0.0,0.0,0.0
+category_last_Shakers,0.0,0.0,0.0,0.0,0.0
+category_last_Shampoo para Autos,0.0,0.0,0.0,0.0,0.0
+category_last_Shampoos y Acondicionadores,4.0,7.6615753173828125,1851.06103515625,30.64630126953125,7404.244140625
+category_last_Shorts,0.0,0.0,0.0,0.0,0.0
+category_last_Shorts de Juego,0.0,0.0,0.0,0.0,0.0
+category_last_Shorts y Bermudas,0.0,0.0,0.0,0.0,0.0
+category_last_Sifones de Desague,0.0,0.0,0.0,0.0,0.0
+category_last_Sifones para Crema,0.0,0.0,0.0,0.0,0.0
+category_last_Silenciadores,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas Materas,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas Mecedoras,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas Tándem,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas de Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas de Camping,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas de Comedor,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas de Comer,1.0,7.717987060546875,300.622802734375,7.717987060546875,300.622802734375
+category_last_Sillas de Oficina,0.0,0.0,0.0,0.0,0.0
+category_last_Sillas y Sillones de Jardín,0.0,0.0,0.0,0.0,0.0
+category_last_Sillitas para Bebés,0.0,0.0,0.0,0.0,0.0
+category_last_Sillones Gamer,0.0,0.0,0.0,0.0,0.0
+category_last_Sillones Inflables,0.0,0.0,0.0,0.0,0.0
+category_last_Sillones Masajeadores,0.0,0.0,0.0,0.0,0.0
+category_last_Sillones y Sofás,0.0,0.0,0.0,0.0,0.0
+category_last_Simuladores de Manejo,0.0,0.0,0.0,0.0,0.0
+category_last_Sin Hidromasajes,0.0,0.0,0.0,0.0,0.0
+category_last_Sirenas,0.0,0.0,0.0,0.0,0.0
+category_last_Sistemas Operativos,0.0,0.0,0.0,0.0,0.0
+category_last_Skins,0.0,0.0,0.0,0.0,0.0
+category_last_Sliders,0.0,0.0,0.0,0.0,0.0
+category_last_Smartbands,0.0,0.0,0.0,0.0,0.0
+category_last_Smartwatch,2.0,2.956125259399414,1547.25732421875,5.912250518798828,3094.5146484375
+category_last_Snacks Salados,0.0,0.0,0.0,0.0,0.0
+category_last_Sobres,0.0,0.0,0.0,0.0,0.0
+category_last_Sobres de Seguridad,0.0,0.0,0.0,0.0,0.0
+category_last_Sogas,0.0,0.0,0.0,0.0,0.0
+category_last_Sogas para Saltar,0.0,0.0,0.0,0.0,0.0
+category_last_Soldador,0.0,0.0,0.0,0.0,0.0
+category_last_Soldadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Soluciones Limpiadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Sombras de Ojos,0.0,0.0,0.0,0.0,0.0
+category_last_Sombreros y Gorros,0.0,0.0,0.0,0.0,0.0
+category_last_Sombrillas,0.0,0.0,0.0,0.0,0.0
+category_last_Sondas,0.0,0.0,0.0,0.0,0.0
+category_last_Sopapas Ventosas,0.0,0.0,0.0,0.0,0.0
+category_last_Sopas y Cremas Instantáneas,0.0,0.0,0.0,0.0,0.0
+category_last_Sopletes,0.0,0.0,0.0,0.0,0.0
+category_last_Sopletes Flambeadores,0.0,0.0,0.0,0.0,0.0
+category_last_Soportes,7.0,7.315438270568848,2562.803466796875,51.20806884765625,17939.625
+category_last_Soportes de Tanques de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Soportes para Autos,0.0,0.0,0.0,0.0,0.0
+category_last_Soportes para DVD,0.0,0.0,0.0,0.0,0.0
+category_last_Soportes para Pared,0.0,0.0,0.0,0.0,0.0
+category_last_Soportes para Parlantes,0.0,0.0,0.0,0.0,0.0
+category_last_Soportes para Taladros,0.0,0.0,0.0,0.0,0.0
+category_last_Sorbetes,0.0,0.0,0.0,0.0,0.0
+category_last_Splash Corporal,0.0,0.0,0.0,0.0,0.0
+category_last_Squishys,0.0,0.0,0.0,0.0,0.0
+category_last_Steps,0.0,0.0,0.0,0.0,0.0
+category_last_Stickers para Uñas,0.0,0.0,0.0,0.0,0.0
+category_last_Stilletos y Plataformas,0.0,0.0,0.0,0.0,0.0
+category_last_Strass de Uñas,0.0,0.0,0.0,0.0,0.0
+category_last_Suavizantes para Ropa,0.0,0.0,0.0,0.0,0.0
+category_last_SubWoofers,0.0,0.0,0.0,0.0,0.0
+category_last_Sujetalibros,0.0,0.0,0.0,0.0,0.0
+category_last_Supermercados,0.0,0.0,0.0,0.0,0.0
+category_last_Suplementos,0.0,0.0,0.0,0.0,0.0
+category_last_Suplementos Alimenticios,0.0,0.0,0.0,0.0,0.0
+category_last_Suplementos Deportivos,0.0,0.0,0.0,0.0,0.0
+category_last_Suspensión Neumática,0.0,0.0,0.0,0.0,0.0
+category_last_Sustratos,0.0,0.0,0.0,0.0,0.0
+category_last_Sweaters,0.0,0.0,0.0,0.0,0.0
+category_last_Switches,0.0,0.0,0.0,0.0,0.0
+category_last_Switches y Splitters,0.0,0.0,0.0,0.0,0.0
+category_last_Sábanas,0.0,0.0,0.0,0.0,0.0
+category_last_TVs,6.0,15.178988456726074,2301.831787109375,91.07392883300781,13810.9912109375
+category_last_Tabaco,0.0,0.0,0.0,0.0,0.0
+category_last_Tablas de Inversión,0.0,0.0,0.0,0.0,0.0
+category_last_Tablas de Picar,0.0,0.0,0.0,0.0,0.0
+category_last_Tablas de Planchar,0.0,0.0,0.0,0.0,0.0
+category_last_Tableros,0.0,0.0,0.0,0.0,0.0
+category_last_Tabletas Digitalizadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Tablets,0.0,0.0,0.0,0.0,0.0
+category_last_Tachas,0.0,0.0,0.0,0.0,0.0
+category_last_Tacómetros Portátiles,0.0,0.0,0.0,0.0,0.0
+category_last_Taladros Atornilladores,0.0,0.0,0.0,0.0,0.0
+category_last_Taladros de Banco,0.0,0.0,0.0,0.0,0.0
+category_last_Talco,0.0,0.0,0.0,0.0,0.0
+category_last_Taller de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_Taloneras,0.0,0.0,0.0,0.0,0.0
+category_last_Tampones,0.0,0.0,0.0,0.0,0.0
+category_last_Tanques de Agua,0.0,0.0,0.0,0.0,0.0
+category_last_Tanques para Desmalezadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Tanzas para Bordeadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Tapabocas Reutilizables,0.0,0.0,0.0,0.0,0.0
+category_last_Tapas de Caja,0.0,0.0,0.0,0.0,0.0
+category_last_Tapas de Inodoro,0.0,0.0,0.0,0.0,0.0
+category_last_Tapas de Válvulas,0.0,0.0,0.0,0.0,0.0
+category_last_Tapas de Válvulas de Ruedas,0.0,0.0,0.0,0.0,0.0
+"category_last_Tapas, Tapones y Corchos",0.0,0.0,0.0,0.0,0.0
+category_last_Tapices,0.0,0.0,0.0,0.0,0.0
+category_last_Tapizados de Puertas,0.0,0.0,0.0,0.0,0.0
+category_last_Tarjetas de Proximidad,0.0,0.0,0.0,0.0,0.0
+category_last_Tarjetas y Credenciales,0.0,0.0,0.0,0.0,0.0
+category_last_Tarugos,0.0,0.0,0.0,0.0,0.0
+category_last_Tazas,0.0,0.0,0.0,0.0,0.0
+category_last_Teclados,0.0,0.0,0.0,0.0,0.0
+category_last_Teclados Físicos,0.0,0.0,0.0,0.0,0.0
+category_last_Teclas de Faros Auxiliares,0.0,0.0,0.0,0.0,0.0
+category_last_Tejidos Mosquiteros,0.0,0.0,0.0,0.0,0.0
+category_last_Telescopios,0.0,0.0,0.0,0.0,0.0
+category_last_Telurímetros,0.0,0.0,0.0,0.0,0.0
+category_last_Teléfonos,0.0,0.0,0.0,0.0,0.0
+category_last_Temporizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Temporizadores para Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Tenders,0.0,0.0,0.0,0.0,0.0
+category_last_Tenedores,0.0,0.0,0.0,0.0,0.0
+category_last_Tequila,0.0,0.0,0.0,0.0,0.0
+category_last_Termofusoras,0.0,0.0,0.0,0.0,0.0
+category_last_Termos,0.0,0.0,0.0,0.0,0.0
+category_last_Termostatos Digitales,0.0,0.0,0.0,0.0,0.0
+category_last_Termotanques,0.0,0.0,0.0,0.0,0.0
+category_last_Termómetros,0.0,0.0,0.0,0.0,0.0
+category_last_Termómetros Ambientales,0.0,0.0,0.0,0.0,0.0
+category_last_Termómetros de Cocina,0.0,0.0,0.0,0.0,0.0
+category_last_Terrajas,0.0,0.0,0.0,0.0,0.0
+category_last_Testers de Alcoholemia,0.0,0.0,0.0,0.0,0.0
+category_last_Teteras,0.0,0.0,0.0,0.0,0.0
+category_last_Tetinas,0.0,0.0,0.0,0.0,0.0
+category_last_Tibiales,0.0,0.0,0.0,0.0,0.0
+category_last_Tierra,0.0,0.0,0.0,0.0,0.0
+category_last_Tijeras,0.0,0.0,0.0,0.0,0.0
+category_last_Tijeras Cortatubos,0.0,0.0,0.0,0.0,0.0
+category_last_Tijeras de Podar,0.0,0.0,0.0,0.0,0.0
+category_last_Tijeras de Sastre,0.0,0.0,0.0,0.0,0.0
+category_last_Timbres,0.0,0.0,0.0,0.0,0.0
+category_last_Tintas,0.0,0.0,0.0,0.0,0.0
+category_last_Tinturas y Decolorantes,0.0,0.0,0.0,0.0,0.0
+category_last_Tiradores,0.0,0.0,0.0,0.0,0.0
+category_last_Tiras Blanqueadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Tiras de LED,0.0,0.0,0.0,0.0,0.0
+category_last_Tizas,0.0,0.0,0.0,0.0,0.0
+category_last_Toallas Húmedas,0.0,0.0,0.0,0.0,0.0
+category_last_Toallas Turbantes,0.0,0.0,0.0,0.0,0.0
+category_last_Toallas de Mano,0.0,0.0,0.0,0.0,0.0
+category_last_Toallas de Microfibra,0.0,0.0,0.0,0.0,0.0
+category_last_Toallas de Rostro,0.0,0.0,0.0,0.0,0.0
+category_last_Toalleros,0.0,0.0,0.0,0.0,0.0
+category_last_Toallitas Femeninas,0.0,0.0,0.0,0.0,0.0
+category_last_Toallitas Húmedas,0.0,0.0,0.0,0.0,0.0
+category_last_Toallones,0.0,0.0,0.0,0.0,0.0
+category_last_Tobilleras y Muñequeras,0.0,0.0,0.0,0.0,0.0
+category_last_Tocadiscos,0.0,0.0,0.0,0.0,0.0
+category_last_Tocadores,0.0,0.0,0.0,0.0,0.0
+"category_last_Tocados, Vinchas y Tiaras",0.0,0.0,0.0,0.0,0.0
+category_last_Tomacorrientes,0.0,0.0,0.0,0.0,0.0
+category_last_Tomas de Fondo,0.0,0.0,0.0,0.0,0.0
+category_last_Topes de Estacionamiento,0.0,0.0,0.0,0.0,0.0
+category_last_Tops,0.0,0.0,0.0,0.0,0.0
+category_last_Tornillos,0.0,0.0,0.0,0.0,0.0
+category_last_Tornos Industriales,0.0,0.0,0.0,0.0,0.0
+category_last_Tornos para Manicura,0.0,0.0,0.0,0.0,0.0
+category_last_Torquímetros,0.0,0.0,0.0,0.0,0.0
+category_last_Tortillas,0.0,0.0,0.0,0.0,0.0
+category_last_Tortugas de Enganche,0.0,0.0,0.0,0.0,0.0
+category_last_Tostadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Trabas de Discos,0.0,0.0,0.0,0.0,0.0
+category_last_Trabas para Puertas,0.0,0.0,0.0,0.0,0.0
+category_last_Trajes de Lluvia,0.0,0.0,0.0,0.0,0.0
+category_last_Trajes de Neoprene,0.0,0.0,0.0,0.0,0.0
+category_last_Trajes y Kimonos,0.0,0.0,0.0,0.0,0.0
+category_last_Trampolines,0.0,0.0,0.0,0.0,0.0
+category_last_Transformadores y Fuentes,0.0,0.0,0.0,0.0,0.0
+category_last_Transmisores FM,0.0,0.0,0.0,0.0,0.0
+category_last_Trapos de Limpieza,0.0,0.0,0.0,0.0,0.0
+category_last_Tratamientos para el Cabello,0.0,0.0,0.0,0.0,0.0
+category_last_Trenes de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_Tricetas,0.0,0.0,0.0,0.0,0.0
+category_last_Triciclos,0.0,0.0,0.0,0.0,0.0
+category_last_Trimmers,2.0,1.861572265625,5352.8232421875,3.72314453125,10705.646484375
+category_last_Trituradoras,0.0,0.0,0.0,0.0,0.0
+category_last_Trompetas,0.0,0.0,0.0,0.0,0.0
+category_last_Trucos Profesionales,0.0,0.0,0.0,0.0,0.0
+category_last_Trucos para Principiantes,0.0,0.0,0.0,0.0,0.0
+category_last_Trípodes,0.0,0.0,0.0,0.0,0.0
+category_last_Tubos de Ensayo,0.0,0.0,0.0,0.0,0.0
+category_last_Tweeters,0.0,0.0,0.0,0.0,0.0
+category_last_Tápers,0.0,0.0,0.0,0.0,0.0
+category_last_Té,0.0,0.0,0.0,0.0,0.0
+category_last_Títeres,0.0,0.0,0.0,0.0,0.0
+category_last_UPS,0.0,0.0,0.0,0.0,0.0
+category_last_USB,0.0,0.0,0.0,0.0,0.0
+category_last_Ukeleles,0.0,0.0,0.0,0.0,0.0
+category_last_Ultrabooks,0.0,0.0,0.0,0.0,0.0
+category_last_Ultracavitación,0.0,0.0,0.0,0.0,0.0
+category_last_Uniformes Gastronómicos,0.0,0.0,0.0,0.0,0.0
+category_last_Universales,0.0,0.0,0.0,0.0,0.0
+category_last_Uñas Postizas,0.0,0.0,0.0,0.0,0.0
+category_last_Valijas,0.0,0.0,0.0,0.0,0.0
+category_last_Valijas Portaequipajes,0.0,0.0,0.0,0.0,0.0
+category_last_Valijitas de Juguete,0.0,0.0,0.0,0.0,0.0
+category_last_Vanitorys y Botiquines de Baño,0.0,0.0,0.0,0.0,0.0
+category_last_Vaporeras,0.0,0.0,0.0,0.0,0.0
+category_last_Vaporizadores,0.0,0.0,0.0,0.0,0.0
+category_last_Vaporizadores Faciales,0.0,0.0,0.0,0.0,0.0
+category_last_Vasos,0.0,0.0,0.0,0.0,0.0
+category_last_Vasos Descartables,0.0,0.0,0.0,0.0,0.0
+category_last_Vasos Térmicos,0.0,0.0,0.0,0.0,0.0
+category_last_Vasos y Copas,0.0,0.0,0.0,0.0,0.0
+category_last_Vasos y Jarras Medidoras,0.0,0.0,0.0,0.0,0.0
+category_last_Vehículos a Control Remoto,0.0,0.0,0.0,0.0,0.0
+category_last_Vehículos a Escala,0.0,0.0,0.0,0.0,0.0
+category_last_Vehículos de Muñecos y Muñecas,0.0,0.0,0.0,0.0,0.0
+category_last_Veladores y Lámparas de Mesa,0.0,0.0,0.0,0.0,0.0
+category_last_Velas,0.0,0.0,0.0,0.0,0.0
+category_last_Ventiladores,0.0,0.0,0.0,0.0,0.0
+category_last_Ventiladores de Radiador,0.0,0.0,0.0,0.0,0.0
+category_last_Ventosas Chinas,0.0,0.0,0.0,0.0,0.0
+category_last_Vestidos,0.0,0.0,0.0,0.0,0.0
+category_last_Videojuegos,0.0,0.0,0.0,0.0,0.0
+category_last_Vigas y Viguetas,0.0,0.0,0.0,0.0,0.0
+category_last_Vinagreras y Aceiteras,0.0,0.0,0.0,0.0,0.0
+category_last_Vinos,2.0,9.028594970703125,3554.50341796875,18.05718994140625,7109.0068359375
+category_last_Violines,0.0,0.0,0.0,0.0,0.0
+category_last_Vodka,0.0,0.0,0.0,0.0,0.0
+category_last_Válvulas,0.0,0.0,0.0,0.0,0.0
+category_last_Válvulas EGR,0.0,0.0,0.0,0.0,0.0
+category_last_Válvulas de Descarga,0.0,0.0,0.0,0.0,0.0
+category_last_Válvulas de Riego,0.0,0.0,0.0,0.0,0.0
+category_last_Waders,0.0,0.0,0.0,0.0,0.0
+category_last_Wafleras,0.0,0.0,0.0,0.0,0.0
+category_last_Walkie Talkies,0.0,0.0,0.0,0.0,0.0
+category_last_Waterpiks,0.0,0.0,0.0,0.0,0.0
+category_last_Waveboards,0.0,0.0,0.0,0.0,0.0
+category_last_Webcams,0.0,0.0,0.0,0.0,0.0
+category_last_Whiskies,1.0,12.0909423828125,1531.0733642578125,12.0909423828125,1531.0733642578125
+category_last_Wok,0.0,0.0,0.0,0.0,0.0
+category_last_Woofers,0.0,0.0,0.0,0.0,0.0
+category_last_Yerba Mate,0.0,0.0,0.0,0.0,0.0
+category_last_Yogurteras,0.0,0.0,0.0,0.0,0.0
+category_last_Zafus,0.0,0.0,0.0,0.0,0.0
+category_last_Zapateros,0.0,0.0,0.0,0.0,0.0
+category_last_Zapatillas,3.0,10.015389442443848,2311.767822265625,30.04616928100586,6935.30322265625
+category_last_Zapatillas de Ciclismo,0.0,0.0,0.0,0.0,0.0
+category_last_Zapatillas y Botas,0.0,0.0,0.0,0.0,0.0
+category_last_Zuecos y Mules,0.0,0.0,0.0,0.0,0.0
+category_last_Zunchadoras,0.0,0.0,0.0,0.0,0.0
+category_last_Zócalos,0.0,0.0,0.0,0.0,0.0
+title_emb_0,203.0,7.23350715637207,481.3607482910156,1468.4019775390625,97716.234375
+title_emb_1,206.0,6.532255172729492,476.6470642089844,1345.64453125,98189.296875
+title_emb_2,215.0,6.908878803253174,659.9727172851562,1485.408935546875,141894.140625
+title_emb_3,255.0,7.845607280731201,663.029541015625,2000.6298828125,169072.53125
+title_emb_4,267.0,7.230645179748535,468.7198791503906,1930.582275390625,125148.2109375
+title_emb_5,246.0,7.240957736968994,732.9010620117188,1781.275634765625,180293.65625
+title_emb_6,229.0,6.911587715148926,760.1900024414062,1582.7535400390625,174083.515625
+title_emb_7,247.0,7.004195690155029,704.8678588867188,1730.036376953125,174102.359375
+title_emb_8,238.0,6.18580961227417,662.4741821289062,1472.22265625,157668.859375
+title_emb_9,252.0,7.363917350769043,714.6713256835938,1855.7071533203125,180097.171875
+title_emb_10,246.0,7.102206230163574,747.954345703125,1747.1427001953125,183996.765625
+title_emb_11,229.0,6.863156318664551,624.34814453125,1571.662841796875,142975.71875
+title_emb_12,256.0,8.902009010314941,697.2820434570312,2278.914306640625,178504.203125
+title_emb_13,197.0,6.468312740325928,640.2130737304688,1274.257568359375,126121.9765625
+title_emb_14,245.0,8.974210739135742,879.0093383789062,2198.681640625,215357.28125
+title_emb_15,238.0,7.12517786026001,479.7552490234375,1695.7923583984375,114181.75
+title_emb_16,246.0,7.077889442443848,757.8037719726562,1741.1607666015625,186419.734375
+title_emb_17,243.0,8.417071342468262,681.3260498046875,2045.348388671875,165562.234375
+title_emb_18,203.0,6.556144714355469,615.733154296875,1330.8973388671875,124993.8359375
+title_emb_19,239.0,6.649085998535156,678.007568359375,1589.131591796875,162043.8125
+title_emb_20,197.0,7.077060222625732,676.0369873046875,1394.180908203125,133179.28125
+title_emb_21,190.0,6.88128662109375,379.2596740722656,1307.4444580078125,72059.3359375
+title_emb_22,225.0,6.523587703704834,737.4830322265625,1467.8072509765625,165933.6875
+title_emb_23,255.0,6.874786376953125,540.6361694335938,1753.070556640625,137862.21875
+title_emb_24,260.0,7.194299221038818,776.346435546875,1870.517822265625,201850.078125
+title_emb_25,227.0,6.2831621170043945,843.0690307617188,1426.27783203125,191376.671875
+title_emb_26,247.0,7.970737457275391,771.2151489257812,1968.7720947265625,190490.140625
+title_emb_27,288.0,7.289309024810791,763.8883666992188,2099.321044921875,219999.84375
+title_emb_28,223.0,7.292587757110596,641.5316772460938,1626.2470703125,143061.5625
+title_emb_29,184.0,6.8598480224609375,500.22637939453125,1262.2120361328125,92041.65625
+title_emb_30,191.0,6.649685859680176,845.028076171875,1270.0899658203125,161400.359375
+title_emb_31,248.0,7.918808937072754,596.7727661132812,1963.8646240234375,147999.640625
+title_emb_32,214.0,6.6477131843566895,487.3724670410156,1422.610595703125,104297.7109375
+title_emb_33,247.0,8.150568962097168,567.4833374023438,2013.1904296875,140168.390625
+title_emb_34,259.0,7.119417190551758,932.5330200195312,1843.9290771484375,241526.046875
+title_emb_35,285.0,7.591699123382568,732.3936157226562,2163.63427734375,208732.171875
+title_emb_36,348.0,9.127792358398438,1063.782470703125,3176.4716796875,370196.3125
+title_emb_37,230.0,6.921942234039307,654.0133666992188,1592.0467529296875,150423.078125
+title_emb_38,252.0,8.805063247680664,1003.6218872070312,2218.8759765625,252912.71875
+title_emb_39,244.0,6.477729797363281,552.270751953125,1580.5660400390625,134754.0625
+title_emb_40,214.0,7.3122124671936035,673.479248046875,1564.8134765625,144124.5625
+title_emb_41,267.0,7.608237266540527,711.9141845703125,2031.3992919921875,190081.09375
+title_emb_42,236.0,7.745115756988525,744.7403564453125,1827.8472900390625,175758.71875
+title_emb_43,216.0,7.209219455718994,700.5635986328125,1557.19140625,151321.734375
+title_emb_44,254.0,6.880813121795654,616.267578125,1747.7265625,156531.96875
+title_emb_45,227.0,7.390966415405273,619.387939453125,1677.7493896484375,140601.0625
+title_emb_46,204.0,6.764435291290283,463.60333251953125,1379.94482421875,94575.078125
+title_emb_47,225.0,6.727206707000732,474.30780029296875,1513.6214599609375,106719.2578125
+title_emb_48,248.0,7.1166605949401855,751.3933715820312,1764.931884765625,186345.5625
+title_emb_49,189.0,6.79296875,663.5413208007812,1283.87109375,125409.3046875
