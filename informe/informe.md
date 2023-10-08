@@ -1,21 +1,19 @@
 ---
 title: "Tecnología Digital VI: Inteligencia Artificial - Trabajo Práctico 2"
 author: [Federico Giorgi, Gastón Loza Montaña, Tomás Curzio]
-geometry: "left=2.5cm,right=2.5cm,top=3cm,bottom=3cm"
+geometry: "left=1cm,right=1cm,top=1cm,bottom=2cm"
 lang: "es"
 ...
 
 # Análisis exploratorio de los datos
 
-Para el análisis de los datos quisimos observar patrones de comportamiendo de los usuarios de la plataforma de e-commerce. Para ello, graficamos la frecuencia de conversión según la plataforma desde la cual está operando el usuario y la frecuencia de conversión según hora y día de la semana.
+Para el análisis de los datos quisimos observar patrones de comportamiendo de los usuarios de la plataforma de e-commerce. Para ello, graficamos la frecuencia de conversión según la plataforma desde la cual está operando el usuario y la frecuencia de conversión según hora y día de la semana (figura 1).
 
-![Histograma de conversión por plataforma](platform_vs_conversion.png){ width=400px }
 
 Entendemos por cómo estaba presentada la información de la plataforma en la que se estaba realizando la visualización que tanto la categoría `android` como `ios` refieren a las aplicaciones nativas de la plataforma en esos sistemas operativos y que `mobile` refiere al uso de la plataforma desde el navegador del dispositivo móbil. Notamos que la conversión en `desktop` es superior a la demás alternativas y que dentro de las opciones de teléfonos, la mayor tasa de conversión se da en dispositivos con el OS de Apple.
 
-![Histogramas de conversión por hora del día y día de la semana](hora_dia_vs_conversion.png){ width=400px }
 
-Del segundo gráfico, nos llama la atención que la tasa de conversión se mantiene bastante estable durante casi todo el día (entre las 9:00 a 23:00) con leves picos en el horario de la salida del horario laboral (18:00) y en la cena u horario de ir a descansar (22:00-23:00).
+De la figura 2, nos llama la atención que la tasa de conversión se mantiene bastante estable durante casi todo el día (entre las 9:00 a 23:00) con leves picos en el horario de la salida del horario laboral (18:00) y en la cena u horario de ir a descansar (22:00-23:00).
 
 # Ingeniería de atributos
 
@@ -67,16 +65,11 @@ Lo hicimos así para un modelo inicial sobre el cual aplicamos algunas modificac
 
 Utilizamos solo los parámetros vistos en clase, ya que esto nos permitía tener una idea mas clara de cuando podíamos estar overfitteando y cuando no al ir moviendolos. Como finalmente los parámetros de hyperopt nos daban un buen score tanto en validation como en el leaderboard público, consideramos que no estaba haciendo overfitting y no los modificamos. En el leaderboard privado nuestro score aumentó, lo que nos da pie a pensar que esa consideración era correcta.
 
-```
-Best Hiperparameters:
-{'colsample_by_tree': 0.5918738102818046, 'gamma': 0.012058425899935464, 
-'learning_rate': 0.03504176190033326, 'max_depth': 7, 'min_child_weight': 6, 
-'n_estimators': 378, 'reg_lambda': 15.162218839683447, 'subsample': 0.6434651515727876}
-```
-
 # Análisis Final
 
 Para ver la importancia de nuestros parametros, utilizamos distintas métricas de importancia, principalmente `Gain` y `Weight`. Mientras `Gain` implica la contribucion relativa de la variable al modelo (mayor gain que otra variable significa que es mas importante), `Weight` representa la cantidad de splits que se hizo con la variable. Entendemos que el `Weight` es interesante pues si se utiliza en muchos splits tiene sentido que sea un predictor útil, pero nos basamos mas en la `Gain`, pues entendemos que por ejemplo una variable binaria muy importante solo puede generar 1 split por arbol (como es el caso de is_pdp).
+
+$\pagebreak$
 
 | Feature                  |   weight |     gain |    cover |   total_gain |      total_cover | Importance |
 |:-------------------------|---------:|---------:|---------:|-------------:|-----------------:| ----------:|
@@ -103,8 +96,14 @@ Interesantes correlaciones con is_pdp:
 
 Podemos ver como es muy importante `avg_gmv_seller_bday` la cantidad de ventas que tiene el vendedor, esto puede ser por un factor de confianza si lo conocemos (por ejemplo, si aparece que lo vende una marca conocida) o también porque aquellos que venden mucho, saben como operar en la página. Principalmente vemos que precios competitivos hacen la diferencia, lo cual es bastante lógico, luego hay categorías como `category_last_Celulares y Smartphones` o `platform_desktop` que tienen mas que ver con que son productos muy buscados y que en general como vimos las compras se hacen desde la computadora. Cosas que el vendedor si puede tener en cuenta son variables como `ahora-12`, `free_shipping`, `fulfillment`, que si bien le pueden generar un costo (pagar el envío o hacerlo uno mismo, dar cuotas, etc.) influyen a que el producto sea mas tenido en cuenta y clickeado, lo cual lleva a una mayor probabilidad de venta. Aun que no parezca muy lógico ya que no aparece tanto al scrollear, la variable `extended_warranty_eligible` parece tener un impacto, posiblemente por filtros o funcionamiento interno del retailer que lo hagan aparecer mas arriba (vimos como también era un factor importante), por lo que recomendaríamos ofrecer una garantía extendible de ser posible.
 
-Teniendo en cuenta estas consideraciones, probablemente el vendedor pueda lograr un mayor porcentaje de clicks en su producto, consiguiendo así una mayor cantidad de ventas.
+Teniendo en cuenta estas consideraciones, probablemente el vendedor pueda lograr un mayor porcentaje de clicks en su producto, consiguiendo así una mayor cantidad de ventas. 
 
-# Notas para nosotros -> BORRAR AL FINAL!!
+Posibles debilidades de este análisis son que algunas variables a tener en cuenta implican gastos adicionales y también se ve que para un vendedor nuevo puede ser dificil competir con el factor de confianza y probablemente manejo del algoritmo del retailer para mostrar los productos de los vendedores mas consolidados (con mas ventas) y no está siendo tan tenido en cuenta.
 
-Para que quede perfecto faltaría simplemente reducir el espacio que ocupa a las 3 carillas que se piden y quizás intentar que el análisis de datos inicial sea mas exploratorio pero aún no se me ocurre como hacer eso asi que lo podemos obviar.
+$\pagebreak$
+
+# Anexo: Gráficos
+
+![Histograma de conversión por plataforma](platform_vs_conversion.png){ width=325px }
+
+![Histogramas de conversión por hora del día y día de la semana](hora_dia_vs_conversion.png){ width=350px }
