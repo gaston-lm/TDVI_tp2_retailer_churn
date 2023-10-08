@@ -13,9 +13,13 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split, ParameterSampler
 from sklearn.metrics import balanced_accuracy_score, roc_auc_score, make_scorer, confusion_matrix
 from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 seed = 798589991
-do_hyperopt = False
+DO_HYPEROPT = False
+DO_ANALYSIS = False
+GENERATE_SUBMIT = False
 
 # Para W2V
 def tokenizer(raw_text):
@@ -161,9 +165,60 @@ def data_eng(df):
 
     return df
 
+# Cargamos el dataset.
+comp_data = pd.read_csv("data/competition_data.csv")
+
+if DO_ANALYSIS:
+    df = comp_data.copy(deep=True)
+
+    # Figura 1:
+    df['platform'] = df['platform'].str.split('/').str[2]
+    plt.figure(figsize=(7, 5))
+    sns.barplot(data=df, x='platform', y='conversion', ci=None, palette='Set2')
+
+    plt.title('Platform vs Conversion')
+    plt.xlabel('Platform')
+    plt.ylabel('Conversion Rate')
+
+    bar_width = 0.6 
+    for bar in plt.gca().patches:
+        x = bar.get_x() + (bar.get_width() - bar_width) / 2
+        bar.set_x(x)
+        bar.set_width(bar_width)
+
+    plt.xticks(rotation=0)
+    plt.tight_layout()
+    plt.show()
+
+    # Figura 2:
+    df['date'] = pd.to_datetime(df['print_server_timestamp'])
+    df['month'] = df['date'].dt.month
+    df['day'] = df['date'].dt.day
+    df['day_of_week'] = df['date'].dt.dayofweek
+    df['hour'] = df['date'].dt.hour
+    df['minute'] = df['date'].dt.minute
+    df['second'] = df['date'].dt.second
+
+    plt.figure(figsize=(7, 8))
+
+    plt.subplot(2, 1, 1)
+    plt.hist(df['hour'], bins=24, color='g', alpha=0.7, density=True, edgecolor='black')
+    plt.title('Histograma de densidad de conversión por hora del día')
+    plt.xlabel('Hora del día')
+    plt.ylabel('Frecuencia de conversión')
+
+    plt.xticks(range(24), [f"{hour:02}:00" for hour in range(24)], rotation=45)
+
+    plt.subplot(2, 1, 2)
+    plt.hist(df['day_of_week'], bins=7, color='r', alpha=0.7, density=True, edgecolor='black')
+    plt.title('Histograma de densidad de conversión por día de la semana')
+    plt.xlabel('Día de la semana (0=Lunes, 6=Domingo)')
+    plt.ylabel('Frecuencia de conversión')
+
+    plt.tight_layout()
+    plt.show()
 
 # Ingeniería de atributos que no hace data leakage al darle todo el dataset (OHE pero no es grave, es conveniente hacerlo así para que no haya mismatch de columnas)
-comp_data = pd.read_csv("data/competition_data.csv")
 comp_data = data_eng(comp_data)
 
 # Dividimos entre la data que tenemos y la de evaluación para submitear.
@@ -181,17 +236,17 @@ X = local_data.drop(columns=['conversion', 'ROW_ID'], axis = 1)
 val_test_size = 0.3 # Proporción de la suma del test de validación y del de test.
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size = val_test_size, random_state = seed, stratify = y)
 
-if do_hyperopt:
+if DO_HYPEROPT:
     # Espacio de búsqueda
     space = {
         'max_depth': hp.choice('max_depth', range(1, 15)),
         'learning_rate': hp.loguniform('learning_rate', -5, 0),
         'n_estimators': hp.choice('n_estimators', range(50, 500)),
         'gamma': hp.loguniform('gamma', -5, 0),
-        'subsample': hp.uniform('subsample', 0.5, 1.0),  # Add subsample
-        'min_child_weight': hp.choice('min_child_weight', range(1, 10)),  # Add min_child_weight
-        'colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0),  # Add colsample_bytree
-        'reg_lambda': hp.loguniform('reg_lambda', -5, 5),  # Add reg_lambda
+        'subsample': hp.uniform('subsample', 0.5, 1.0),
+        'min_child_weight': hp.choice('min_child_weight', range(1, 10)),  
+        'colsample_bytree': hp.uniform('colsample_bytree', 0.5, 1.0), 
+        'reg_lambda': hp.loguniform('reg_lambda', -5, 5) 
     }
 
     # Funciíon objetivo
@@ -233,6 +288,8 @@ if do_hyperopt:
     best_colsample_bytree = best['colsample_bytree']
     best_reg_lambda = best['reg_lambda']
 
+# Hiperparámetros obtenidos con Hyperopt hecho sobre el modelo final.
+
 else:
     best_max_depth = 7
     best_learning_rate = 0.03504176190033326
@@ -243,6 +300,7 @@ else:
     best_colsample_bytree = 0.5918738102818046
     best_reg_lambda = 15.162218839683447
 
+# Entrenamos el modelo con los hiperparámetros obtenidos y la ingeniería de atributos realizada sobre el dataset.
 
 final_cls = make_pipeline(xgb.XGBClassifier(
         objective='binary:logistic',
@@ -266,28 +324,33 @@ y_pred = final_cls.predict_proba(X_val)[:, 1]
 auc_roc = sklearn.metrics.roc_auc_score(y_val, y_pred)
 print('AUC-ROC validación: %0.5f' % auc_roc)
 
-# Para hacer submit.
-all_data_cls = make_pipeline(xgb.XGBClassifier(
-    objective='binary:logistic',
-    seed=seed,
-    eval_metric='auc',
-    max_depth=best_max_depth,
-    learning_rate=best_learning_rate,
-    n_estimators=best_n_estimators,
-    gamma=best_gamma,
-    subsample=best_subsample,
-    min_child_weight=best_min_child_weight,
-    colsample_bytree=best_colsample_bytree,
-    reg_lambda=best_reg_lambda,
-    ))
+# Para hacer submit con todos los datos.
+if GENERATE_SUBMIT or DO_ANALYSIS:
+    all_data_cls = make_pipeline(xgb.XGBClassifier(
+        objective='binary:logistic',
+        seed=seed,
+        eval_metric='auc',
+        max_depth=best_max_depth,
+        learning_rate=best_learning_rate,
+        n_estimators=best_n_estimators,
+        gamma=best_gamma,
+        subsample=best_subsample,
+        min_child_weight=best_min_child_weight,
+        colsample_bytree=best_colsample_bytree,
+        reg_lambda=best_reg_lambda,
+        ))
 
-all_data_cls.fit(X, y)
+    all_data_cls.fit(X, y)
 
-# Predicción en la data de kaggle para submitear.
-kaggle_data = kaggle_data.drop(columns=["conversion"])
-y_preds = all_data_cls.predict_proba(kaggle_data.drop(columns=["ROW_ID"]))[:, final_cls.classes_ == 1].squeeze()
+if DO_ANALYSIS:
+    pass
 
-# Generamos el archivo para submit en base a lo predicho.
-submission_df = pd.DataFrame({"ROW_ID": kaggle_data["ROW_ID"], "conversion": y_preds})
-submission_df["ROW_ID"] = submission_df["ROW_ID"].astype(int)
-submission_df.to_csv("xgboost_model/xgboost_model.csv", sep=",", index=False)
+if GENERATE_SUBMIT:
+    # Predicción en la data de kaggle para submitear.
+    kaggle_data = kaggle_data.drop(columns=["conversion"])
+    y_preds = all_data_cls.predict_proba(kaggle_data.drop(columns=["ROW_ID"]))[:, final_cls.classes_ == 1].squeeze()
+
+    # Generamos el archivo para submit en base a lo predicho.
+    submission_df = pd.DataFrame({"ROW_ID": kaggle_data["ROW_ID"], "conversion": y_preds})
+    submission_df["ROW_ID"] = submission_df["ROW_ID"].astype(int)
+    submission_df.to_csv("xgboost_model/xgboost_model.csv", sep=",", index=False)

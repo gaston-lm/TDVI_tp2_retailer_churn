@@ -1,7 +1,7 @@
 ---
 title: "Tecnología Digital VI: Inteligencia Artificial - Trabajo Práctico 2"
 author: [Federico Giorgi, Gastón Loza Montaña, Tomás Curzio]
-geometry: "left=1cm,right=1cm,top=1cm,bottom=2cm"
+geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
 lang: "es"
 ...
 
@@ -9,9 +9,11 @@ lang: "es"
 
 Para el análisis de los datos quisimos observar patrones de comportamiendo de los usuarios de la plataforma de e-commerce. Para ello, graficamos la frecuencia de conversión según la plataforma desde la cual está operando el usuario y la frecuencia de conversión según hora y día de la semana (figura 1).
 
+![Histograma de conversión por plataforma](platform_vs_conversion.png){ width=350px }
 
 Entendemos por cómo estaba presentada la información de la plataforma en la que se estaba realizando la visualización que tanto la categoría `android` como `ios` refieren a las aplicaciones nativas de la plataforma en esos sistemas operativos y que `mobile` refiere al uso de la plataforma desde el navegador del dispositivo móbil. Notamos que la conversión en `desktop` es superior a la demás alternativas y que dentro de las opciones de teléfonos, la mayor tasa de conversión se da en dispositivos con el OS de Apple.
 
+![Histogramas de conversión por hora del día y día de la semana](hora_dia_vs_conversion_outline.png){ width=350px }
 
 De la figura 2, nos llama la atención que la tasa de conversión se mantiene bastante estable durante casi todo el día (entre las 9:00 a 23:00) con leves picos en el horario de la salida del horario laboral (18:00) y en la cena u horario de ir a descansar (22:00-23:00).
 
@@ -69,7 +71,6 @@ Utilizamos solo los parámetros vistos en clase, ya que esto nos permitía tener
 
 Para ver la importancia de nuestros parametros, utilizamos distintas métricas de importancia, principalmente `Gain` y `Weight`. Mientras `Gain` implica la contribucion relativa de la variable al modelo (mayor gain que otra variable significa que es mas importante), `Weight` representa la cantidad de splits que se hizo con la variable. Entendemos que el `Weight` es interesante pues si se utiliza en muchos splits tiene sentido que sea un predictor útil, pero nos basamos mas en la `Gain`, pues entendemos que por ejemplo una variable binaria muy importante solo puede generar 1 split por arbol (como es el caso de is_pdp).
 
-$\pagebreak$
 
 | Feature                  |   weight |     gain |    cover |   total_gain |      total_cover | Importance |
 |:-------------------------|---------:|---------:|---------:|-------------:|-----------------:| ----------:|
@@ -99,11 +100,3 @@ Podemos ver como es muy importante `avg_gmv_seller_bday` la cantidad de ventas q
 Teniendo en cuenta estas consideraciones, probablemente el vendedor pueda lograr un mayor porcentaje de clicks en su producto, consiguiendo así una mayor cantidad de ventas. 
 
 Posibles debilidades de este análisis son que algunas variables a tener en cuenta implican gastos adicionales y también se ve que para un vendedor nuevo puede ser dificil competir con el factor de confianza y probablemente manejo del algoritmo del retailer para mostrar los productos de los vendedores mas consolidados (con mas ventas) y no está siendo tan tenido en cuenta.
-
-$\pagebreak$
-
-# Anexo: Gráficos
-
-![Histograma de conversión por plataforma](platform_vs_conversion.png){ width=325px }
-
-![Histogramas de conversión por hora del día y día de la semana](hora_dia_vs_conversion.png){ width=350px }
