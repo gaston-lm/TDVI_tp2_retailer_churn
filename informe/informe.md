@@ -80,7 +80,7 @@ Para ver la importancia de nuestros parámetros, utilizamos distintas métricas 
 | print_position           |      792 |  45.1744 |  1922.79 |      35778.2 |       1522846.25 | 0.0171     |
 | total_orders_item_30days |      509 |  30.6762 |  2353.67 |      15614.2 |          1198020 | 0.0116     |
 
-La tabla muestra el top 5 de variables mas importantes. Podemos ver como la posición en la página importa, determinado por las variables `offset` y `print_position`, que la gente suele hacer sus compras desde una computadora, por la variable `platform_desktop`, que los items que mas se vienen vendiendo suelen seguir esa tendencia por la variable `total_orders_items_30days` y finalmente que lógicamente es muy importante que los usuarios clickeen nuestro producto para que lo compren, por la variable `is_pdp`.
+La tabla muestra el top 5 de variables mas importantes en cuanto a `gain` se refiere. Podemos ver como la posición en la página importa, determinado por las variables `offset` y `print_position`, que la gente suele hacer sus compras desde una computadora, por la variable `platform_desktop`, que los items que mas se vienen vendiendo suelen seguir esa tendencia por la variable `total_orders_items_30days` y finalmente que lógicamente es muy importante que los usuarios clickeen nuestro producto para que lo compren, por la variable `is_pdp`.
 
 Para darle un consejo a vendedores, buscamos enfocarnos justamente en eso, en el primer paso que es lograr que el usuario clickee nuestro producto, lo cual aumenta nuestra probabilidad de conversión. Para eso, buscamos las variables que se correlacionan con `is_pdp`.
 

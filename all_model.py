@@ -18,7 +18,7 @@ import seaborn as sns
 
 seed = 798589991
 DO_HYPEROPT = False
-DO_ANALYSIS = False
+DO_ANALYSIS = True
 GENERATE_SUBMIT = False
 
 # Para W2V
@@ -343,7 +343,51 @@ if GENERATE_SUBMIT or DO_ANALYSIS:
     all_data_cls.fit(X, y)
 
 if DO_ANALYSIS:
-    pass
+    # Creamos CSVs con las importancias de las variables y correlación de las variables con is_pdp. En el informe estos CSVs están reducidos a las tablas que creamos.
+    scores = all_data_cls.named_steps['xgbclassifier'].feature_importances_
+    feature_names = X_train.columns
+    feature_importance_dict = dict(zip(feature_names, scores))
+
+    df_feature_importance = pd.DataFrame(list(feature_importance_dict.items()), columns=['Feature', 'Importance'])
+    df_feature_importance.set_index('Feature', inplace=True)
+
+    df_feature_importance.reset_index(inplace=True)
+
+    gain = all_data_cls.named_steps['xgbclassifier'].get_booster().get_score(importance_type='gain')
+    df_gain = pd.DataFrame(list(gain.items()), columns=['Feature', 'Importance'])
+
+    importance_types = ['weight', 'gain', 'cover', 'total_gain', 'total_cover']
+
+    importance_dfs = []
+
+    for importance_type in importance_types:
+        importance_scores = all_data_cls.named_steps['xgbclassifier'].get_booster().get_score(importance_type=importance_type)
+        
+        att_df = pd.DataFrame(columns=['Feature', importance_type])
+        feature_names = X_train.columns.tolist()
+        att_df['Feature'] = feature_names
+        att_df.set_index('Feature', inplace=True)
+        
+        for feature_name in feature_names:
+            if feature_name in importance_scores:
+                att_df.at[feature_name, importance_type] = importance_scores[feature_name]
+            else:
+                att_df.at[feature_name, importance_type] = 0
+        
+        importance_dfs.append(att_df)
+
+    df_final = pd.concat(importance_dfs, axis=1)
+
+    for importance_type in importance_types:
+        df_final[importance_type] = df_final[importance_type].astype(float)
+    
+    df_final.to_csv('importance_scores.csv', index=True)
+    df_feature_importance.to_csv('feature_importance.csv', index=True)
+
+    atributos_usados = list(gain.keys())
+    correlations = X[atributos_usados].corrwith(X['is_pdp'])
+
+    correlations.to_csv('corr_is_pdp.csv', index=True)
 
 if GENERATE_SUBMIT:
     # Predicción en la data de kaggle para submitear.
