@@ -18,7 +18,7 @@ import seaborn as sns
 
 seed = 798589991
 DO_HYPEROPT = False
-DO_ANALYSIS = True
+DO_ANALYSIS = False
 GENERATE_SUBMIT = False
 
 # Para W2V
@@ -354,7 +354,6 @@ if DO_ANALYSIS:
     df_feature_importance.reset_index(inplace=True)
 
     gain = all_data_cls.named_steps['xgbclassifier'].get_booster().get_score(importance_type='gain')
-    df_gain = pd.DataFrame(list(gain.items()), columns=['Feature', 'Importance'])
 
     importance_types = ['weight', 'gain', 'cover', 'total_gain', 'total_cover']
 
